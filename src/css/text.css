@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'CustomFont';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/src/assets/fonts/font.woff") format("woff");
+}
+
+h2 {
+  margin-top: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-size: 1.5em;
+  text-align: left;
+  color: #38a4c8;
+  background-color: #ffffff;
+}
+
+p {
+  margin-bottom: 2%;
+  padding: 0;
+  border: 0;
+  font-size: 1em;
+  color: #1D1D1B;
+}
+
+strong {
+  color: var(--blue);
+  font-weight: normal;
+}

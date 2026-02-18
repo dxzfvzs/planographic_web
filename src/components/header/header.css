@@ -1,0 +1,21 @@
+header {
+  margin-left: auto;
+  margin-right: auto;
+  height: 3.5em;
+  background-color: #121212;
+  color: white;
+  padding: 0 10%;
+  width: 80%;
+}
+
+.header_link-container {
+  padding: 0 1em;
+  height: 100%;
+  width: fit-content;
+  display: block;
+}
+
+.header_logo {
+  width: auto;
+  height: 100%;
+}

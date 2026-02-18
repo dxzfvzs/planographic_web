@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./pages/home";
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
+import Polygraphy from "./pages/polygraphy";
+import Technology from "./pages/technology";
+import Materials from "./pages/materials";
+import Czech from "./pages/czech";
+import English from "./pages/english";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/polygraphy" element={<Polygraphy />} />
+          <Route path="/technology" element={<Technology />} />
+          <Route path="/materials" element={<Materials />} />
+          <Route path="/english" element={<English />} />
+          <Route path="/czech" element={<Czech />} />
+        </Routes>
+      </main>
+      <Footer />
+    </Router>
   );
 }
 

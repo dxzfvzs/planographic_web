@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# Planographic Study Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+(a collection of study materials)
+
+Point of this project is to share study notes for final exams at Brno's Polygraphic school.
+
+> Fun fact: This is a modernisation of a previous html/css/php project which is at the point of rewriting over 7 years old, and due
+to missing version control and hosting/design choice somewhat hard to maintain – complete rewrite just made sense time
+wise.
+
 
 ## Available Scripts
 

@@ -1,0 +1,37 @@
+:root {
+  --blue: #38a4c8;
+  --blue-hover: #198bb1;
+  --white: #ffffff;
+  --yellow: #ffcc00;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'CustomFont', sans-serif;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+main {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1em;
+  width: 80%;
+  margin: 1em auto;
+  box-sizing: border-box;
+}
+
+.flex-gap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
