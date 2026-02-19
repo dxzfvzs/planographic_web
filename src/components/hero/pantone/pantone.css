@@ -4,34 +4,51 @@
   height: 17em;
   background: #f3f3f3;
   border-radius: 5px;
-  box-shadow: 15px 15px 15px #1b1b1b;
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.35);
   display: flex;
   flex-direction: column;
+
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  will-change: transform;
+}
+
+.pantone:hover {
+  box-shadow: 25px 25px 40px rgba(0, 0, 0, 0.45),
+  0 0 30px rgba(168, 168, 168, 0.15);
 }
 
 .pantone__color-block {
-  border-radius: 5px 5px 0 0;
+  border-radius: 4px 4px 0 0;
   width: 100%;
-  background: var(--blue);
   height: 68%;
   flex-grow: 0;
 }
 
 .pantone__text-block {
-  padding: 0.5em;
+  padding: 0.6em;
   flex-direction: column;
   flex-grow: 1;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 4px 4px;
   text-decoration: none;
   gap: 5px;
   display: flex;
-}
-
-.pantone__text--headline {
-  font-family: "Big John", sans-serif;
   color: black;
 }
 
+.pantone__text__headline {
+  display: flex;
+  align-items: flex-start;
+}
+
+.pantone__text__headline--name {
+  font-family: "Big John", sans-serif;
+}
+
+.pantone__text--mark {
+  font-weight: lighter;
+  font-size: 12px;
+}
 
 .pantone__text--description {
   color: black;
