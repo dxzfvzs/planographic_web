@@ -12,6 +12,12 @@ html, body {
   font-family: 'CustomFont', sans-serif;
 }
 
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 section {
   margin-left: auto;
   margin-right: auto;
@@ -26,6 +32,7 @@ main {
   flex-direction: column;
   gap: 1em;
   width: 80%;
+  flex-grow: 1;
   margin: 3em auto 1em auto;
   box-sizing: border-box;
 }
