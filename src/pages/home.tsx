@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <section>
-        <h2>Od studentů, pro studenty</h2>
+        <h1>Od studentů, pro studenty</h1>
         <p>
           {`Na tomto webu naleznete různé zpracované zápisky, výpisky, témata, otázky... `}
         </p>

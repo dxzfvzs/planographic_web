@@ -9,17 +9,17 @@ import Materials from "./pages/materials";
 import Czech from "./pages/czech";
 import English from "./pages/english";
 import Hero from "./components/hero/hero";
+import Article from "./pages/article";
 
 
 function App() {
   const location = useLocation();
-  const isHome = location.pathname === '/' || location.pathname === '';
+  const currentCore = location.pathname.split("/")[1];
 
   return (
     <>
       <Header/>
-      {isHome && <Hero/>}
-
+      <Hero currentCore={currentCore}/>
       <main>
         <Routes>
           <Route path="/" element={<Home/>}/>

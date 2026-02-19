@@ -5,16 +5,28 @@
   src: url("/src/assets/fonts/font.woff") format("woff");
 }
 
+h1 {
+  margin-top: 0;
+  margin-bottom: 1.7em;
+  padding: 0;
+  border: 0;
+  font-size: 1.8em;
+  text-align: left;
+  color: #38a4c8;
+  background-color: #ffffff;
+  font-weight: bolder;
+}
+
 h2 {
   margin-top: 0;
-  margin-bottom: 1.8em;
+  margin-bottom: 1em;
   padding: 0;
   border: 0;
   font-size: 1.5em;
   text-align: left;
   color: #38a4c8;
   background-color: #ffffff;
-  font-weight: bolder;
+  font-weight: normal;
 }
 
 p {
