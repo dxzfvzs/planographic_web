@@ -23,7 +23,12 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home/>}/>
+
           <Route path="/polygraphy" element={<Polygraphy/>}/>
+          <Route path="/polygraphy/:sectionSlug/:articleSlug" element={
+            <Article subject={"Polygraphy"}/>
+          }/>
+
           <Route path="/technology" element={<Technology/>}/>
           <Route path="/materials" element={<Materials/>}/>
           <Route path="/english" element={<English/>}/>

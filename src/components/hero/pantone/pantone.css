@@ -9,21 +9,14 @@
   flex-direction: column;
 
   transform-style: preserve-3d;
-  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  transition: 0.3s ease;
   will-change: transform;
-}
-
-.pantone--sub {
-  opacity: 0.8;
-  scale: 0.9;
-  transition: 0.3s;
 }
 
 .pantone:hover {
   box-shadow: 25px 25px 40px rgba(0, 0, 0, 0.45),
   0 0 30px rgba(168, 168, 168, 0.15);
   scale: 1;
-  opacity: 1;
 }
 
 .pantone__color-block {
@@ -62,4 +55,31 @@
   color: black;
   font-weight: lighter;
   font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pantone--sub {
+  width: 9em;
+  height: 12em;
+  transition: 0.3s;
+}
+
+.pantone--sub .pantone__text-block {
+  padding: 0.3em 0.4em;
+  font-size: 14px;
+}
+
+.pantone--sub .pantone__text--description {
+  font-size: 10px;
+}
+
+.pantone--sub .pantone__color-block {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.pantone--sub:hover .pantone__color-block {
+  opacity: 1;
 }

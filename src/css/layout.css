@@ -46,12 +46,20 @@ main {
 
 .hero {
   width: 100%;
-  height: fit-content;
+  min-height: 23em;
   box-sizing: border-box;
   background: #333333;
   padding: 3em 10%;
   color: white;
   justify-content: center;
+  align-items: end;
   margin: auto;
   display: flex;
+  transition: 0.3s;
+}
+
+@media (max-width: 1042px) {
+  .hero {
+    display: none;
+  }
 }
