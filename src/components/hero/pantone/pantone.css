@@ -1,0 +1,40 @@
+.pantone {
+  text-decoration: none;
+  width: 11.5em;
+  height: 17em;
+  background: #f3f3f3;
+  border-radius: 5px;
+  box-shadow: 15px 15px 15px #1b1b1b;
+  display: flex;
+  flex-direction: column;
+}
+
+.pantone__color-block {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  background: var(--blue);
+  height: 68%;
+  flex-grow: 0;
+}
+
+.pantone__text-block {
+  padding: 0.5em;
+  flex-direction: column;
+  flex-grow: 1;
+  border-radius: 0 0 5px 5px;
+  text-decoration: none;
+  gap: 5px;
+  display: flex;
+}
+
+.pantone__text--headline {
+  font-family: "Big John", sans-serif;
+  color: black;
+}
+
+
+.pantone__text--description {
+  color: black;
+  font-weight: lighter;
+  font-size: 14px;
+}

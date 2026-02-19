@@ -26,7 +26,7 @@ main {
   flex-direction: column;
   gap: 1em;
   width: 80%;
-  margin: 1em auto;
+  margin: 3em auto 1em auto;
   box-sizing: border-box;
 }
 
@@ -34,4 +34,16 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
+}
+
+.hero {
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+  background: #333333;
+  padding: 3em;
+  color: white;
+  justify-content: center;
+  margin: auto;
+  display: flex;
 }
