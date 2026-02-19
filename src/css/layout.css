@@ -48,7 +48,7 @@ main {
   height: fit-content;
   box-sizing: border-box;
   background: #333333;
-  padding: 3em;
+  padding: 3em 10%;
   color: white;
   justify-content: center;
   margin: auto;

@@ -19,7 +19,7 @@
   transition: transform 0.3s ease;
 }
 
-.thicker-link::after {
+.link--thicker::after {
   height: 5px;
 }
 
