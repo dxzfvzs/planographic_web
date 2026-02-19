@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './header.css';
 import { subjects } from "../../utils/subjects";
+import { Link } from "react-router-dom";
 
 // clickable buttons on the header for each subject, for desktop/wide screen
 // will disappear on close zoom
@@ -8,12 +9,12 @@ function HeaderNav() {
   return (
     <nav className="header_nav flex-gap">
       {Object.entries(subjects).map(([key, sub]) => (
-        <a key={key} href={`/${sub.url}`}
+        <Link key={key} to={sub.url}
            className="link header_link"
            style={{ textDecoration: 'none' }}
         >
           {sub.cz}
-        </a>
+        </Link>
       ))}
     </nav>
   );
@@ -29,14 +30,14 @@ function BurgerMenu() {
       {menuOpen && (
         <div className="burger_menu">
           {Object.entries(subjects).map(([key, sub]) => (
-            <a
+            <Link
               key={key}
-              href={`/${sub.url}`}
+              to={sub.url}
               className="header_link link"
               onClick={() => setMenuOpen(false)}
             >
               {sub.cz}
-            </a>
+            </Link>
           ))}
         </div>
       )}
@@ -47,8 +48,8 @@ function BurgerMenu() {
 export default function Header() {
   return (
     <header>
-      <a href="/" className="header__link-container link link--thicker">
-        <img alt="Planographic" src="/img/logo.svg" className="header_logo"/>
+      <a href={`${process.env.PUBLIC_URL}/`} className="header__link-container link link--thicker">
+        <img alt="Planographic" src={`${process.env.PUBLIC_URL}/img/logo.svg`} className="header_logo"/>
       </a>
       <HeaderNav/>
       <BurgerMenu/>

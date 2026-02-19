@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './css/layout.css';
 import './css/text.css';
 import App from './App';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 
 const root = ReactDOM.createRoot(
@@ -11,8 +11,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <HashRouter>
+      <App/>
+    </HashRouter>
   </React.StrictMode>
 );
