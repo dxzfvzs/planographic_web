@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/planographic_web/static/css/main.3fa041ce.css",
-    "main.js": "/planographic_web/static/js/main.2e26e0cb.js",
+    "main.css": "/planographic_web/static/css/main.e2d72d68.css",
+    "main.js": "/planographic_web/static/js/main.390b921b.js",
     "static/media/font.woff": "/planographic_web/static/media/font.2252e71bce0b64f8277a.woff",
     "index.html": "/planographic_web/index.html",
-    "main.3fa041ce.css.map": "/planographic_web/static/css/main.3fa041ce.css.map",
-    "main.2e26e0cb.js.map": "/planographic_web/static/js/main.2e26e0cb.js.map"
+    "main.e2d72d68.css.map": "/planographic_web/static/css/main.e2d72d68.css.map",
+    "main.390b921b.js.map": "/planographic_web/static/js/main.390b921b.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fa041ce.css",
-    "static/js/main.2e26e0cb.js"
+    "static/css/main.e2d72d68.css",
+    "static/js/main.390b921b.js"
   ]
 }
