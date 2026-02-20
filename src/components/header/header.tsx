@@ -48,9 +48,9 @@ function BurgerMenu() {
 export default function Header() {
   return (
     <header>
-      <a href={`${process.env.PUBLIC_URL}/`} className="header__link-container link link--thicker">
+      <Link to={`/`} className="header__link-container link link--thicker">
         <img alt="Planographic" src={`${process.env.PUBLIC_URL}/img/logo.svg`} className="header_logo"/>
-      </a>
+      </Link>
       <HeaderNav/>
       <BurgerMenu/>
     </header>
