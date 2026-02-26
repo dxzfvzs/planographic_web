@@ -1,7 +1,8 @@
 import React from "react";
 import NavButton from "../components/button/nav-button";
 import { ContentMap } from "../content/content";
-import { Subject, subjects } from "../utils/subjects";
+import type { Subject } from "../utils/subjects";
+import { subjects } from "../utils/subjects";
 import { useParams } from "react-router-dom";
 
 export default function SubjectPage() {
