@@ -4,11 +4,12 @@ interface ButtonProps {
   text: string;
   color?: string;
   onClick?: () => void;
+  type?: "button" | "submit" | "reset";
 }
 
-export default function Button({ text, color, onClick }: ButtonProps) {
+export default function Button({ text, color, onClick, type = "button" }: ButtonProps) {
   return (
-    <button className="button" style={color ? { backgroundColor: color } : undefined} onClick={onClick}>
+    <button type={type} className="button" style={color ? { backgroundColor: color } : undefined} onClick={onClick}>
       {text}
     </button>
   );
