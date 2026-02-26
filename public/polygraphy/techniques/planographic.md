@@ -20,7 +20,7 @@ I tisk z plochy může být dělen na přímé a nepřímé techniky:
 Litografie je úplně první technika tisku z plochy vůbec. Jako formu používá jemnozrnný **solnhofenský vápenec** z
 Bavorska.
 
-Vynalezl ji: [**Alois Senefelder**](https://cz.wikipedia.org/wiki/Alois_Senefelder), okolo roku **1796**.
+Vynalezl ji: [**Alois Senefelder**](https://cs.wikipedia.org/wiki/Alois_Senefelder), okolo roku **1796**.
 
 ### Princip litografie
 
