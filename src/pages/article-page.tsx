@@ -16,7 +16,14 @@ export default function ArticlePage() {
   const { subjectSlug, sectionSlug, articleSlug } = useParams<Record<keyof Params, string>>();
 
   const [content, setContent] = useState<string>("");
-  const [neutralColor, setNeutralColor] = useState<boolean>(false);
+  const [neutralColor, setNeutralColor] = useState<boolean>(() => {
+    const stored = localStorage.getItem("neutralColor");
+    return stored === "true";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("neutralColor", String(neutralColor));
+  }, [neutralColor]);
 
   useEffect(() => {
     async function loadArticle() {
@@ -34,7 +41,6 @@ export default function ArticlePage() {
     void loadArticle();
   }, [subjectSlug, sectionSlug, articleSlug]);
 
-
   const subjectKey = (Object.keys(subjects) as Subject[]).find(
     key => subjects[key].url === subjectSlug
   );
@@ -50,7 +56,7 @@ export default function ArticlePage() {
     <div className="flex-col">
       <div className="article__nav flex-gap">
         <NavButton url={`/${config.url}`} text={"Zpátky na výběr"} color={color}/>
-        <Button text={"Změň barvu"} color={color} onClick={() => setNeutralColor(!neutralColor)}/>
+        <Button text={"Změň barvu"} color={color} onClick={() => setNeutralColor(prev => !prev)}/>
       </div>
       <div style={{ "--subject-color": color } as React.CSSProperties} className="section--darker">
         <Article
