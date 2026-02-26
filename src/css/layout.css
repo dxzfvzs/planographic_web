@@ -12,10 +12,6 @@ html, body {
   font-family: 'CustomFont', sans-serif;
 }
 
-.i-hate-color {
-  filter: grayscale(100%);
-}
-
 #root {
   min-height: 100vh;
   display: flex;
