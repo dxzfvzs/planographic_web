@@ -46,7 +46,7 @@ export default function Pantone({ subject, main = true }: NavButtonProps) {
   return (
     <Link
       ref={cardRef}
-      to={config.url}
+      to={`/${config.url}`}
       className={`pantone ${!main ? "pantone--sub" : ""}`}
       style={style}
       onMouseMove={handleMouseMove}
