@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import NavButton from "../components/button/nav-button";
 import { ContentMap } from "../content/content";
 import { Subject, subjects } from "../utils/subjects";
@@ -12,17 +12,7 @@ export default function SubjectPage() {
   );
 
   const neutralColorHex = "#404040";
-
-  // state for neutral color toggle
-  const [neutralColor] = useState<boolean>(() => {
-    const stored = localStorage.getItem("neutralColor");
-    return stored === "true";
-  });
-
-  // persist toggle
-  useEffect(() => {
-    localStorage.setItem("neutralColor", String(neutralColor));
-  }, [neutralColor]);
+  const neutralColor = localStorage.getItem("neutralColor");
 
   if (!subjectKey) return <p>Předmětová stránka nenalezena</p>;
 
