@@ -18,7 +18,7 @@ export const polygraphyContent: ContentSection[] = [
       intro: `Detailní popis jednotlivých tiskových technik včetně hloubotisku, 
       tisku z plochy, tisku z výšky, digitálního tisku a sítotisku.`,
       articles: [
-        { name: "Tisk z hloubky Hlubotisk", url: "depth" },
+        { name: "Tisk z hloubky", url: "depth" },
         { name: "Hlubotisk", url: "intaglio" },
         { name: "Tisk z plochy", url: "planographic" },
         { name: "Tisk z výšky Knihtisk Flexotisk", url: "relief" },
