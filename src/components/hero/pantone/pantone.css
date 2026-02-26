@@ -16,7 +16,6 @@
 .pantone:hover {
   box-shadow: 25px 25px 40px rgba(0, 0, 0, 0.45),
   0 0 30px rgba(168, 168, 168, 0.15);
-  scale: 1;
 }
 
 .pantone__color-block {
