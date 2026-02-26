@@ -5,13 +5,13 @@ import NavButton from "../components/button/nav-button";
 export default function Home() {
   return (
     <>
-      <section>
+      <section className="article-background">
         <h1>Od studentů, pro studenty</h1>
-        <p>
+        <p className="intro">
           {`Na tomto webu naleznete různé zpracované zápisky, výpisky, témata, otázky... `}
         </p>
 
-        <p>
+        <p className="intro">
           {`Vše pro studenty `}
           <ClickableLink
             url={"https://ssgbrno.cz/"}>

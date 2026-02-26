@@ -11,25 +11,24 @@ html, body {
 
 h1 {
   margin-top: 0;
-  margin-bottom: 1.7em;
-  padding: 0;
-  border: 0;
-  font-size: 1.8em;
   text-align: left;
-  color: #38a4c8;
-  background-color: #ffffff;
   font-weight: bolder;
+  color: white;
+  padding: 0.75em 0.8em;
+  margin-bottom: 1.4em;
+  border-radius: 15px 15px 0 0;
+  font-size: 25px;
+  background: var(--subject-color, var(--blue));
 }
 
 h2 {
-  margin-top: 1em;
+  margin-top: 0.8em;
   margin-bottom: 1em;
   padding: 0;
   border: 0;
   font-size: 1.5em;
   text-align: left;
-  color: #38a4c8;
-  background-color: #ffffff;
+  color: var(--subject-color, var(--blue));
   font-weight: normal;
 }
 
@@ -40,8 +39,16 @@ p {
   color: #1D1D1B;
 }
 
+.intro {
+  padding: 0.2em 2em 0 2em;
+}
+
+.link-section {
+  padding: 1em 2em;
+}
+
 strong {
-  color: var(--blue);
+  color: var(--subject-color, var(--blue));
   font-weight: bolder;
 }
 

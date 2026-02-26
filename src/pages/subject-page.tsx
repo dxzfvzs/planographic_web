@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import NavButton from "../components/button/nav-button";
 import { ContentMap } from "../content/content";
 import { Subject, subjects } from "../utils/subjects";
@@ -11,20 +11,38 @@ export default function SubjectPage() {
     key => subjects[key].url === subjectSlug
   );
 
+  const neutralColorHex = "#404040";
+
+  // state for neutral color toggle
+  const [neutralColor] = useState<boolean>(() => {
+    const stored = localStorage.getItem("neutralColor");
+    return stored === "true";
+  });
+
+  // persist toggle
+  useEffect(() => {
+    localStorage.setItem("neutralColor", String(neutralColor));
+  }, [neutralColor]);
+
   if (!subjectKey) return <p>Předmětová stránka nenalezena</p>;
 
   const config = subjects[subjectKey];
+  const color = neutralColor ? neutralColorHex : config.color;
   const contentSections = ContentMap[subjectKey] || [];
 
   return (
     <>
-      <section style={{ "--subject-color": config.color } as React.CSSProperties}>
+      <section style={{ "--subject-color": color } as React.CSSProperties} className="article-background">
         <h1>{config.cz}</h1>
-        <p>{config.intro}</p>
+        <p className="intro">{config.intro}</p>
       </section>
 
       {contentSections.map((section) => (
-        <section key={section.sectionSlug}>
+        <section
+          key={section.sectionSlug}
+          style={{ "--subject-color": color } as React.CSSProperties}
+          className="article-background link-section"
+        >
           <h2>{section.section}</h2>
           <p>{section.intro}</p>
           <div className="flex-gap">
@@ -33,7 +51,7 @@ export default function SubjectPage() {
                 key={article.url}
                 url={`/${config.url}/${section.sectionSlug}/${article.url}`}
                 text={article.name}
-                color={config.color} // per-subject color
+                color={color}
               />
             ))}
           </div>
