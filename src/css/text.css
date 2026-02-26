@@ -48,7 +48,7 @@ p {
 }
 
 strong {
-  color: var(--subject-color, var(--blue));
+  color: var(--blue);
   font-weight: bolder;
 }
 
