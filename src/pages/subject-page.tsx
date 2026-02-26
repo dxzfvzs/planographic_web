@@ -4,6 +4,7 @@ import { ContentMap } from "../content/content";
 import type { Subject } from "../utils/subjects";
 import { subjects } from "../utils/subjects";
 import { useParams } from "react-router-dom";
+import { neutralColorHex, useNeutralColor } from "../hooks/useNeutralColor";
 
 export default function SubjectPage() {
   const { subjectSlug } = useParams<{ subjectSlug: string }>();
@@ -12,8 +13,7 @@ export default function SubjectPage() {
     key => subjects[key].url === subjectSlug
   );
 
-  const neutralColorHex = "#404040";
-  const neutralColor = localStorage.getItem("neutralColor");
+  const [neutralColor] = useNeutralColor();
 
   if (!subjectKey) return <p>Předmětová stránka nenalezena</p>;
 

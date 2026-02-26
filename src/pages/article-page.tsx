@@ -5,6 +5,7 @@ import Article from "../components/article/article";
 import NavButton from "../components/button/nav-button";
 import { ContentMap } from "../content/content";
 import Button from "../components/button/button";
+import { neutralColorHex, useNeutralColor } from "../hooks/useNeutralColor";
 
 interface Params {
   subjectSlug: string;
@@ -16,14 +17,7 @@ export default function ArticlePage() {
   const { subjectSlug, sectionSlug, articleSlug } = useParams<Record<keyof Params, string>>();
 
   const [content, setContent] = useState<string>("");
-  const [neutralColor, setNeutralColor] = useState<boolean>(() => {
-    const stored = localStorage.getItem("neutralColor");
-    return stored === "true";
-  });
-
-  useEffect(() => {
-    localStorage.setItem("neutralColor", String(neutralColor));
-  }, [neutralColor]);
+  const [neutralColor, setNeutralColor] = useNeutralColor();
 
   useEffect(() => {
     const controller = new AbortController();
@@ -53,9 +47,7 @@ export default function ArticlePage() {
   if (!subjectKey) return <p>Předmětová stránka nenalezena</p>;
 
   const config = subjects[subjectKey];
-  const neutralColorHex = "#404040";
-  const subjectColorHex = config.color;
-  const color = neutralColor ? neutralColorHex : subjectColorHex;
+  const color = neutralColor ? neutralColorHex : config.color;
 
   return (
     <div className="flex-col">
