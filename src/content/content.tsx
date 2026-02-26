@@ -14,6 +14,6 @@ export interface ContentSection {
 }
 
 
-export const ContentMap: Record<Subject, ContentSection[]> = {
+export const ContentMap: Readonly<Record<Subject, ContentSection[]>> = {
   Czech: [], English: [], Materials: [], Polygraphy: polygraphyContent, Technology: []
 }
