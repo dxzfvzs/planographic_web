@@ -26,19 +26,24 @@ export default function ArticlePage() {
   }, [neutralColor]);
 
   useEffect(() => {
+    const controller = new AbortController();
+
     async function loadArticle() {
       const path = `${process.env.PUBLIC_URL}/${subjectSlug}/${sectionSlug}/${articleSlug}.md`;
       try {
-        const res = await fetch(path);
+        setContent("");
+        const res = await fetch(path, { signal: controller.signal });
         if (!res.ok) throw new Error("Article not found");
         const text = await res.text();
         setContent(text);
       } catch (e) {
+        if ((e as Error).name === "AbortError") return;
         setContent("# Článek nebyl nalezen");
       }
     }
 
     void loadArticle();
+    return () => controller.abort();
   }, [subjectSlug, sectionSlug, articleSlug]);
 
   const subjectKey = (Object.keys(subjects) as Subject[]).find(
