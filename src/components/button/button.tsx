@@ -1,4 +1,5 @@
 import "./button.css"
+import React from "react";
 
 interface ButtonProps {
   text: string;
@@ -9,7 +10,7 @@ interface ButtonProps {
 
 export default function Button({ text, color, onClick, type = "button" }: ButtonProps) {
   return (
-    <button type={type} className="button" style={color ? { backgroundColor: color } : undefined} onClick={onClick}>
+    <button type={type} className="button" style={{ "--subject-color": color } as React.CSSProperties} onClick={onClick}>
       {text}
     </button>
   );
