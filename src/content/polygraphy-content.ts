@@ -22,6 +22,8 @@ export const polygraphyContent: ContentSection[] = [
         { name: "Hlubotisk", url: "intaglio" },
         { name: "Tisk z plochy", url: "planographic" },
         { name: "Tisk z výšky Knihtisk Flexotisk", url: "relief" },
+        { name: "Knihtisk", url: "letterpress" },
+        { name: "Flexotisk", url: "flexography" },
         { name: "Digitální tisk", url: "digital" },
         { name: "Sítotisk", url: "screen" }
       ]
