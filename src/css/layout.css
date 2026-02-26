@@ -12,6 +12,10 @@ html, body {
   font-family: 'CustomFont', sans-serif;
 }
 
+.i-hate-color {
+  filter: grayscale(100%);
+}
+
 #root {
   min-height: 100vh;
   display: flex;
@@ -34,7 +38,7 @@ main {
   gap: 1em;
   width: 80%;
   flex-grow: 1;
-  margin: 3em auto 1em auto;
+  margin: 3em auto 3em auto;
   box-sizing: border-box;
 }
 
@@ -42,6 +46,16 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .hero {
@@ -62,4 +76,8 @@ main {
   .hero {
     display: none;
   }
+}
+
+hr {
+  margin: 2em 0;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import ClickableLink from "../components/clickable-link/clickable-link";
-import NavButton from "../components/nav-button/nav-button";
+import NavButton from "../components/button/nav-button";
 
 export default function Home() {
   return (

@@ -1,4 +1,4 @@
-import { ContentSection } from "../content";
+import { ContentSection } from "./content";
 
 export const polygraphyContent: ContentSection[] = [
     {
