@@ -80,10 +80,11 @@
   margin-left: 1em;
   opacity: 0.9;
   background: var(--subject-color, var(--blue));
+  font-weight: normal;
 }
 .article-content h4 + p,
 .article-content h4 + ul {
-  margin-left: 0.5em;
+  margin-left: 1em;
 }
 
 .article-content h5 {
@@ -96,6 +97,7 @@
   margin-top: 1.5em;
   opacity: 0.9;
   background: var(--subject-color, var(--blue));
+  font-weight: normal;
 }
 
 .article-content h5 + p,
