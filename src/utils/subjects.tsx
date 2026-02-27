@@ -30,7 +30,7 @@ export const subjects = {
     cz: "Čeština",
     color: "#238ca3",
     url: "czech",
-    intro: "Většinou zde budou různé rozbory literálních děl.",
+    intro: "Většinou zde budou různé rozbory literárních děl.",
   },
 } as const;
 
