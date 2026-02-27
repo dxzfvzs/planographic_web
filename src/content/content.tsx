@@ -1,6 +1,7 @@
 import { Subject } from "../utils/subjects";
 import { polygraphyContent } from "./polygraphy-content";
 import { technologyContent } from "./technology-content";
+import { materialsContent } from "./materials-content";
 
 export interface Article {
   name: string;
@@ -16,5 +17,5 @@ export interface ContentSection {
 
 
 export const ContentMap: Readonly<Record<Subject, ContentSection[]>> = {
-  Czech: [], English: [], Materials: [], Polygraphy: polygraphyContent, Technology: technologyContent
+  Czech: [], English: [], Materials: materialsContent, Polygraphy: polygraphyContent, Technology: technologyContent
 }
