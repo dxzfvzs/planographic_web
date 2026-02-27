@@ -10,25 +10,27 @@ export const subjects = {
     cz: "Technologie",
     color: "#df7432",
     url: "technology",
-    intro: "technology",
+    intro: "Technologie se zaměřuje na technické procesy a výrobní postupy používané v polygrafii – od předtiskové přípravy " +
+      "přes tiskové techniky až po zpracování hotových výrobků.",
   },
   Materials: {
     cz: "Polygrafické materiály",
     color: "#d6a62a",
     url: "materials",
-    intro: "materials",
+    intro: "Polygrafické materiály zahrnují papíry, kartony, barvy, laky, lepidla a další materiály používané při " +
+      "tisku a dokončovacím zpracování.",
   },
   English: {
     cz: "Angličtina",
     color: "#61981e",
     url: "english",
-    intro: "english",
+    intro: "Angličtina pokryje jak běžné maturitní otázky z každodenního života, tak i ty odborné z pohledu polygrafie.",
   },
   Czech: {
     cz: "Čeština",
     color: "#238ca3",
     url: "czech",
-    intro: "czech",
+    intro: "Většinou zde budou různé rozbory literálních děl.",
   },
 } as const;
 
