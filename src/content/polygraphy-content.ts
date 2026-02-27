@@ -1,77 +1,59 @@
 import type { ContentSection } from "./content";
 
-export const polygraphyContent: ContentSection[] = [
+// 1. Tisk z výšky
+// 3. Rozdělení tiskových technik
+// 5. Polygrafická výroba
+// 7. Přímé tiskové techniky
+// 9. Strojní vybavení kniháren
+// 11. Tisk z plochy
+// 13. Nepřímé tiskové techniky
+// 17. Rozdělení knižních vazeb
+// 19. Měkké knižní vazby
+// 21. Tuhé knižní vazby
+// 23. Tisk z hloubky
+// 25. Sítotisk
+
+export const polygraphyContent: ContentSection[] =
+  [
     {
       section: "Tiskové techniky obecně",
       sectionSlug: "general",
-      intro: `V této sekci se seznámíme se základními tiskovými technikami, jejich 
-      rozdělením a přehledem. Také zde najdete srovnání různých metod a jejich využití.`,
+      intro: "Základní tiskové techniky a jejich přehled.",
       articles: [
-        { name: "Rozdělení tiskových technik", url: "rozdeleni" },
-        { name: "Přehled tiskových technik", url: "prehled" },
-        { name: "Tiskové techniky a jejich srovnání", url: "srovnani" }
+        { name: "Rozdělení tiskových technik", url: "rozdeleni-tiskovych-technik" }, // 3
+        { name: "Strojní vybavení kniháren", url: "strojni-vybaveni-kniharen" }, // 9
       ]
     },
     {
-      section: "Jednotlivé techniky",
+      section: "Jednotlivé tiskové techniky",
       sectionSlug: "techniques",
-      intro: `Detailní popis jednotlivých tiskových technik včetně hloubotisku, 
-      tisku z plochy, tisku z výšky, digitálního tisku a sítotisku.`,
+      intro: "Detailní popis jednotlivých tiskových technik.",
       articles: [
-        { name: "Tisk z hloubky", url: "depth" },
-        { name: "Hlubotisk", url: "intaglio" },
-        { name: "Tisk z plochy", url: "planographic" },
-        { name: "Tisk z výšky", url: "relief" },
-        { name: "Knihtisk", url: "letterpress" },
-        { name: "Flexotisk", url: "flexography" },
-        { name: "Digitální tisk", url: "digital" },
-        { name: "Sítotisk", url: "screen" }
-      ]
-    },
-    {
-      section: "Knižní vazby",
-      sectionSlug: "vazby",
-      intro: `Sekce věnovaná knižním vazbám, jejich částem, rozdělení a historickému 
-      vývoji. Zahrnuje postupy výroby měkké i tuhé vazby.`,
-      articles: [
-        { name: "Knižní vazby a jejich části", url: "vazby" },
-        { name: "Rozdělení knižních vazeb", url: "rozdeleni" },
-        { name: "Historický vývoj knižní vazby a knihařství", url: "historie" },
-        { name: "Zhotovení vazby měkké", url: "mekka" },
-        { name: "Zhotovení vazby tuhé", url: "tuha" }
+        { name: "Tisk z výšky", url: "tisk-z-vysky" }, // 1
+        { name: "Tisk z hloubky", url: "tisk-z-hloubky" }, // 23
+        { name: "Tisk z plochy", url: "tisk-z-plochy" }, // 11
+        { name: "Sítotisk", url: "sitotisk" }, // 25
+        { name: "Digitální tisk*", url: "digitalni-tisk" },
       ]
     },
     {
       section: "Polygrafická výroba",
-      sectionSlug: "polygraficka-vyroba",
-      intro: `Přehled celého výrobního procesu tiskovin – od předvýrobní činnosti, 
-      přes samotnou výrobu, až po dokončující zpracování a expedici.`,
+      sectionSlug: "production",
+      intro: "Procesy a workflow polygrafické výroby.",
       articles: [
-        { name: "Fáze polygrafické výroby, fakturace a expedice", url: "faze" },
-        { name: "Předvýrobní činnost podniku", url: "prepress" },
-        { name: "Členění materiálů pro polygrafickou výrobu", url: "materialy" },
-        { name: "Dokončující zpracování tiskovin", url: "dokoncujici-zpracovani" }
+        { name: "Polygrafická výroba", url: "polygraficka-vyroba" }, // 5
+        { name: "Přímé tiskové techniky", url: "primy-tisk" }, // 7
+        { name: "Nepřímé tiskové techniky", url: "neprimy-tisk" }, // 13
       ]
     },
     {
-      section: "Historie",
-      sectionSlug: "historie",
-      intro: `Významné osobnosti polygrafie a jejich přínos pro rozvoj tiskového průmyslu.`,
+      section: "Knižní vazby",
+      sectionSlug: "bindings",
+      intro: "Typy knižních vazeb a postupy jejich výroby.",
       articles: [
-        { name: "Významné osobnosti polygrafie", url: "osobnosti" }
-      ]
-    },
-    {
-      section: "Knihařské materiály",
-      sectionSlug: "materials",
-      intro: `Materiály používané v knihařské výrobě, členění materiálů pro polygrafii, 
-      formáty papíru a zušlechťování polygrafických výrobků.`,
-      articles: [
-        { name: "Materiály používané v knihařské výrobě", url: "materialy-v-kniharske-vyrobe" },
-        { name: "Knihařské materiály", url: "kniharske-materialy" },
-        { name: "Členění materiálů pro polygrafickou výrobu", url: "cleneni" },
-        { name: "Formáty papíru", url: "formaty" },
-        { name: "Zušlechťování polygrafických výrobků", url: "zuslechtovani" }
+        { name: "Rozdělení knižních vazeb", url: "rozdeleni-vazeb" }, // 17
+        { name: "Měkké knižní vazby", url: "mekke-vazby" }, // 19
+        { name: "Tuhé knižní vazby", url: "tuhe-vazby" } // 21
       ]
     }
   ]
