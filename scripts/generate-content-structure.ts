@@ -60,7 +60,8 @@ async function run() {
 
     for (const article of section.articles) {
       const mdPath = path.join(sectionDir, `${article.url}.md`);
-      ensureFile(mdPath, "Prozatím tu nic není.");
+      const content = subject === "english" ? "Nothing here just yet." : "Prozatím tu nic není.";
+      ensureFile(mdPath, content);
     }
   }
 

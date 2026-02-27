@@ -1,1 +1,1 @@
-Prozatím tu nic není.
+Nothing here just yet.
