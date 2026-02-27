@@ -34,7 +34,7 @@ Tyto techniky se rozdělují podle několika kritérií:
 ## Digitální tiskové techniky
 
 Digitální tisk probíhá **bez hmotné tiskové formy a bez tlaku**. Tiskový obraz vzniká přímo z digitálních dat uložených
-v paměti zařízení.
+v paměti zařízení. Hodí se pro velmi malé a malé náklady, protože nevyžaduje tiskové formy.
 
 Základní typy digitálního tisku:
 
@@ -43,9 +43,9 @@ Základní typy digitálního tisku:
 - **Tryskový (inkoustový) tisk** – princip využívá **inkoustová tiskárna**. Tisková hlava vystřikuje drobné kapky barvy
   přímo na materiál.
 - **Termosublimační** nebo **Elektrosublimační tisk** – barva přechází z pevného do plynného skupenství a sublimuje
-  přímo do povrchu materiálu.
+  přímo do povrchu materiálu. Díky velmi jemným přechodům se hodí pro tisk obrázků.
 
-***
+---
 
 ## Vhodnost tiskových technik
 
@@ -58,14 +58,6 @@ Při volbě tiskové techniky je třeba zohlednit:
 
 Cílem je vždy zvolit technologii, která je pro konkrétní výrobek **nejefektivnější** a cenově **nejvýhodnější**, a to
 bez dopadu na kvalitu výsledku.
-
-### Digitální tisk
-
-Hodí se pro velmi malé a malé náklady, protože nevyžaduje tiskové formy.
-
-#### Sublimační tisk
-
-Díky velmi jemným přechodům se hodí pro tisk obrázků.
 
 ---
 
