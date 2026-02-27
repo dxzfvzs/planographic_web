@@ -21,7 +21,7 @@ export const polygraphyContent: ContentSection[] = [
         { name: "Tisk z hloubky", url: "depth" },
         { name: "Hlubotisk", url: "intaglio" },
         { name: "Tisk z plochy", url: "planographic" },
-        { name: "Tisk z výšky Knihtisk Flexotisk", url: "relief" },
+        { name: "Tisk z výšky", url: "relief" },
         { name: "Knihtisk", url: "letterpress" },
         { name: "Flexotisk", url: "flexography" },
         { name: "Digitální tisk", url: "digital" },
@@ -34,7 +34,7 @@ export const polygraphyContent: ContentSection[] = [
       intro: `Sekce věnovaná knižním vazbám, jejich částem, rozdělení a historickému 
       vývoji. Zahrnuje postupy výroby měkké i tuhé vazby.`,
       articles: [
-        { name: "Knižní vazby a její části", url: "parts" },
+        { name: "Knižní vazby a jejich části", url: "parts" },
         { name: "Rozdělení knižních vazeb", url: "division" },
         { name: "Historický vývoj knižní vazby a knihařství", url: "history" },
         { name: "Zhotovení vazby měkké", url: "soft" },
