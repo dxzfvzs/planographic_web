@@ -1,0 +1,78 @@
+import React, { useEffect, useState } from "react";
+import { Subject, subjects } from "../utils/subjects";
+import { useParams } from "react-router-dom";
+import Article from "../components/article/article";
+import NavButton from "../components/button/nav-button";
+import { ContentMap } from "../content/content";
+import Button from "../components/button/button";
+import { neutralColorHex, useNeutralColor } from "../hooks/useNeutralColor";
+
+interface Params {
+  subjectSlug: string;
+  sectionSlug: string;
+  articleSlug: string;
+}
+
+export default function ArticlePage() {
+  const { subjectSlug, sectionSlug, articleSlug } = useParams<Record<keyof Params, string>>();
+
+  const [content, setContent] = useState<string>("");
+  const [neutralColor, setNeutralColor] = useNeutralColor();
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    async function loadArticle() {
+      const path = `${process.env.PUBLIC_URL}/${subjectSlug}/${sectionSlug}/${articleSlug}.md`;
+      try {
+        setContent("");
+        const res = await fetch(path, { signal: controller.signal });
+        if (!res.ok) throw new Error("Article not found");
+        const text = await res.text();
+        setContent(text);
+      } catch (e) {
+        if ((e as Error).name === "AbortError") return;
+        setContent("# Článek nebyl nalezen");
+      }
+    }
+
+    void loadArticle();
+    return () => controller.abort();
+  }, [subjectSlug, sectionSlug, articleSlug]);
+
+  const subjectKey = (Object.keys(subjects) as Subject[]).find(
+    key => subjects[key].url === subjectSlug
+  );
+
+  if (!subjectKey) return <p>Předmětová stránka nenalezena</p>;
+
+  const config = subjects[subjectKey];
+  const color = neutralColor ? neutralColorHex : config.color;
+
+  return (
+    <div className="flex-col">
+      <div className="article__nav flex-gap">
+        <NavButton url={`/${config.url}`} text={"Zpátky na výběr"} color={color}/>
+        <Button text={"Změň barvu"} color={color} onClick={() => setNeutralColor(prev => !prev)}/>
+      </div>
+      <div style={{ "--subject-color": color } as React.CSSProperties} className="section--darker">
+        <Article
+          content={content}
+          headline={
+            ContentMap[subjectKey]
+              ?.find(s => s.sectionSlug === sectionSlug)
+              ?.articles.find(a => a.url === articleSlug)?.name
+            ?? config.cz
+          }
+          subject={config.cz}
+        />
+      </div>
+
+      <div className="note">
+        Poznámka: Textů je hodně. Pro urychlení psaní byla použita pomoc umělá inteligence (ChatGPT, Perplexity), a to
+        například pro odchycení chyb a překlepů, pomocí se strukturou textu, někde s formátováním, apod. Výsledek byl
+        ale vždy ještě nakonec okontrolován a upraven člověkem.
+      </div>
+    </div>
+  );
+}

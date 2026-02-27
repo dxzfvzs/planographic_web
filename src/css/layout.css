@@ -23,6 +23,7 @@ section {
   margin-right: auto;
   box-sizing: border-box;
   width: 100%;
+  margin-bottom: 2em;
 }
 
 main {
@@ -33,7 +34,7 @@ main {
   gap: 1em;
   width: 80%;
   flex-grow: 1;
-  margin: 3em auto 1em auto;
+  margin: 3em auto 3em auto;
   box-sizing: border-box;
 }
 
@@ -43,14 +44,36 @@ main {
   gap: 1em;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
 .hero {
   width: 100%;
-  height: fit-content;
+  min-height: 23em;
   box-sizing: border-box;
   background: #333333;
   padding: 3em 10%;
   color: white;
   justify-content: center;
+  align-items: end;
   margin: auto;
   display: flex;
+  transition: 0.3s;
+}
+
+@media (max-width: 1042px) {
+  .hero {
+    display: none;
+  }
+}
+
+hr {
+  margin: 2em 0;
 }

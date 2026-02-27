@@ -5,9 +5,10 @@ import { Subject, subjects } from "../../../utils/subjects";
 
 interface NavButtonProps {
   subject: Subject;
+  main?: boolean; // on homescreen, all are main. on subpages, only the relevant one is main
 }
 
-export default function Pantone({ subject }: NavButtonProps) {
+export default function Pantone({ subject, main = true }: NavButtonProps) {
   const config = subjects[subject];
   const cardRef = useRef<HTMLAnchorElement>(null);
   const [style, setStyle] = useState({});
@@ -45,8 +46,8 @@ export default function Pantone({ subject }: NavButtonProps) {
   return (
     <Link
       ref={cardRef}
-      to={config.url}
-      className="pantone"
+      to={`/${config.url}`}
+      className={`pantone ${!main ? "pantone--sub" : ""}`}
       style={style}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}

@@ -1,14 +1,23 @@
 import React from 'react';
 import Pantone from "./pantone/pantone";
+import { Subject, subjects } from "../../utils/subjects";
 
-export default function Hero() {
+interface HeroProps {
+  currentCore: string;
+}
+
+export default function Hero({ currentCore }: HeroProps) {
+  const entries = Object.entries(subjects) as [Subject, typeof subjects[Subject]][];
+
   return (
     <div className="hero flex-gap">
-      <Pantone subject={"Polygraphy"} />
-      <Pantone subject={"Technology"}/>
-      <Pantone subject={"Materials"}/>
-      <Pantone subject={"English"}/>
-      <Pantone subject={"Czech"}/>
+      {entries.map(([key, info]) => (
+        <Pantone
+          key={key}
+          subject={key}
+          main={info.url === currentCore || currentCore === ""}
+        />
+      ))}
     </div>
   );
 }

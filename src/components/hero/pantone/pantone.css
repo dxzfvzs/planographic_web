@@ -9,7 +9,7 @@
   flex-direction: column;
 
   transform-style: preserve-3d;
-  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  transition: 0.3s ease;
   will-change: transform;
 }
 
@@ -54,4 +54,31 @@
   color: black;
   font-weight: lighter;
   font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pantone--sub {
+  width: 9em;
+  height: 12em;
+  transition: 0.3s;
+}
+
+.pantone--sub .pantone__text-block {
+  padding: 0.3em 0.4em;
+  font-size: 14px;
+}
+
+.pantone--sub .pantone__text--description {
+  font-size: 10px;
+}
+
+.pantone--sub .pantone__color-block {
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.pantone--sub:hover .pantone__color-block {
+  opacity: 1;
 }

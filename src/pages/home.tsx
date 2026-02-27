@@ -1,17 +1,17 @@
 import React from 'react';
 import ClickableLink from "../components/clickable-link/clickable-link";
-import NavButton from "../components/nav-button/nav-button";
+import NavButton from "../components/button/nav-button";
 
 export default function Home() {
   return (
     <>
-      <section>
-        <h2>Od studentů, pro studenty</h2>
-        <p>
+      <section className="article-background">
+        <h1>Od studentů, pro studenty</h1>
+        <p className="intro">
           {`Na tomto webu naleznete různé zpracované zápisky, výpisky, témata, otázky... `}
         </p>
 
-        <p>
+        <p className="intro">
           {`Vše pro studenty `}
           <ClickableLink
             url={"https://ssgbrno.cz/"}>
