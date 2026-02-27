@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://dxzfvzs.github.io/planographic_web/",
+  "type": "module",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -27,7 +28,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "gs-polygraphy": "npx ts-node scripts/generate-content-structure.ts polygraphy",
+    "gs-technology": "npx ts-node scripts/generate-content-structure.ts technology",
+    "gs-czech": "npx ts-node scripts/generate-content-structure.ts czech",
+    "gs-english": "npx ts-node scripts/generate-content-structure.ts english",
+    "gs-materials": "npx ts-node scripts/generate-content-structure.ts materials",
+    "gs-all": "npm run gs-polygraphy && npm run gs-technology && npm run gs-czech && npm run gs-english && npm run gs-materials"
   },
   "eslintConfig": {
     "extends": [
