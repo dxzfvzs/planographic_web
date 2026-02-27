@@ -7,9 +7,9 @@ export const polygraphyContent: ContentSection[] = [
       intro: `V této sekci se seznámíme se základními tiskovými technikami, jejich 
       rozdělením a přehledem. Také zde najdete srovnání různých metod a jejich využití.`,
       articles: [
-        { name: "Rozdělení tiskových technik", url: "division" },
-        { name: "Přehled tiskových technik", url: "overview" },
-        { name: "Tiskové techniky a jejich srovnání", url: "comparison" }
+        { name: "Rozdělení tiskových technik", url: "rozdeleni" },
+        { name: "Přehled tiskových technik", url: "prehled" },
+        { name: "Tiskové techniky a jejich srovnání", url: "srovnani" }
       ]
     },
     {
@@ -30,35 +30,35 @@ export const polygraphyContent: ContentSection[] = [
     },
     {
       section: "Knižní vazby",
-      sectionSlug: "bindings",
+      sectionSlug: "vazby",
       intro: `Sekce věnovaná knižním vazbám, jejich částem, rozdělení a historickému 
       vývoji. Zahrnuje postupy výroby měkké i tuhé vazby.`,
       articles: [
-        { name: "Knižní vazby a jejich části", url: "parts" },
-        { name: "Rozdělení knižních vazeb", url: "division" },
-        { name: "Historický vývoj knižní vazby a knihařství", url: "history" },
-        { name: "Zhotovení vazby měkké", url: "soft" },
-        { name: "Zhotovení vazby tuhé", url: "hard" }
+        { name: "Knižní vazby a jejich části", url: "vazby" },
+        { name: "Rozdělení knižních vazeb", url: "rozdeleni" },
+        { name: "Historický vývoj knižní vazby a knihařství", url: "historie" },
+        { name: "Zhotovení vazby měkké", url: "mekka" },
+        { name: "Zhotovení vazby tuhé", url: "tuha" }
       ]
     },
     {
       section: "Polygrafická výroba",
-      sectionSlug: "production",
+      sectionSlug: "polygraficka-vyroba",
       intro: `Přehled celého výrobního procesu tiskovin – od předvýrobní činnosti, 
       přes samotnou výrobu, až po dokončující zpracování a expedici.`,
       articles: [
-        { name: "Fáze polygrafické výroby, fakturace a expedice", url: "phases" },
+        { name: "Fáze polygrafické výroby, fakturace a expedice", url: "faze" },
         { name: "Předvýrobní činnost podniku", url: "prepress" },
-        { name: "Členění materiálů pro polygrafickou výrobu", url: "materials" },
-        { name: "Dokončující zpracování tiskovin", url: "finishing" }
+        { name: "Členění materiálů pro polygrafickou výrobu", url: "materialy" },
+        { name: "Dokončující zpracování tiskovin", url: "dokoncujici-zpracovani" }
       ]
     },
     {
       section: "Historie",
-      sectionSlug: "history",
+      sectionSlug: "historie",
       intro: `Významné osobnosti polygrafie a jejich přínos pro rozvoj tiskového průmyslu.`,
       articles: [
-        { name: "Významné osobnosti polygrafie", url: "personalities" }
+        { name: "Významné osobnosti polygrafie", url: "osobnosti" }
       ]
     },
     {
@@ -67,11 +67,11 @@ export const polygraphyContent: ContentSection[] = [
       intro: `Materiály používané v knihařské výrobě, členění materiálů pro polygrafii, 
       formáty papíru a zušlechťování polygrafických výrobků.`,
       articles: [
-        { name: "Materiály používané v knihařské výrobě", url: "usage" },
-        { name: "Knihařské materiály", url: "bindings" },
-        { name: "Členění materiálů pro polygrafickou výrobu", url: "division" },
-        { name: "Formáty papíru", url: "formats" },
-        { name: "Zušlechťování polygrafických výrobků", url: "finishing" }
+        { name: "Materiály používané v knihařské výrobě", url: "materialy-v-kniharske-vyrobe" },
+        { name: "Knihařské materiály", url: "kniharske-materialy" },
+        { name: "Členění materiálů pro polygrafickou výrobu", url: "cleneni" },
+        { name: "Formáty papíru", url: "formaty" },
+        { name: "Zušlechťování polygrafických výrobků", url: "zuslechtovani" }
       ]
     }
   ]
