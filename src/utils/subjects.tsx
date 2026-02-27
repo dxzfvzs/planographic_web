@@ -6,19 +6,19 @@ export const subjects = {
     intro: "Polygrafie je obor výroby a reprodukce tištěných materiálů, který zahrnuje vše od přípravy dat," +
       " přes samotný tisk až po dokončovací úpravy výsledných produktů.",
   },
-  Technology: {
-    cz: "Technologie",
-    color: "#df7432",
-    url: "technology",
-    intro: "Technologie se zaměřuje na technické procesy a výrobní postupy používané v polygrafii – od předtiskové přípravy " +
-      "přes tiskové techniky až po zpracování hotových výrobků.",
-  },
   Materials: {
     cz: "Polygrafické materiály",
-    color: "#d6a62a",
+    color: "#df7432",
     url: "materials",
     intro: "Polygrafické materiály zahrnují papíry, kartony, barvy, laky, lepidla a další materiály používané při " +
       "tisku a dokončovacím zpracování.",
+  },
+  Technology: {
+    cz: "Technologie",
+    color: "#d6a62a",
+    url: "technology",
+    intro: "Technologie se zaměřuje na technické procesy a výrobní postupy používané v polygrafii – od předtiskové přípravy " +
+      "přes tiskové techniky až po zpracování hotových výrobků.",
   },
   English: {
     cz: "Angličtina",
