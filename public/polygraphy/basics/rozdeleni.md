@@ -165,7 +165,7 @@ Sítotisk je průtisková technika.
 
 ***
 
-## Digitální tiskové techniky
+## Konvenční tiskové techniky = Digitální tiskové techniky
 
 Digitální tisk nepotřebuje hmotnou tiskovou formu; obraz se vytváří přímo z digitálních dat v tiskárně.
 Jsou zde zastoupeni pouze dva činitelé tisku: barva (inkoust, toner apod.) a potiskovaný materiál.

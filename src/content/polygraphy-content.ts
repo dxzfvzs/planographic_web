@@ -1,39 +1,18 @@
 import type { ContentSection } from "./content";
 
-// 1. Tisk z výšky
-// 3. Rozdělení tiskových technik
-// 5. Polygrafická výroba
-// 7. Přímé tiskové techniky
-// 9. Strojní vybavení kniháren
-// 11. Tisk z plochy
-// 13. Nepřímé tiskové techniky
-// 17. Rozdělení knižních vazeb
-// 19. Měkké knižní vazby
-// 21. Tuhé knižní vazby
-// 23. Tisk z hloubky
-// 25. Sítotisk
-
 export const polygraphyContent: ContentSection[] =
   [
     {
-      section: "Tiskové techniky obecně",
-      sectionSlug: "general",
+      section: "Základy polygrafie",
+      sectionSlug: "basics",
       intro: "Základní tiskové techniky a jejich přehled.",
       articles: [
-        { name: "Rozdělení tiskových technik", url: "rozdeleni-tiskovych-technik" }, // 3
-        { name: "Strojní vybavení kniháren", url: "strojni-vybaveni-kniharen" }, // 9
-      ]
-    },
-    {
-      section: "Jednotlivé tiskové techniky",
-      sectionSlug: "techniques",
-      intro: "Detailní popis jednotlivých tiskových technik.",
-      articles: [
-        { name: "Tisk z výšky", url: "tisk-z-vysky" }, // 1
-        { name: "Tisk z hloubky", url: "tisk-z-hloubky" }, // 23
-        { name: "Tisk z plochy", url: "tisk-z-plochy" }, // 11
-        { name: "Sítotisk", url: "sitotisk" }, // 25
-        { name: "Digitální tisk*", url: "digitalni-tisk" },
+        { name: "Přehled tiskových technik", url: "prehled" },
+        { name: "Rozdělení tiskových technik", url: "rozdeleni" },
+        { name: "Přímé tiskové techniky", url: "primy-tisk" },
+        { name: "Nepřímé tiskové techniky", url: "neprimy-tisk" },
+        { name: "Strojní vybavení kniháren", url: "strojni-vybaveni" },
+        { name: "Významné osobnosti polygrafie", url: "osobnosti" },
       ]
     },
     {
@@ -41,19 +20,38 @@ export const polygraphyContent: ContentSection[] =
       sectionSlug: "production",
       intro: "Procesy a workflow polygrafické výroby.",
       articles: [
-        { name: "Polygrafická výroba", url: "polygraficka-vyroba" }, // 5
-        { name: "Přímé tiskové techniky", url: "primy-tisk" }, // 7
-        { name: "Nepřímé tiskové techniky", url: "neprimy-tisk" }, // 13
+        { name: "Fáze polygrafické výroby", url: "faze-vyroby" },
+        { name: "Předvýrobní činnost podniku", url: "predvyrobni-cinnost" },
+        { name: "Zušlechťování polygrafických výrobků", url: "zuslechtovani" },
+        { name: "Dokončující zpracování tiskovin", url: "dokoncujici-zpracovani" },
+        { name: "Členění materiálů pro polygrafickou výrobu", url: "cleneni-materialu" },
       ]
     },
     {
-      section: "Knižní vazby",
-      sectionSlug: "bindings",
-      intro: "Typy knižních vazeb a postupy jejich výroby.",
+      section: "Jednotlivé tiskové techniky",
+      sectionSlug: "techniques",
+      intro: "Detailní popis jednotlivých tiskových technik.",
       articles: [
-        { name: "Rozdělení knižních vazeb", url: "rozdeleni-vazeb" }, // 17
-        { name: "Měkké knižní vazby", url: "mekke-vazby" }, // 19
-        { name: "Tuhé knižní vazby", url: "tuhe-vazby" } // 21
+        { name: "Tisk z výšky", url: "tisk-z-vysky" },
+        { name: "Tisk z hloubky", url: "tisk-z-hloubky" },
+        { name: "Tisk z plochy", url: "tisk-z-plochy" },
+        { name: "Knihtisk", url: "knihtisk" },
+        { name: "Sítotisk", url: "sitotisk" },
+        { name: "Digitální tiskové techniky", url: "digitalni-tisk" },
+      ]
+    },
+    {
+      section: "Knihařství",
+      sectionSlug: "bookbinding",
+      intro: "Vazby, materiály a technologie knihařství.",
+      articles: [
+        { name: "Knižní vazba a její části", url: "knizni-vazba" },
+        { name: "Historický vývoj knižní vazby, výrobní náplň knihařství", url: "historicky-vyvoj" },
+        { name: "Rozdělení knižních vazeb", url: "rozdeleni-vazeb" },
+        { name: "Měkké knižní vazby", url: "mekke-vazby" },
+        { name: "Tuhé knižní vazby", url: "tuhe-vazby" },
+        { name: "Formáty papíru", url: "formaty-papiru" },
+        { name: "Materiály používané v knihařské výrobě", url: "materialy-kniharina" },
       ]
     }
   ]
