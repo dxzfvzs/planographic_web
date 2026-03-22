@@ -143,4 +143,3 @@ Tampon se přitlačí na povrch tiskové formy a opět se zvedne, poté tampon o
 - technika umožňuje potiskovat velké množství tvarově různorodých předmětů
 - využívá se pro potisk reklamních předmětů menších rozměrů, hraček, domácích potřeb, skleněných nebo
   keramických předmětů různých tvarů, sportovních potřeb, autopříslušenství...
-- 

@@ -11,6 +11,7 @@
   margin-bottom: 1.4em;
   border-radius: 15px 15px 0 0;
   font-size: 25px;
+  /*noinspection CssUnresolvedCustomProperty*/
   background: var(--subject-color, var(--blue));
 }
 
@@ -30,6 +31,7 @@
 }
 
 .article-content h2 {
+  /*noinspection CssUnresolvedCustomProperty*/
   background: var(--subject-color, var(--blue));
   color: white;
   padding: 0.45em 1.2em;
@@ -46,6 +48,7 @@
   padding: 0.4em 1em;
   border-radius: 5px;
   font-size: 16px;
+  /*noinspection CssUnresolvedCustomProperty*/
   background: var(--subject-color, var(--blue));
   margin-top: 2em;
   font-weight: normal;
@@ -72,11 +75,13 @@
 .article-content a {
   text-decoration-line: underline;
   text-decoration-style: dotted;
+  /*noinspection CssUnresolvedCustomProperty*/
   text-decoration-color: var(--subject-color, var(--blue));
   text-underline-offset: 3px;
 }
 
 .article-content a:hover {
+  /*noinspection CssUnresolvedCustomProperty*/
   background: color-mix(in srgb, var(--subject-color, var(--blue)) 10%, transparent);
 }
 
@@ -94,6 +99,7 @@
   margin-left: 1em;
   margin-bottom: 0.6em;
   opacity: 0.9;
+  /*noinspection CssUnresolvedCustomProperty*/
   background: var(--subject-color, var(--blue));
   font-weight: normal;
 }
@@ -112,6 +118,7 @@
   margin-top: 1.5em;
   margin-bottom: 0.7em;
   opacity: 0.9;
+  /*noinspection CssUnresolvedCustomProperty*/
   background: var(--subject-color, var(--blue));
   font-weight: normal;
 }
@@ -130,6 +137,7 @@
   margin-left: 5em;
   margin-top: 1.5em;
   opacity: 0.9;
+  /*noinspection CssUnresolvedCustomProperty*/
   background: var(--subject-color, var(--blue));
 }
 
@@ -154,6 +162,7 @@
 }
 
 .article-content strong {
+  /*noinspection CssUnresolvedCustomProperty*/
   color: var(--subject-color, var(--blue));
 }
 
