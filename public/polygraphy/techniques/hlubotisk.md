@@ -1,35 +1,38 @@
-# Tisk z hloubky
+# Hlubotisk
 
-Tisková forma je tvořena **zahloubenými tisknoucími místy**, které jsou pod úrovní netisknoucích míst. Po nanesení a
-setření přebytečné tiskové barvy z netisknoucích míst stíracím nořem (raklí) dochází k otisku kresby
-z tiskové formy na potiskovaný materiál účinkem tlaku.
+**Tisknoucí místa jsou zahloubená, netisknoucí vyvýšená**, do tisknoucích se vtírá hlubotisková barva **řídké** konzistence
+z barevníku a z netisknoucích je stírána ořezovým stěračem. Dovoluje **vysokou kvalitou potiskovat široký sortiment**
+polygrafických výrobků od papíru až po podlahové krytiny, časopisy, přílohy, katalogy, kde obraz převládá nad textem,
+obalové materiály, ceniny, to vše **ve vysokých nákladech**.
 
-Patří sem hlubotisk, tamponový tisk, ocelotisk, mědiryt, suchá jehla...
+#### Výhody
+
+- vysoká kvalita tisku
+- tisk při vysokých nákladech
+- největší tónový rozsah
+- možnost tzv. nekonečného tisku
+- vysoká výdržnost TF
+
+#### Nevýhody
+
+- vysoká pořizovací cena TF
+- zdlouhavá výroba TF
+- neostré okraje písma
 
 ---
 
 ### Historie
 
-#### Hlubotisk
-
-- **mědiryt**
-    - předchůdce hlubotisku, jedna z nejstarších tiskových technik, objevuje se už v 15. století
-    - do měděné destičky se obraz ručně zahluboval rýdlem, destička se poté natřela barvou a otiskla na papír
-- **heliogravura**
-    - v 70. letech 19. století vynalezl Karel Klíč
-    - je to technika přímého tisku z hloubky a předchůdce klasického hlubotisku
-
-#### Tamponový tisk
-
-- jedna z nejstarších tiskových technik, původ sahá do počátku 18. století (potisk ciferníků hodinek ve Švýcarsku)
-- v 60. letech 20. století se začaly používat silikonové tampony
-- rozmach v ČR po roce 1989
+- **mědiryt** 
+  - předchůdce hlubotisku, jedna z nejstarších tiskových technik, objevuje se už v 15. století
+  - do měděné destičky se obraz ručně zahluboval rýdlem, destička se poté natřela barvou a otiskla na papír
+- **heliogravura** 
+  - v 70. letech 19. století vynalezl Karel Klíč
+  - je to technika přímého tisku z hloubky a předchůdce klasického hlubotisku
 
 ---
 
-## Tiskové formy
-
-### Hlubotisková TF
+## Tisková forma
 
 Jako tisková forma slouží hlubotiskový válec.
 
@@ -58,28 +61,9 @@ Jako tisková forma slouží hlubotiskový válec.
 - **autotypický hlubotisk** – tisknoucí místa mají variabilní šířku a stejnou hloubku
 - **poloautomatický hlubotisk** – tisknoucí místa mají variabilní šířku i hloubku
 
-### TF pro tamponový tisk
-
-Tisková forma – klišé, může být ploché/rotační, barva je přenesena na pružný tampon a poté na PM (nepřímý tisk)
-
-##### Klišé
-
-- **fotopolymerní** – kovová destička (0,3–0,4 mm), nanesena stejně silná vrstva polymeru, vydrží až 30 000 tisků
-- **ocelové** – v tloušťce 0,5 a 10 mm jsou potaženy světlocitlivou vrstvou, tisknoucí prvky se tvoří osvitem a
-  následným vyleptáním zahloubených tisknoucích míst, vydrží až 300 000 tisků
-- **keramické** – pro vytvoření tiskového motivu se využívá výhradně laser, vydrží až 2 000 000 tisků
-- **rotační klišé** – z oceli nebo keramiky, pro rotační tamponový tisk
-
-##### Tampon
-
-Přenášecí těleso, liší se tvarem tiskové plochy, tvrdostí a velikostí, odlévají se ze silikonového kaučuku
-a po vulkanizaci nalepeny na držák. Tvrdost tamponů se vyjadřuje stupnicí Shore, podle tvrdosti barevně odlišeny.
-
 ---
 
 ## Tiskové stroje
-
-### Hlubotisk
 
 Rozlišujeme přímý, rotační a kotoučový tisk.
 
@@ -109,39 +93,12 @@ Rozlišujeme přímý, rotační a kotoučový tisk.
     - jednoúčelové, variabilní
     - kombinace s jinou tiskovou technikou – flexotisk, ocelotisk
 
-### Tamponový tisk
-
-Nejprve je těrkou na klišé nanesena tisková barva z barevníku, pak je přebytečná barva setřena těrkou tak, aby zůstala
-pouze v zahloubených tiskových místech.
-Tampon se přitlačí na povrch tiskové formy a opět se zvedne, poté tampon otiskne motiv na potiskovaný materiál.
-
-#### Rozdělení tiskových strojů podle...
-
-- **velikost potiskovaného materiálu**
-- **počet tištěných barev**
-- **stupně automatizace**
-    - ručně
-    - poloautomacky
-    - automaticky
-- **konstukce barevníku**
-    - otevřený barevník
-    - uzavřený barevník
-- **dalších konstrukčních prvků**
-
 ---
 
 ## Využití
-
-### Hlubotisk
 
 - časopisy, přílohy, katalogy (převaha obrázků nad textem)
 - obalové materiály (spíš flexotisk)
 - ceniny (známky, bankovky)
 
 **Vše ve vysokých nákladech (100 000 a víc)**
-
-### Tamponový tisk
-
-- technika umožňuje potiskovat velké množství tvarově různorodých předmětů
-- využívá se pro potisk reklamních předmětů menších rozměrů, hraček, domácích potřeb, skleněných nebo
-  keramických předmětů různých tvarů, sportovních potřeb, autopříslušenství...
