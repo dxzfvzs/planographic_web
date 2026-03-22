@@ -1,56 +1,145 @@
 # Strojní vybavení kniháren
 
-## Předtisková příprava
-Před samotnou výrobou knihy probíhá sada operací, které připraví tisková data a materiál.
+### Předtisková příprava
 
-- **Zařízení pro přípravu dat:** počítače, DTP software (např. Adobe InDesign, QuarkXPress), skenery
-- **CtP zařízení (Computer-to-Plate):** slouží k přímému osvitování tiskových desek
-- **Kontrolní zařízení:** nátiskové systémy, densitometry, spektralfotometry
+Před samotnou výrobou knihy probíhá sada operací, které připraví tisková data a materiál. Cílem je minimalizovat chyby
+ještě před výrobou.
 
-***
+* **DTP pracoviště:** sazba a zlom (např. Adobe InDesign)
+* **CtP zařízení (Computer-to-Plate):** přímé osvětlení tiskových desek
+* **Nátiskové systémy:** simulace výsledného tisku
+* **Měřicí zařízení:**
+    * densitometry (měření hustoty barvy)
+    * spektrofotometry (barevná přesnost)
 
-## Tiskové stroje
+---
+
+### Tiskové stroje
+
 Tisk je hlavní částí polygrafického procesu. Používají se různé typy tiskových strojů podle technologie:
 
 - **Ofsetové tiskové stroje:** vhodné pro velké náklady knih (např. Heidelberg, Komori)
 - **Digitální tiskárny:** využívány pro menší náklady nebo personalizované tisky (např. Xeikon, HP Indigo)
 - **Tisk na archy a role:** archové stroje pro menší objemy, rotační stroje pro velké objemy
 
-***
+---
 
-## Knihařské stroje
-Knihařské stroje zajišťují finální úpravy – řezání, skládání, lepení nebo šití bloků knih.
+## Knihařské zpracování
 
-### Skládací stroje
-- Skládají vytištěné archy do složek (signatur).
-- Typy: kapsové, nožové, kombinované.
+Knihařské zpracování je poslední a velmi důležitá fáze polygrafické výroby. Finální zpracování výrobku rozhoduje o jeho
+trvanlivosti, vzhledu i použitelnosti. Moderní knihárny jsou vysoce automatizované provozy, kde na sebe navazují
+jednotlivé stroje do výrobních linek.
 
-### Vázací stroje
-- **Lepenkové vazby:** lepení hřbetu pomocí lepidla PUR nebo EVA.
-- **Šité vazby:** spojení signatur nití či drátem.
-- **Vazba V1:** sešití drátěnými sponkami.
-- **Vazba V2:** lepená vazba bez šití.
+### Skládací stroje (falcovačky)
 
-### Řezačky a ořezové stroje
-- Řežou archy na požadovaný formát, ořezávají knižní bloky.
-- Příklady: jednonožové, trojnožové řezačky, gilotiny.
+Po vytištění se archy musí složit do správného pořadí, čímž vznikají **signatury**.
 
-***
+Přesnost skládání je zásadní pro správné řazení stránek. Chybný falc = špatně čitelná kniha.
 
-## Dokončovací stroje
-Dokončovací linky zajišťují dodatečné zpracování knih po vazbě.
+#### Typy falcovaček
 
-- **Laminovačky:** chrání obálky a listy před opotřebením.
-- **Lakovací stroje:** nanášejí lesklý nebo matný lak.
-- **Zlatotiskové stroje:** pro dekorativní ražbu písma nebo ornamentů.
-- **Vysekávací stroje:** tvarový výsek obálek nebo obalů knih.
+- **Kapsové (falcpocket)**
+  - arch naráží do kapsy a láme se
+  - vysoká rychlost
+  - vhodné pro jednoduché sklady
 
-***
+- **Nožové (knife folding)**
+  - skládání pomocí nože
+  - přesnější, vhodné pro silnější papír
 
-## Automatizace a digitalizace v knihárnách
-Moderní knihárny jsou vybaveny automatickými linkami a řízením výroby pomocí počítačů:
+- **Kombinované**
 
-- Automatické dávkování lepidla, skládací a vazací linky
-- Kontrola kvality pomocí kamerových systémů
-- Robotické manipulátory pro přesun knih
-- Integrace systémů MES a ERP pro sledování výroby
+---
+
+### Snášecí stroje
+
+Po složení je potřeba signatury **seřadit za sebe ve správném pořadí**. Často jsou součástí automatických linek.
+Princip je jednoduchý, jednotlivé složky se odebírají ze zásobníků a skládají se do knižního bloku.
+
+#### Typy
+
+- **snášení na sebe (stacking)**
+- **snášení do sebe (inserting)** – typické pro časopisy
+
+---
+
+### Vázací technologie a stroje
+
+- **šití bloků**
+- **lepičky bloků**
+- **stroje na výrobu desek**
+- **zalisování (lisy)**
+
+---
+
+### Řezací stroje
+
+#### Jednonožové řezačky (gilotiny)
+
+- Trojnožové řezačky
+  - ořezávají knihu ze **tří stran najednou**, používají se až po svázání
+- Rotační řezačky
+    - používají nože ve válci, vhodné pro kontinuální výrobu (role papíru)
+- Laserové řezání (moderní trend)
+  - bez mechanického kontaktu, využívá se spíš pro speciální produkty
+
+---
+
+### Frézovací a drážkovací stroje
+
+#### Frézování hřbetu
+- odstranění části papíru pro lepší přilnavost lepidla, používá se u lepené vazby
+
+#### Drážkování (bigování)
+- vytváří rýhy na obálkách, zabrání praskání papíru
+
+---
+
+### Lisy a sušící zařízení
+Po slepení nebo vložení do desek je potřeba knihu stabilizovat a vyrovnat pro zajištění pevnosti vazby.
+
+#### Typy
+- **mechanické lisy**
+- **hydraulické lisy**
+
+---
+
+### Dokončovací (zušlechťovací) stroje
+
+#### Laminovačky
+- nanášení fólie (lesklé/matné/metalické/soft-touch) jako ochrana proti vlhkosti nebo jako vzhledová úprava
+
+#### Lakovací stroje
+- nanášení vrstvy laku, možnost celoplošně i parciálně (např. jen na logo)
+- UV lak, disperzní lak
+
+#### Razicí stroje (zlatotisk)
+- používají tlak + teplo + fólii, slouží jako dekorativní prvky
+
+
+#### Vysekávací stroje
+- vytváří speciální tvary pomocí speciálních výsekových forem
+
+#### Perforační stroje
+- vytváří trhací linie, např. u bloků nebo vstupenek
+
+#### Číslovací a personalizační zařízení
+- tisk (číselných) kódů, jmen, apod.
+
+---
+
+### Automatizované knihařské linky
+
+Moderní knihárna funguje jako celek:
+
+- propojení strojů do jedné linky
+- minimální ruční práce
+- vysoká rychlost
+
+---
+
+### Kontrola kvality
+
+- kamerové systémy
+- kontrola pořadí stran
+- kontrola ořezu

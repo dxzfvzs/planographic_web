@@ -11,7 +11,7 @@ export const polygraphyContent: ContentSection[] =
         { name: "Rozdělení tiskových technik", url: "rozdeleni", done: true },
         { name: "Přímé tiskové techniky", url: "primy-tisk" },
         { name: "Nepřímé tiskové techniky", url: "neprimy-tisk" },
-        { name: "Strojní vybavení kniháren", url: "strojni-vybaveni" },
+        { name: "Strojní vybavení kniháren", url: "strojni-vybaveni", done: true },
         { name: "Významné osobnosti polygrafie", url: "osobnosti", done: true },
       ]
     },
