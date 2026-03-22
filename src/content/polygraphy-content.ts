@@ -37,7 +37,7 @@ export const polygraphyContent: ContentSection[] =
         { name: "Tisk z plochy", url: "tisk-z-plochy", done: true },
         { name: "Knihtisk", url: "knihtisk", done: true },
         { name: "Sítotisk", url: "sitotisk", done: true  },
-        { name: "Digitální tiskové techniky", url: "digitalni-tisk" },
+        { name: "Digitální tiskové techniky", url: "digitalni-tisk", done: true },
       ]
     },
     {
