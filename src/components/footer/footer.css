@@ -6,7 +6,7 @@ footer {
   color: var(--white);
   box-sizing: border-box;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.9em;
 }
 
 footer .link {

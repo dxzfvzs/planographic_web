@@ -5,10 +5,20 @@ export default function Footer() {
   return (
     <footer>
       <span>
-        <a href="https://github.com/dxzfvzs/planographic_web" className="link" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/dxzfvzs/planographic_web"
+           className="link"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="GitHub Repozitář (otevře se v novém okně)"
+        >
           GitHub Repozitář
         </a>
-        <a href="http://www.planographic.8u.cz/" className="link" target="_blank" rel="noopener noreferrer">
+        <a href="https://planographic.8u.cz/"
+           className="link"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Původní stránka (otevře se v novém okně)"
+        >
           Původní stránka
         </a>
       </span>
