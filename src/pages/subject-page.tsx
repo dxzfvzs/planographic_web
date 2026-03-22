@@ -5,6 +5,7 @@ import type { Subject } from "../utils/subjects";
 import { subjects } from "../utils/subjects";
 import { useParams } from "react-router-dom";
 import { neutralColorHex, useNeutralColor } from "../hooks/useNeutralColor";
+import Button from "../components/button/button";
 
 export default function SubjectPage() {
   const { subjectSlug } = useParams<{ subjectSlug: string }>();
@@ -13,7 +14,7 @@ export default function SubjectPage() {
     key => subjects[key].url === subjectSlug
   );
 
-  const [neutralColor] = useNeutralColor();
+  const [neutralColor, setNeutralColor] = useNeutralColor();
 
   if (!subjectKey) return <p>Předmětová stránka nenalezena</p>;
 
@@ -22,7 +23,11 @@ export default function SubjectPage() {
   const contentSections = ContentMap[subjectKey] || [];
 
   return (
-    <>
+    <div className="flex-col">
+      <div className="article__nav flex-gap">
+        <Button text={"Změň barvu"} color={color} onClick={() => setNeutralColor(prev => !prev)}/>
+      </div>
+
       <section style={{ "--subject-color": color } as React.CSSProperties} className="article-background">
         <h1>{config.cz}</h1>
         <p className="intro">{config.intro}</p>
@@ -49,6 +54,6 @@ export default function SubjectPage() {
           </div>
         </section>
       ))}
-    </>
+    </div>
   );
 }
