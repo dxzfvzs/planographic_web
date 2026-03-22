@@ -32,10 +32,10 @@ export const polygraphyContent: ContentSection[] =
       sectionSlug: "techniques",
       intro: "Detailní popis jednotlivých tiskových technik.",
       articles: [
-        { name: "Tisk z výšky", url: "tisk-z-vysky" },
+        { name: "Tisk z výšky", url: "tisk-z-vysky", done: true  },
         { name: "Tisk z hloubky", url: "tisk-z-hloubky" },
         { name: "Tisk z plochy", url: "tisk-z-plochy", done: true },
-        { name: "Knihtisk", url: "knihtisk" },
+        { name: "Knihtisk", url: "knihtisk", done: true },
         { name: "Sítotisk", url: "sitotisk" },
         { name: "Digitální tiskové techniky", url: "digitalni-tisk" },
       ]
