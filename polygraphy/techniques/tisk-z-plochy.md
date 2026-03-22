@@ -279,3 +279,4 @@ Obsahuje:
 - **dvouválcový systém** – historický, méně používaný.
 - **čtyřválcové a víceválcové systémy** – různé kombinace pro vyšší produktivitu (např. „satellitní“ uspořádání).
 - **perfektní (oboustranný) tisk** – šestiválcová uspořádání, kde se tiskne oboustranně v jednom průchodu.
+- 
