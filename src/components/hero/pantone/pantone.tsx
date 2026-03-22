@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useRef, useState } from "react";
 import "./pantone.css";
 import { Subject, subjects } from "../../../utils/subjects";
+import { ContentMap } from "../../../content/content";
 
 interface NavButtonProps {
   subject: Subject;
@@ -10,6 +11,18 @@ interface NavButtonProps {
 
 export default function Pantone({ subject, main = true }: NavButtonProps) {
   const config = subjects[subject];
+  const content = ContentMap[subject];
+
+  const contentLength = content.reduce(
+    (acc, section) => acc + section.articles.length,
+    0
+  );
+
+  const contentDoneLength = content.reduce(
+    (acc, section) => acc + section.articles.filter(a => a.done).length,
+    0
+  );
+
   const cardRef = useRef<HTMLAnchorElement>(null);
   const [style, setStyle] = useState({});
 
@@ -58,7 +71,7 @@ export default function Pantone({ subject, main = true }: NavButtonProps) {
           <span className="pantone__text__headline--name">{subject}</span>
           <span className="pantone__text--mark">®</span>
         </div>
-        <div className="pantone__text--description">0/25</div>
+        <div className="pantone__text--description">{contentDoneLength}/{contentLength}</div>
         <div className="pantone__text--description">{config.cz}</div>
       </div>
     </Link>

@@ -13,11 +13,18 @@
   font-size: 16px;
 }
 
+.button--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+
 .missing {
   background-color: #525252;
 }
 
-.button:hover {
+.button:not(.button--disabled):hover {
   background: var(--subject-color, var(--blue));
   cursor: pointer;
   opacity: 1;

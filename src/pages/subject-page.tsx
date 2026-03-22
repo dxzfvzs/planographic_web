@@ -43,6 +43,7 @@ export default function SubjectPage() {
                 url={`/${config.url}/${section.sectionSlug}/${article.url}`}
                 text={article.name}
                 color={color}
+                disabled={!article.done}
               />
             ))}
           </div>

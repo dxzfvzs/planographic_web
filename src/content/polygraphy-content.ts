@@ -7,12 +7,12 @@ export const polygraphyContent: ContentSection[] =
       sectionSlug: "basics",
       intro: "Základní tiskové techniky a jejich přehled.",
       articles: [
-        { name: "Přehled tiskových technik", url: "prehled" },
-        { name: "Rozdělení tiskových technik", url: "rozdeleni" },
+        { name: "Přehled tiskových technik", url: "prehled", done: true },
+        { name: "Rozdělení tiskových technik", url: "rozdeleni", done: true },
         { name: "Přímé tiskové techniky", url: "primy-tisk" },
         { name: "Nepřímé tiskové techniky", url: "neprimy-tisk" },
         { name: "Strojní vybavení kniháren", url: "strojni-vybaveni" },
-        { name: "Významné osobnosti polygrafie", url: "osobnosti" },
+        { name: "Významné osobnosti polygrafie", url: "osobnosti", done: true },
       ]
     },
     {
@@ -34,7 +34,7 @@ export const polygraphyContent: ContentSection[] =
       articles: [
         { name: "Tisk z výšky", url: "tisk-z-vysky" },
         { name: "Tisk z hloubky", url: "tisk-z-hloubky" },
-        { name: "Tisk z plochy", url: "tisk-z-plochy" },
+        { name: "Tisk z plochy", url: "tisk-z-plochy", done: true },
         { name: "Knihtisk", url: "knihtisk" },
         { name: "Sítotisk", url: "sitotisk" },
         { name: "Digitální tiskové techniky", url: "digitalni-tisk" },

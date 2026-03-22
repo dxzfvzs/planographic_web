@@ -8,6 +8,7 @@ import { czechContent } from "./czech-content";
 export interface Article {
   name: string;
   url: string; // just the last bit of the path, final slug
+  done?: boolean
 }
 
 export interface ContentSection {
