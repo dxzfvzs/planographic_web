@@ -46,7 +46,7 @@ export const polygraphyContent: ContentSection[] =
       sectionSlug: "bookbinding",
       intro: "Vazby, materiály a technologie knihařství.",
       articles: [
-        { name: "Knižní vazba a její části", url: "knizni-vazba" },
+        { name: "Knižní vazba a její části", url: "knizni-vazba", done: true },
         { name: "Historický vývoj knižní vazby, výrobní náplň knihařství", url: "historicky-vyvoj" },
         { name: "Rozdělení knižních vazeb", url: "rozdeleni-vazeb" },
         { name: "Měkké knižní vazby", url: "mekke-vazby" },
