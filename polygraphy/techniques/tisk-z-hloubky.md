@@ -35,22 +35,22 @@ Jako tisková forma slouží hlubotiskový válec.
 
 #### Zhotovení TF pro hlubotisk
 
-1. **opracovávání ocelového jádra** – nanáší se tenká vrstva niklu (1–3 μm) proti korozi, udržuje pevnost měděné vrstvy
+1. **opracovávání ocelového jádra** – na **ocelové jádro** se nanáší tenká vrstva **niklu** (1–3 μm) která zvyšuje přilnavost mědi a chrání proti korozi
 2. **mědění** – základní měděná vrstva (1–2 mm)
-3. **zinkování** – pro vypalování tisknoucích míst laserem
-4. **zhotovení tiskového obrazu**
-    - **leptáním** – osvit a následné leptání floridem železitým
-    - **elektromechanicky** – rytí diamantovou jehlou
-    - **vypalováním laserem** – vypaluje se do zinku
-5. **chromování** – vrstva, která zvyšuje odolnost povrchu tiskového válce proti oděrkám
-6. **leštění**
     - **Ballardova slupka**
-        - vrstva do níž se vytváří tiskový obraz (80 μm)
-        - po provedení tisku je vrstva stržena a nanesena nová vrstva pro další motiv
-        - stržení po tisku umožňuje další niklová vrstva (1 μm)
+        - první se nanese separační (oddělovací) vrstva niklu (tenká, 1 μm), která umožňuje stržení slupky po tisku
+        - poté se nanese tlustší vrstva mědi (80 μm) = Ballardova slupka, do níž se později vytváří tiskový obraz
+        - po provedení tisku je vrstva stržena a opět nanesena nová vrstva (+ provedeny zbývající kroky) pro další motiv
     - **Polishmaster**
         - na připravené jádro se nanese silná vrstva mědi do níž se vytváří tisknoucí místa
         - po tisku se tisknoucí místa obrousí, válec je připraven k vytváření dalších TM
+3. volitelně **zinkování** – pouze pokud budou tisková místa vypálena laserem
+4. **zhotovení tiskového obrazu**
+    - **leptáním** – osvit a následné leptání **chloridem železitým**
+    - **elektromechanicky** – rytí diamantovou jehlou
+    - **vypalováním laserem** – vypaluje se do zinku
+5. **chromování** – vrstva, která zvyšuje odolnost povrchu tiskového válce proti oděrkám
+6. **leštění** – finální úprava povrchu před tiskem, zajišťuje správný přenos barvy
 
 #### Tvary tiskových míst na hlubotiskové formě
 
