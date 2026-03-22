@@ -6,4 +6,10 @@ footer {
   color: var(--white);
   box-sizing: border-box;
   text-align: center;
+  font-size: 14px;
+}
+
+footer .link {
+  color: var(--white);
+  margin: 0 1.5em;
 }
