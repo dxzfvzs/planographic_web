@@ -48,7 +48,7 @@ export const polygraphyContent: ContentSection[] =
       articles: [
         { name: "Knižní vazba a její části", url: "knizni-vazba", done: true },
         { name: "Historický vývoj knižní vazby, výrobní náplň knihařství", url: "historicky-vyvoj" },
-        { name: "Rozdělení knižních vazeb", url: "rozdeleni-vazeb" },
+        { name: "Rozdělení knižních vazeb", url: "rozdeleni-vazeb", done: true },
         { name: "Měkké knižní vazby", url: "mekke-vazby" },
         { name: "Tuhé knižní vazby", url: "tuhe-vazby" },
         { name: "Formáty papíru", url: "formaty-papiru" },
