@@ -49,7 +49,7 @@ export default function Header() {
   return (
     <header>
       <Link to={`/`} className="header__link-container link link--thicker">
-        <img alt="Planographic" src={`${process.env.PUBLIC_URL}/img/logo.svg`} className="header_logo"/>
+        <img alt="Planographic" src={`${import.meta.env.BASE_URL}img/logo.svg`} className="header_logo"/>
       </Link>
       <HeaderNav/>
       <BurgerMenu/>

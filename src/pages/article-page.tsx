@@ -24,7 +24,7 @@ export default function ArticlePage() {
     const controller = new AbortController();
 
     async function loadArticle() {
-      const path = `${process.env.PUBLIC_URL}/${subjectSlug}/${sectionSlug}/${articleSlug}.md`;
+      const path = `${import.meta.env.BASE_URL}${subjectSlug}/${sectionSlug}/${articleSlug}.md`;
       try {
         setContent("");
         const res = await fetch(path, { signal: controller.signal });
