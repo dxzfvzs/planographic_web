@@ -9,8 +9,8 @@ export const polygraphyContent: ContentSection[] =
       articles: [
         { name: "Přehled tiskových technik", url: "prehled", done: true },
         { name: "Rozdělení tiskových technik", url: "rozdeleni", done: true },
-        { name: "Přímé tiskové techniky", url: "primy-tisk" },
-        { name: "Nepřímé tiskové techniky", url: "neprimy-tisk" },
+        { name: "Přímé tiskové techniky", url: "primy-tisk", done: true },
+        { name: "Nepřímé tiskové techniky", url: "neprimy-tisk", done: true },
         { name: "Strojní vybavení kniháren", url: "strojni-vybaveni", done: true },
         { name: "Významné osobnosti polygrafie", url: "osobnosti", done: true },
       ]
@@ -20,11 +20,11 @@ export const polygraphyContent: ContentSection[] =
       sectionSlug: "production",
       intro: "Procesy a workflow polygrafické výroby.",
       articles: [
-        { name: "Fáze polygrafické výroby", url: "faze-vyroby" },
-        { name: "Předvýrobní činnost podniku", url: "predvyrobni-cinnost" },
-        { name: "Zušlechťování polygrafických výrobků", url: "zuslechtovani" },
-        { name: "Dokončující zpracování tiskovin", url: "dokoncujici-zpracovani" },
-        { name: "Členění materiálů pro polygrafickou výrobu", url: "cleneni-materialu" },
+        { name: "Fáze polygrafické výroby", url: "faze-vyroby", done: true },
+        { name: "Předvýrobní činnost podniku", url: "predvyrobni-cinnost", done: true },
+        { name: "Zušlechťování polygrafických výrobků", url: "zuslechtovani", done: true },
+        { name: "Dokončující zpracování tiskovin", url: "dokoncujici-zpracovani", done: true },
+        { name: "Členění materiálů pro polygrafickou výrobu", url: "cleneni-materialu", done: true },
       ]
     },
     {
@@ -47,12 +47,12 @@ export const polygraphyContent: ContentSection[] =
       intro: "Vazby, materiály a technologie knihařství.",
       articles: [
         { name: "Knižní vazba a její části", url: "knizni-vazba", done: true },
-        { name: "Historický vývoj knižní vazby, výrobní náplň knihařství", url: "historicky-vyvoj" },
+        { name: "Historický vývoj knižní vazby, výrobní náplň knihařství", url: "historicky-vyvoj", done: true },
         { name: "Rozdělení knižních vazeb", url: "rozdeleni-vazeb", done: true },
-        { name: "Měkké knižní vazby", url: "mekke-vazby" },
-        { name: "Tuhé knižní vazby", url: "tuhe-vazby" },
-        { name: "Formáty papíru", url: "formaty-papiru" },
-        { name: "Materiály používané v knihařské výrobě", url: "materialy-kniharina" },
+        { name: "Měkké knižní vazby", url: "mekke-vazby", done: true },
+        { name: "Tuhé knižní vazby", url: "tuhe-vazby", done: true },
+        { name: "Formáty papíru", url: "formaty-papiru", done: true },
+        { name: "Materiály používané v knihařské výrobě", url: "materialy-kniharina", done: true },
       ]
     }
   ]

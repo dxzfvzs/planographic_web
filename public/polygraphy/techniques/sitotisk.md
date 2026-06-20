@@ -1,12 +1,11 @@
 # Sítotisk
 
-**Sítotisk**, neboli **průtisk** označuje **konvenční tiskovou techniku** (= využívající tiskové formy a tlaku).
-Základem sítotisku
-je síto upevněné v tiskovém rámu, barva je na potiskovaný materiál přenášena **protlačením přes síto**.
+**Sítotisk**, neboli **průtisk** označuje **konvenční tiskovou techniku** (= využívající tiskové formy a tlaku) a řadí se mezi [[basics/primy-tisk]].
+Základem sítotisku je síto upevněné v tiskovém rámu, barva je na potiskovaný materiál přenášena **protlačením přes síto**.
 
 Sítotisk se využívá pro potisk textilu, papíru, kartonu, lepenky, plastu, skla, kovu, dřeva, keramiky a 3D i plošných
 materiálů. Používá se pro **tisk malých nákladů**, výhodou je možnost ovlivnění nánosu tiskové barvy (může se libovolně
-zvyšovat) i **potisk tmavých materiálů**.
+zvyšovat) i **potisk tmavých materiálů**. Sítotisk se hojně využívá i při [[production/zuslechtovani]] – zejména pro aplikaci UV laku.
 
 ---
 

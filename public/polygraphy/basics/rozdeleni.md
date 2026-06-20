@@ -18,7 +18,7 @@ Barva se nanáší pouze na vyvýšená místa a tlakem se přenáší na PM.
 
 #### Knihtisk (letterpress)
 
-- Historie: Rozvinul ho **Johannes Gutenberg** kolem roku 1450 v Evropě.
+- Historie: Rozvinul ho **Johannes Gutenberg** kolem roku 1450 v Evropě – viz [[basics/osobnosti]].
 - Princip: Sazba z liter (písmen) nebo štočků je zafixovaná v tiskové formě, barva se nanese na vyvýšená místa a přímo
   se otiskne na papír.
 - Využití dnes: Spíše pro umělecké tisky, vizitky, exkluzivní tiskoviny s reliéfem; masová produkce se přesunula k
@@ -96,7 +96,7 @@ Barva vyplní prohlubně na válci a přebytek se stírá stěrkou. Potom se bar
 #### Hlubotisk (rotogravura)
 
 - Historie: Za předchůdce se považuje mědiryt, moderní hlubotisk rozvinul **Karel (Karl) Václav Klíč** svým procesem
-  heliogravury.
+  heliogravury – viz [[basics/osobnosti]].
 - Využití: Velké náklady, kde převažuje obraz (časopisy, katalogy, obaly, dekorativní fólie, tapety, textilie).
 
 #### Typy hlubotisku
@@ -154,7 +154,7 @@ Sítotisk je průtisková technika.
 - Princip: Tisknoucí místa tvoří **otvory v sítovině**, ostatní místa jsou uzavřená emulzí.
   Barva se protlačuje **těrkou** skrz otevřená místa na potiskovaný materiál.
 - Historie: Pochází z Dálného východu; první patent moderního sítotisku získal **Samuel Simon** v roce 1907 a **Edward
-  Owens** v roce 1915.
+  Owens** v roce 1915. Podrobněji: [[techniques/sitotisk]].
 - Formy:
     - Plochý sítotisk – napnutá síťovina v kovovém rámu.
     - Rotační sítotisk – síto má tvar válce, používá se v textilním a obalovém tisku. Barva je uvnitř válce, tiskne

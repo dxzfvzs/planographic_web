@@ -1,6 +1,6 @@
 # KNIŽNÍ VAZBA A JEJÍ ČÁSTI
 
-Vazby se dělí na: měkké, tuhé, speciální a polotuhé.
+Vazby se dělí na: [[bookbinding/mekke-vazby]], [[bookbinding/tuhe-vazby]], speciální a polotuhé – přehled viz [[bookbinding/rozdeleni-vazeb]].
 Náležitosti knižní vazby jsou **mechanické** (materiál, ze kterého je vazba vyrobena) a **obsahové** (to, co je v knize
 vytištěno).
 
@@ -8,8 +8,8 @@ vytištěno).
 
 ## Mechanické
 
-Kniha vzniká ve 3. fázi polygrafické výroby (post-press), knižní blok se zpracovává samostatně a s knižními deskami se
-spojuje pomocí **předsádky**.
+Kniha vzniká ve 3. fázi polygrafické výroby (post-press) – viz [[production/faze-vyroby]] a [[production/dokoncujici-zpracovani]]. Knižní blok se zpracovává samostatně a s knižními deskami se
+spojuje pomocí **předsádky**. Materiály: [[bookbinding/materialy-kniharina]].
 
 #### Vnitřní
 

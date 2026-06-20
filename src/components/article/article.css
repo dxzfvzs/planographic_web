@@ -166,6 +166,45 @@
   color: var(--subject-color, var(--blue));
 }
 
+.article-related {
+  width: 95%;
+  margin: 1.5em auto 0;
+  padding: 1em 0 0.5em;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.article-related__label {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  opacity: 0.4;
+  margin: 0 0 0.6em;
+}
+
+.article-related__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.article-related__link {
+  font-size: 13px;
+  padding: 0.3em 0.9em;
+  border-radius: 20px;
+  /*noinspection CssUnresolvedCustomProperty*/
+  border: 1px solid var(--subject-color, var(--blue));
+  /*noinspection CssUnresolvedCustomProperty*/
+  color: var(--subject-color, var(--blue));
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.article-related__link:hover {
+  /*noinspection CssUnresolvedCustomProperty*/
+  background: color-mix(in srgb, var(--subject-color, var(--blue)) 12%, transparent);
+}
+
 .article__nav {
   margin: 1em 0;
   justify-content: end;

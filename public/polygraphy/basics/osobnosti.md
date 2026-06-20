@@ -18,7 +18,7 @@ jako **Gutenbergova bible**, dokončená kolem roku **1455**, na kterém začal 
 
 ### Přínos
 
-- Gutenberg vynalezl **knihtisk pro Evropu**., což se datuje na rok **1440**. Není to ale první knihtisk vůbec, protože
+- Gutenberg vynalezl **[[techniques/knihtisk]]** pro Evropu, což se datuje na rok **1440**. Není to ale první knihtisk vůbec, protože
   první dochovaný tisk pomocí pohyblivých kovových písmen se dochoval v Koreji – kniha Čikči, která byla vytištěná v
   období dynastie Korjo v červenci roku 1377.
 
@@ -65,7 +65,7 @@ Za svůj objev litografie získal řadu ocenění
 * 1826 – zavedl vícebarevnou litografii
 * **1833 – zavedl tisk olejem ředitelnými barvami z litografického kamene na plátně**
 
-Jeho metalografické pokusy o tisk z oceli, zinku, mosazi a mědi se později **se staly základem pro ofsetový tisk**.
+Jeho metalografické pokusy o tisk z oceli, zinku, mosazi a mědi se později **se staly základem pro ofsetový tisk** – viz [[techniques/tisk-z-plochy]].
 
 Litografie (kamenotisk) byla **levnější a rychlejší než starší techniky**, a proto se rychle rozšířila. Je vhodn8
 především pro tisk obrazových předloh, reprodukcí kreseb či k volné tvorbě a la prima. Soutiskem dvou či více desek
@@ -84,7 +84,7 @@ Byl i zručným litografem, dokonale ovládal mědiryt i lept.
 
 ### Přínos
 
-- **1878 – vynalezl heliogravuru (fotogravuru)** – techniku, která nahradila ruční rytí **fotochemickým procesem**.
+- **1878 – vynalezl heliogravuru (fotogravuru)** – techniku, která nahradila ruční rytí **fotochemickým procesem**. Viz [[techniques/hlubotisk]] a [[techniques/tisk-z-hloubky]].
 - Svůj nález si **nedal patentovat**. Když mu byl nápad odcizen, nezbylo než začít s novými pokusy, které po špatných
   zkušenostech tajil.
 - **1890 – vynález rotačního stíracího hlubotisku**

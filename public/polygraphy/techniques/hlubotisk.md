@@ -5,6 +5,8 @@ z barevníku a z netisknoucích je stírána ořezovým stěračem. Dovoluje **v
 polygrafických výrobků od papíru až po podlahové krytiny, časopisy, přílohy, katalogy, kde obraz převládá nad textem,
 obalové materiály, ceniny, to vše **ve vysokých nákladech**.
 
+Obecně o tisku z hloubky: [[techniques/tisk-z-hloubky]].
+
 #### Výhody
 
 - vysoká kvalita tisku
@@ -27,7 +29,7 @@ obalové materiály, ceniny, to vše **ve vysokých nákladech**.
   - předchůdce hlubotisku, jedna z nejstarších tiskových technik, objevuje se už v 15. století
   - do měděné destičky se obraz ručně zahluboval rýdlem, destička se poté natřela barvou a otiskla na papír
 - **heliogravura** 
-  - v 70. letech 19. století vynalezl Karel Klíč
+  - v 70. letech 19. století vynalezl Karel Klíč – viz [[basics/osobnosti]]
   - je to technika přímého tisku z hloubky a předchůdce klasického hlubotisku
 
 ---

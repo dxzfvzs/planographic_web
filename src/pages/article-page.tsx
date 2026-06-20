@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Subject, subjects } from "../utils/subjects";
 import { useParams } from "react-router-dom";
 import Article from "../components/article/article";
@@ -6,6 +6,7 @@ import NavButton from "../components/button/nav-button";
 import { ContentMap } from "../content/content";
 import Button from "../components/button/button";
 import { neutralColorHex, useNeutralColor } from "../hooks/useNeutralColor";
+import { processWikiLinks } from "../utils/wiki-links";
 
 interface Params {
   subjectSlug: string;
@@ -44,6 +45,11 @@ export default function ArticlePage() {
     key => subjects[key].url === subjectSlug
   );
 
+  const { processed: processedContent, related } = useMemo(
+    () => subjectKey ? processWikiLinks(content, subjectKey) : { processed: content, related: [] },
+    [content, subjectKey]
+  );
+
   if (!subjectKey) return <p>Předmětová stránka nenalezena</p>;
 
   const config = subjects[subjectKey];
@@ -57,7 +63,8 @@ export default function ArticlePage() {
       </div>
       <div style={{ "--subject-color": color } as React.CSSProperties} className="section--darker">
         <Article
-          content={content}
+          content={processedContent}
+          related={related}
           headline={
             ContentMap[subjectKey]
               ?.find(s => s.sectionSlug === sectionSlug)

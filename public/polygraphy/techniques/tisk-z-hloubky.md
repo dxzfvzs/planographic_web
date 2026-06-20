@@ -4,7 +4,7 @@ Tisková forma je tvořena **zahloubenými tisknoucími místy**, které jsou po
 setření přebytečné tiskové barvy z netisknoucích míst stíracím nořem (raklí) dochází k otisku kresby
 z tiskové formy na potiskovaný materiál účinkem tlaku.
 
-Patří sem hlubotisk, tamponový tisk, ocelotisk, mědiryt, suchá jehla...
+Patří sem [[techniques/hlubotisk]], tamponový tisk (viz [[basics/neprimy-tisk]]), ocelotisk, mědiryt, suchá jehla...
 
 ---
 
@@ -16,7 +16,7 @@ Patří sem hlubotisk, tamponový tisk, ocelotisk, mědiryt, suchá jehla...
     - předchůdce hlubotisku, jedna z nejstarších tiskových technik, objevuje se už v 15. století
     - do měděné destičky se obraz ručně zahluboval rýdlem, destička se poté natřela barvou a otiskla na papír
 - **heliogravura**
-    - v 70. letech 19. století vynalezl Karel Klíč
+    - v 70. letech 19. století vynalezl Karel Klíč – viz [[basics/osobnosti]]
     - je to technika přímého tisku z hloubky a předchůdce klasického hlubotisku
 
 #### Tamponový tisk
