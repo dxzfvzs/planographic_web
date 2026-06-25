@@ -1,6 +1,6 @@
 
 .button {
-  background: var(--subject-color, var(--blue));
+  background: var(--subject-color);
   color: white;
   padding: 0.7em 1.3em;
   text-align: center;
@@ -30,15 +30,15 @@
 
 .button--pill {
   background: transparent;
-  color: var(--subject-color, var(--blue));
-  border: 1px solid var(--subject-color, var(--blue));
+  color: var(--subject-color);
+  border: 1px solid var(--subject-color);
   border-radius: 20px;
   font-size: 15px;
   padding: 0.55em 1.2em;
 }
 
 .button--pill:not(.button--disabled):hover {
-  background: color-mix(in srgb, var(--subject-color, var(--blue)) 12%, transparent);
+  background: color-mix(in srgb, var(--subject-color) 12%, transparent);
   filter: none;
 }
 

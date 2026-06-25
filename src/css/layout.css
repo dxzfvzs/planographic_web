@@ -3,6 +3,7 @@
   --blue-hover: #198bb1;
   --white: #ffffff;
   --yellow: #ffcc00;
+  --subject-color: var(--blue);
 }
 
 html, body {

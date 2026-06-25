@@ -19,7 +19,7 @@
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--subject-color, var(--blue));
+  background-color: var(--subject-color);
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease;
