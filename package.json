@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "tsc --noEmit && tsc -p tsconfig.node.json --noEmit && vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "gs-polygraphy": "npx ts-node --esm scripts/generate-content-structure.ts polygraphy",

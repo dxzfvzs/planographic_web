@@ -4,7 +4,6 @@ import { ContentMap } from "../content/content";
 interface ResolvedLink {
   name: string;
   href: string;
-  slug: string;
 }
 
 function resolveWikiLink(slug: string, currentSubjectKey: Subject): ResolvedLink | null {
@@ -35,7 +34,6 @@ function resolveWikiLink(slug: string, currentSubjectKey: Subject): ResolvedLink
   return {
     name: article.name,
     href: `#/${subjects[subjectKey].url}/${sectionSlug}/${articleSlug}`,
-    slug,
   };
 }
 
@@ -57,8 +55,8 @@ export function processWikiLinks(
     const resolved = resolveWikiLink(slug.trim(), currentSubjectKey);
     if (!resolved) return `[[${slug}]]`;
 
-    if (!seen.has(resolved.slug)) {
-      seen.add(resolved.slug);
+    if (!seen.has(resolved.href)) {
+      seen.add(resolved.href);
       related.push({ name: resolved.name, href: resolved.href });
     }
 

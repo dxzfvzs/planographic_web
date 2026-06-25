@@ -11,7 +11,7 @@ interface NavButtonProps {
 
 export default function Pantone({ subject, main = true }: NavButtonProps) {
   const config = subjects[subject];
-  const content = ContentMap[subject];
+  const content = ContentMap[subject] ?? [];
 
   const contentLength = content.reduce(
     (acc, section) => acc + section.articles.length,

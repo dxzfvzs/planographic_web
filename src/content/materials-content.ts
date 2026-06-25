@@ -21,10 +21,10 @@ export const materialsContent: ContentSection[] =
       sectionSlug: "paper-making",
       intro: "Historie, suroviny a výroba papíru.",
       articles: [
-        { name: "Historický vývoj záznamových materiálů", url: "historicky-vyvoj-zaznamovych-materialu" }, // 2
-        { name: "Suroviny pro výrobu papíru", url: "suroviny-pro-vyrobu-papiru" }, // 4
-        { name: "Strojní výroba papíru", url: "strojni-vyroba-papiru" }, // 6
-        { name: "Vlastnosti papírových materiálů", url: "vlastnosti-papiru" } // 8
+        { name: "Historický vývoj záznamových materiálů", url: "historicky-vyvoj-zaznamovych-materialu", done: false }, // 2
+        { name: "Suroviny pro výrobu papíru", url: "suroviny-pro-vyrobu-papiru", done: false }, // 4
+        { name: "Strojní výroba papíru", url: "strojni-vyroba-papiru", done: false }, // 6
+        { name: "Vlastnosti papírových materiálů", url: "vlastnosti-papiru", done: false } // 8
       ]
     },
     {
@@ -32,7 +32,7 @@ export const materialsContent: ContentSection[] =
       sectionSlug: "materials",
       intro: "Materiály využívané v dokončovacím zpracování.",
       articles: [
-        { name: "Materiály využívané v dokončovacím zpracování", url: "materialy" }, // 15
+        { name: "Materiály využívané v dokončovacím zpracování", url: "materialy", done: false }, // 15
       ]
     },
     {
@@ -40,8 +40,8 @@ export const materialsContent: ContentSection[] =
       sectionSlug: "polymers",
       intro: "Polymerní materiály a jejich využití v polygrafii.",
       articles: [
-        { name: "Polymerní materiály", url: "polymerni-materialy" }, // 20
-        { name: "Polymery v polygrafii", url: "polymery-v-polygrafii" } // 22
+        { name: "Polymerní materiály", url: "polymerni-materialy", done: false }, // 20
+        { name: "Polymery v polygrafii", url: "polymery-v-polygrafii", done: false } // 22
       ]
     },
     {
@@ -49,7 +49,7 @@ export const materialsContent: ContentSection[] =
       sectionSlug: "photographic",
       intro: "Materiály a princip vzniku černobílé fotografie.",
       articles: [
-        { name: "Fotografické materiály", url: "fotograficke-materialy" }, // 24
+        { name: "Fotografické materiály", url: "fotograficke-materialy", done: false }, // 24
       ]
     },
     {
@@ -57,8 +57,8 @@ export const materialsContent: ContentSection[] =
       sectionSlug: "colors",
       intro: "Složení a vlastnosti tiskových barev.",
       articles: [
-        { name: "Složení tiskových barev", url: "slozeni-tiskovych-barev" }, // 10
-        { name: "Tiskové barvy jednotlivých tiskových technik", url: "barvy-pro-techniky" } // 12
+        { name: "Složení tiskových barev", url: "slozeni-tiskovych-barev", done: false }, // 10
+        { name: "Tiskové barvy jednotlivých tiskových technik", url: "barvy-pro-techniky", done: false } // 12
       ]
     },
     {
@@ -66,8 +66,8 @@ export const materialsContent: ContentSection[] =
       sectionSlug: "metals",
       intro: "Vlastnosti kovů, jejich úpravy a využití v polygrafii.",
       articles: [
-        { name: "Kovy a slitiny v polygrafii", url: "kovy-a-slitiny" }, // 14
-        { name: "Úpravy kovových materiálů", url: "upravy-kovu" } // 16
+        { name: "Kovy a slitiny v polygrafii", url: "kovy-a-slitiny", done: false }, // 14
+        { name: "Úpravy kovových materiálů", url: "upravy-kovu", done: false } // 16
       ]
     },
     {
@@ -75,7 +75,7 @@ export const materialsContent: ContentSection[] =
       sectionSlug: "electrochem",
       intro: "Elektrochemické procesy využívané v tisku.",
       articles: [
-        { name: "Elektrochemické procesy v polygrafii", url: "elektrochemicke-procesy" } // 18
+        { name: "Elektrochemické procesy v polygrafii", url: "elektrochemicke-procesy", done: false } // 18
       ]
     }
   ];
