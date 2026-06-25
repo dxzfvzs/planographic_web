@@ -6,11 +6,12 @@ interface ButtonProps {
   color?: string;
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
+  className?: string;
 }
 
-export default function Button({ text, color, onClick, type = "button" }: ButtonProps) {
+export default function Button({ text, color, onClick, type = "button", className }: ButtonProps) {
   return (
-    <button type={type} className="button" style={{ "--subject-color": color } as React.CSSProperties} onClick={onClick}>
+    <button type={type} className={`button ${className ?? ""}`} style={{ "--subject-color": color } as React.CSSProperties} onClick={onClick}>
       {text}
     </button>
   );

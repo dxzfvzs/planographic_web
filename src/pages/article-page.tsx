@@ -2,10 +2,9 @@ import React, { useEffect, useMemo, useState } from "react";
 import { Subject, subjects } from "../utils/subjects";
 import { useParams } from "react-router-dom";
 import Article from "../components/article/article";
-import NavButton from "../components/button/nav-button";
 import { ContentMap } from "../content/content";
-import Button from "../components/button/button";
 import { neutralColorHex, useNeutralColor } from "../hooks/useNeutralColor";
+import PageNav from "../components/page-nav/page-nav";
 import { processWikiLinks } from "../utils/wiki-links";
 import type { SubjectStyle } from "../utils/css";
 
@@ -56,10 +55,7 @@ export default function ArticlePage() {
 
   return (
     <div className="flex-col">
-      <div className="article__nav flex-gap">
-        <NavButton url={`/${config.url}`} text={"Zpátky na výběr"} color={color}/>
-        <Button text={"Změň barvu"} color={color} onClick={() => setNeutralColor(prev => !prev)}/>
-      </div>
+      <PageNav backUrl={`/${config.url}`} onColorToggle={() => setNeutralColor(prev => !prev)}/>
       <div style={{ "--subject-color": color } as SubjectStyle}>
         <Article
           content={processedContent}

@@ -2,8 +2,8 @@ footer {
   padding: 1em 1.5em;
   width: 100%;
   bottom: 0;
-  background: var(--blue);
-  color: var(--white);
+  background: #121212;
+  color: rgba(255, 255, 255, 0.75);
   box-sizing: border-box;
   text-align: center;
   font-size: 0.9em;
@@ -11,6 +11,16 @@ footer {
 }
 
 footer .link {
-  color: var(--white);
+  color: rgba(255, 255, 255, 0.75);
   margin: 0 1.5em;
+  text-decoration: underline dotted rgba(255, 255, 255, 0.3);
+  text-underline-offset: 3px;
+}
+
+footer .link:hover {
+  color: var(--white);
+}
+
+footer .link::after {
+  background-color: rgba(255, 255, 255, 0.4);
 }

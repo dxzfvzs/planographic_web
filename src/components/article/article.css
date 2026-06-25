@@ -75,9 +75,9 @@
 
 .article-content a {
   display: inline-block;
-  font-size: 13px;
-  line-height: 1.2;
-  padding: 0.2em 0.8em;
+  font-size: 15px;
+  line-height: 1.3;
+  padding: 0.25em 0.9em;
   border-radius: 20px;
   /*noinspection CssUnresolvedCustomProperty*/
   border: 1px solid var(--subject-color, var(--blue));
@@ -192,8 +192,8 @@
 }
 
 .article-related__link {
-  font-size: 13px;
-  padding: 0.3em 0.9em;
+  font-size: 15px;
+  padding: 0.35em 1em;
   border-radius: 20px;
   /*noinspection CssUnresolvedCustomProperty*/
   border: 1px solid var(--subject-color, var(--blue));
@@ -206,10 +206,4 @@
 .article-related__link:hover {
   /*noinspection CssUnresolvedCustomProperty*/
   background: color-mix(in srgb, var(--subject-color, var(--blue)) 12%, transparent);
-}
-
-.article__nav {
-  margin: 1em 0;
-  justify-content: flex-end;
-  display: flex;
 }
