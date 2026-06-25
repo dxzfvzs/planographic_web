@@ -1,6 +1,6 @@
 # Rozdělení knižních vazeb
 
-Knižních vazby se dělí na průmyslové (měkké, tuhé) a neprůmyslové (polotuhé). Vazby jsou určené různými normami.
+Knižních vazby se dělí na průmyslové ([[bookbinding/mekke-vazby]], [[bookbinding/tuhe-vazby]]) a neprůmyslové (polotuhé). Vazby jsou určené různými normami. Části knižní vazby: [[bookbinding/knizni-vazba]].
 
 ---
 

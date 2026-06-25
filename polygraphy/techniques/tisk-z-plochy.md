@@ -20,7 +20,7 @@ I tisk z plochy může být dělen na přímé a nepřímé techniky:
 Litografie je úplně první technika tisku z plochy vůbec. Jako formu používá jemnozrnný **solnhofenský vápenec** z
 Bavorska.
 
-Vynalezl ji: [**Alois Senefelder**](https://cs.wikipedia.org/wiki/Alois_Senefelder), okolo roku **1796**.
+Vynalezl ji: [**Alois Senefelder**](https://cs.wikipedia.org/wiki/Alois_Senefelder) – viz [[basics/osobnosti]], okolo roku **1796**.
 
 ### Princip litografie
 
@@ -84,7 +84,7 @@ Ofset je dnes nejrozšířenější technika tisku z plochy v polygrafii. Jedná
 
 ### Princip ofsetu
 
-**Ofset = nepřímý tisk**:
+**Ofset = [[basics/neprimy-tisk]]**:
 Barva nejde z tiskové desky přímo na papír, ale nejdřív na **gumový (přenosový) válec**, a teprve z něj na papír.
 
 #### Proč se používá gumový válec

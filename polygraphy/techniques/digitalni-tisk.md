@@ -88,9 +88,7 @@ Díky procesu sublimace se netiskne pomocí tiskových bodů, výsledný obraz m
 
 ## Digitalizovaný tisk – HP INDIGO
 
-Proces se z digitálních tiskových metod nejvíce podobá **laserovému tisku**, ale narozdíl od něj používá **tekutý toner
-**, nikoli práškový. Zároveň se tisk podobá na princip konvenčního ofsetu, kde se motiv přenáší z obrazového válce na
-válec přenosový s gumovým potahem a poté na PM.
+Proces se z digitálních tiskových metod nejvíce podobá **laserovému tisku**, ale narozdíl od něj používá **tekutý toner**, nikoli práškový. Zároveň se tisk podobá na princip konvenčního ofsetu – viz [[techniques/tisk-z-plochy]] – kde se motiv přenáší z obrazového válce na válec přenosový s gumovým potahem a poté na PM.
 
 - je přechodem mezi konvenčními a digitálními
 - používají trvalou TF (není hmotná), ale její příprava probíhá přímo v TS – computer-to-press (CTP)

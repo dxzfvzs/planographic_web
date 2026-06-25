@@ -26,7 +26,7 @@ Tisk je hlavní částí polygrafického procesu. Používají se různé typy t
 
 ## Knihařské zpracování
 
-Knihařské zpracování je poslední a velmi důležitá fáze polygrafické výroby. Finální zpracování výrobku rozhoduje o jeho
+Knihařské zpracování je poslední a velmi důležitá fáze polygrafické výroby – viz [[production/faze-vyroby]] a [[production/dokoncujici-zpracovani]]. Finální zpracování výrobku rozhoduje o jeho
 trvanlivosti, vzhledu i použitelnosti. Moderní knihárny jsou vysoce automatizované provozy, kde na sebe navazují
 jednotlivé stroje do výrobních linek.
 
@@ -105,6 +105,8 @@ Po slepení nebo vložení do desek je potřeba knihu stabilizovat a vyrovnat pr
 ---
 
 ### Dokončovací (zušlechťovací) stroje
+
+Viz [[production/zuslechtovani]] pro podrobný popis úprav.
 
 #### Laminovačky
 - nanášení fólie (lesklé/matné/metalické/soft-touch) jako ochrana proti vlhkosti nebo jako vzhledová úprava

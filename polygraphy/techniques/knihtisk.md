@@ -1,8 +1,6 @@
 # Knihtisk
 
-Knihtisk je **technika tisku z výšky**, což znamená, že se využívá k potisku materiálu **vyvýšených tisknoucích míst**
-pokrytých
-barvou. Technika byla vynalezena německým zlatníkem **J. G. Gutenbergem** v roce **1440**.
+Knihtisk je **technika tisku z výšky** – viz [[techniques/tisk-z-vysky]] a [[basics/primy-tisk]]. Využívá **vyvýšená tisknoucí místa** pokrytá barvou. Technika byla vynalezena německým zlatníkem **J. G. Gutenbergem** v roce **1440** – viz [[basics/osobnosti]].
 
 ### Johannes Gutenberg
 

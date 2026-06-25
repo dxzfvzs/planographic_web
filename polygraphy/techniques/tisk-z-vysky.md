@@ -11,19 +11,16 @@ předchůdce knihtisku – vynález umožňující jednotlivé strany skládat z
 pálené hlíny. V Evropě nenašel razítkový tisk příliš velké uplatnění, a deskotisk sem pronikl mnohem později, nezávisle
 na Číně.
 Používal se zde k tisku **dřevořez** – do povrchu dřevěné destičky se nožem vyřezávaly různé ornamenty, výzdoby
-či iniciály, zůstalo pouze černé okolí. Roku 1440 byl vynalezen **Johannem Guttenbergem v Evropě knihtisk**. V 18.
-století
-vynalezl **Thomas Bewick dřevoryt** – zhotovuje se do tvrdého dřeva a netisknoucí místa jsou odstraněna rydly.
+či iniciály, zůstalo pouze černé okolí. Roku 1440 byl vynalezen **Johannem Guttenbergem v Evropě knihtisk** – viz [[basics/osobnosti]]. V 18.
+století vynalezl **Thomas Bewick dřevoryt** – zhotovuje se do tvrdého dřeva a netisknoucí místa jsou odstraněna rydly.
 
-Knihtisk lze rozdělit na **přímý** – hmotná forma v přímém kontaktu s PM (knihtisk, flexotisk) a **nepřímý** – obraz
-přenášen z
-formy na PM pomocí tiskové barvy a tlaku přes přenosové těleso.
+Knihtisk lze rozdělit na [[basics/primy-tisk]] – hmotná forma v přímém kontaktu s PM (knihtisk, flexotisk) a [[basics/neprimy-tisk]] – obraz přenášen z formy na PM pomocí tiskové barvy a tlaku přes přenosové těleso.
 
 ---
 
 ## Knihtisk
 
-Roku 1440 byl vynalezen Johannem Guttenbergem v Evropě.
+Roku 1440 byl vynalezen Johannem Guttenbergem v Evropě. Podrobněji: [[techniques/knihtisk]].
 Rozlišujeme několik druhů knihtiskových strojů:
 
 #### Příklopové
