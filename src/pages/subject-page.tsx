@@ -1,4 +1,4 @@
-import React from "react";
+import type { SubjectStyle } from "../utils/css";
 import NavButton from "../components/button/nav-button";
 import { ContentMap } from "../content/content";
 import type { Subject } from "../utils/subjects";
@@ -28,7 +28,7 @@ export default function SubjectPage() {
         <Button text={"Změň barvu"} color={color} onClick={() => setNeutralColor(prev => !prev)}/>
       </div>
 
-      <section style={{ "--subject-color": color } as React.CSSProperties} className="article-background">
+      <section style={{ "--subject-color": color } as SubjectStyle} className="article-background">
         <h1>{config.cz}</h1>
         <p className="intro">{config.intro}</p>
       </section>
@@ -36,7 +36,7 @@ export default function SubjectPage() {
       {contentSections.map((section) => (
         <section
           key={section.sectionSlug}
-          style={{ "--subject-color": color } as React.CSSProperties}
+          style={{ "--subject-color": color } as SubjectStyle}
           className="article-background link-section"
         >
           <h2>{section.section}</h2>
@@ -49,6 +49,7 @@ export default function SubjectPage() {
                 text={article.name}
                 color={color}
                 disabled={!article.done}
+                className="button--pill"
               />
             ))}
           </div>

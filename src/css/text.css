@@ -48,7 +48,7 @@ p {
 }
 
 strong {
-  color: var(--blue);
+  color: var(--subject-color, var(--blue));
   font-weight: bolder;
 }
 
@@ -63,4 +63,5 @@ strong {
   border-radius: 8px;
   font-size: 14px;
   opacity: 0.8;
+  margin-top: 1.5em;
 }

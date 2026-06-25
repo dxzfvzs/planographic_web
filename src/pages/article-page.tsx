@@ -7,15 +7,14 @@ import { ContentMap } from "../content/content";
 import Button from "../components/button/button";
 import { neutralColorHex, useNeutralColor } from "../hooks/useNeutralColor";
 import { processWikiLinks } from "../utils/wiki-links";
-
-interface Params {
-  subjectSlug: string;
-  sectionSlug: string;
-  articleSlug: string;
-}
+import type { SubjectStyle } from "../utils/css";
 
 export default function ArticlePage() {
-  const { subjectSlug, sectionSlug, articleSlug } = useParams<Record<keyof Params, string>>();
+  const { subjectSlug, sectionSlug, articleSlug } = useParams<{
+    subjectSlug: string;
+    sectionSlug: string;
+    articleSlug: string;
+  }>();
 
   const [content, setContent] = useState<string>("");
   const [neutralColor, setNeutralColor] = useNeutralColor();
@@ -61,7 +60,7 @@ export default function ArticlePage() {
         <NavButton url={`/${config.url}`} text={"Zpátky na výběr"} color={color}/>
         <Button text={"Změň barvu"} color={color} onClick={() => setNeutralColor(prev => !prev)}/>
       </div>
-      <div style={{ "--subject-color": color } as React.CSSProperties} className="section--darker">
+      <div style={{ "--subject-color": color } as SubjectStyle}>
         <Article
           content={processedContent}
           related={related}

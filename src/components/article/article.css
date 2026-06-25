@@ -24,6 +24,7 @@
 .article-content {
   width: 95%;
   margin: auto;
+  line-height: 1.55em;
 }
 
 .article-content h1 {
@@ -75,6 +76,7 @@
 .article-content a {
   display: inline-block;
   font-size: 13px;
+  line-height: 1.2;
   padding: 0.2em 0.8em;
   border-radius: 20px;
   /*noinspection CssUnresolvedCustomProperty*/
@@ -208,6 +210,6 @@
 
 .article__nav {
   margin: 1em 0;
-  justify-content: end;
+  justify-content: flex-end;
   display: flex;
 }

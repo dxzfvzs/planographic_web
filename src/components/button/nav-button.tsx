@@ -7,11 +7,12 @@ interface NavButtonProps {
   text: string;
   color?: string;
   disabled?: boolean;
+  className?: string;
 }
 
-export default function NavButton({ url, text, color, disabled }: NavButtonProps) {
+export default function NavButton({ url, text, color, disabled, className }: NavButtonProps) {
   return (
-    <Link to={url} className={`button ${disabled ? "button--disabled" : ""}`}
+    <Link to={url} className={`button ${className ?? ""} ${disabled ? "button--disabled" : ""}`}
           style={{ "--subject-color": color } as React.CSSProperties}>
       {text}
     </Link>
