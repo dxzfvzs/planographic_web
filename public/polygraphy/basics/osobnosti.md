@@ -67,7 +67,7 @@ Za svůj objev litografie získal řadu ocenění
 
 Jeho metalografické pokusy o tisk z oceli, zinku, mosazi a mědi se později **se staly základem pro ofsetový tisk** – viz [[techniques/tisk-z-plochy]].
 
-Litografie (kamenotisk) byla **levnější a rychlejší než starší techniky**, a proto se rychle rozšířila. Je vhodn8
+Litografie (kamenotisk) byla **levnější a rychlejší než starší techniky**, a proto se rychle rozšířila. Je vhodná
 především pro tisk obrazových předloh, reprodukcí kreseb či k volné tvorbě a la prima. Soutiskem dvou či více desek
 vzniká barevná litografie. Litografie je dodnes používaná jako umělecká tisková technika.
 

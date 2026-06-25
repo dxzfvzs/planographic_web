@@ -1,6 +1,6 @@
 # Dokončující zpracování tiskovin
 
-Dokončující zpracování (post-press) jsou operace, při nichž se ze zpotiskovaných archů vytváří **hotový polygrafický výrobek** (brožura, kniha, leták, obal...).
+Dokončující zpracování (post-press) jsou operace, při nichž se z potiskovaných archů vytváří **hotový polygrafický výrobek** (brožura, kniha, leták, obal...).
 
 ---
 

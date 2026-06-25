@@ -31,10 +31,10 @@ Doplňková řada; formáty jsou geometrickým průměrem sousedních formátů 
 
 Navržena pro **obálky** – formát C odpovídá velikostí formátu A vloženému do obálky C.
 
-- **C4** (229 × 324 mm) – obálka pro neskládaný A4.
-- **C5** (162 × 229 mm) – obálka pro A4 složený jednou.
-- **C6** (114 × 162 mm) – obálka pro A4 složený dvakrát (= A6).
-- **DL** (110 × 220 mm) – obálka pro A4 přeložený třikrát.
+- **C4** (229 × 324 mm) – obálka pro neskládaný A4 arch.
+- **C5** (162 × 229 mm) – obálka pro jednou přeložený arch A4.
+- **C6** (114 × 162 mm) – obálka pro dvakrát přeložený arch A4, vždy podél delší strany (= A6).
+- **DL** (110 × 220 mm) – obálka pro A4 arch přeložený na třetiny.
 
 ---
 

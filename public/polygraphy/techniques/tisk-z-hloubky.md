@@ -54,7 +54,7 @@ Jako tisková forma slouží hlubotiskový válec.
 
 #### Tvary tiskových míst na hlubotiskové formě
 
-- **klasický hlubotisk** – tisknoucí místa mají stejnou šířku a variabilní dloubku
+- **klasický hlubotisk** – tisknoucí místa mají stejnou šířku a variabilní hloubku
 - **autotypický hlubotisk** – tisknoucí místa mají variabilní šířku a stejnou hloubku
 - **poloautomatický hlubotisk** – tisknoucí místa mají variabilní šířku i hloubku
 
@@ -73,7 +73,7 @@ Tisková forma – klišé, může být ploché/rotační, barva je přenesena n
 ##### Tampon
 
 Přenášecí těleso, liší se tvarem tiskové plochy, tvrdostí a velikostí, odlévají se ze silikonového kaučuku
-a po vulkanizaci nalepeny na držák. Tvrdost tamponů se vyjadřuje stupnicí Shore, podle tvrdosti barevně odlišeny.
+a po vulkanizaci jsou nalepeny na držák. Tvrdost tamponů se vyjadřuje stupnicí Shore, jsou barevně odlišeny podle tvrdosti.
 
 ---
 

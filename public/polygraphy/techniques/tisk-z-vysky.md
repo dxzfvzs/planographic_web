@@ -4,14 +4,14 @@ Tisk z výšky je nejstarší tiskovou technikou. Jde o princip konvenčního ti
 na tiskové desce jsou vyvýšena nad místa netisknoucí. Na vyvýšená místa je nanesena barva, která je pak tlakem přenesena
 na papír. Nejjednodušší formou tisku z výšky jsou obyčejná razítka, která se otiskují ručně.
 
-### Historie
+## Historie
 
 Důležitým krokem na cestě ke knihtisku byl **deskotisk**, kde se vyřezávalo do dřevěné desky. V 10. stol. vznikl v Číně
 předchůdce knihtisku – vynález umožňující jednotlivé strany skládat znak po znaku, a to díky ručně vyrobeným literám z
 pálené hlíny. V Evropě nenašel razítkový tisk příliš velké uplatnění, a deskotisk sem pronikl mnohem později, nezávisle
 na Číně.
 Používal se zde k tisku **dřevořez** – do povrchu dřevěné destičky se nožem vyřezávaly různé ornamenty, výzdoby
-či iniciály, zůstalo pouze černé okolí. Roku 1440 byl vynalezen **Johannem Guttenbergem v Evropě knihtisk** – viz [[basics/osobnosti]]. V 18.
+či iniciály, zůstalo pouze černé okolí. Roku 1440 byl v Evropě vynalezen **knihtisk** **Johannem Gutenbergem** – viz [[basics/osobnosti]]. V 18.
 století vynalezl **Thomas Bewick dřevoryt** – zhotovuje se do tvrdého dřeva a netisknoucí místa jsou odstraněna rydly.
 
 Knihtisk lze rozdělit na [[basics/primy-tisk]] – hmotná forma v přímém kontaktu s PM (knihtisk, flexotisk) a [[basics/neprimy-tisk]] – obraz přenášen z formy na PM pomocí tiskové barvy a tlaku přes přenosové těleso.
@@ -20,20 +20,20 @@ Knihtisk lze rozdělit na [[basics/primy-tisk]] – hmotná forma v přímém ko
 
 ## Knihtisk
 
-Roku 1440 byl vynalezen Johannem Guttenbergem v Evropě. Podrobněji: [[techniques/knihtisk]].
+Roku 1440 byl vynalezen Johannem Gutenbergem v Evropě. Podrobněji: [[techniques/knihtisk]].
 Rozlišujeme několik druhů knihtiskových strojů:
 
-#### Příklopové
+### Příklopové
 
 Tisková forma plochá, nepohyblivá, proti ní se přiklápí plochá tlaková deska,která přitiskne k tiskové formě PM.
 Manipulaci PM zajišťuje rameno s přísavkami. Dnes spíše pro perforaci, ražbu, nebo číslování menších formátů.
 
-#### Rychlolisy
+### Rychlolisy
 
 Tisková forma je plochá, barva je na ni přenášena navalovacím válečkem. PM přichází do kontaktu s tiskovou formou
 díky tlakovému válci, který přes něj přejíždí. Dnes se tento typ strojů nepoužívá.
 
-#### Rotační stroje
+### Rotační stroje
 
 Fotopolymerová tisková forma se upíná na formový válec, proti ní se pohybuje tlakový válec. Oba válce rotují, ale
 nepohybují se ve směru tisku. Takto bylo možné provádět jak archový, tak i kotoučový tisk.

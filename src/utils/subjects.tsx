@@ -24,7 +24,7 @@ export const subjects = {
     cz: "Angličtina",
     color: "#61981e",
     url: "english",
-    intro: "Angličtina pokryje jak běžné maturitní otázky z každodenního života i celého světa.",
+    intro: "Angličtina pokryje jak běžné maturitní otázky z každodenního života, tak otázky z celého světa.",
   },
   Czech: {
     cz: "Čeština",

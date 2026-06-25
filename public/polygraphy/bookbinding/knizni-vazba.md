@@ -11,7 +11,7 @@ vytištěno).
 Kniha vzniká ve 3. fázi polygrafické výroby (post-press) – viz [[production/faze-vyroby]] a [[production/dokoncujici-zpracovani]]. Knižní blok se zpracovává samostatně a s knižními deskami se
 spojuje pomocí **předsádky**. Materiály: [[bookbinding/materialy-kniharina]].
 
-#### Vnitřní
+### Vnitřní
 
 Tvoří knižní blok.
 
@@ -20,13 +20,13 @@ Tvoří knižní blok.
 - **předsádka** (dvojlist papíru sloužící ke spojení knižního bloku s deskami)
 - **přílohy** (tabulky, mapy, obrázky)
 - **knižní komplet** (snesené knižní složky opatřené přílohami a předsádkami)
-- **knižní blok** (svazek zkompletovaných listů nebo složek stejné vlikosti spojených ve hřbetě)
+- **knižní blok** (svazek zkompletovaných listů nebo složek stejné velikosti spojených ve hřbetě)
 - **ořízka** (barevně upravená ořezová strana knižního bloku)
 - **kapitálek** (textilní prýmek, který se lepí na horní a dolní okraj knižního bloku – ozdobná funkce, knižní blok se
   zpevní)
 - **lacetka** (stužka)
 
-#### Vnější
+### Vnější
 
 Tvoří ji knižní desky, tj. dva přířezy a hřbetník.
 
@@ -40,7 +40,7 @@ Tvoří ji knižní desky, tj. dva přířezy a hřbetník.
 
 ## Obsahové
 
-#### Úvodní
+### Úvodní
 
 - **první patitul** (první lichá strana knižního bloku, nachází se zde signet – značka nakladatelství)
 - **druhý patitul** (další lichá strana, nachází se zde jméno autora a název knihy)
@@ -54,7 +54,7 @@ Tvoří ji knižní desky, tj. dva přířezy a hřbetník.
 - **úvod** (píše vždy autor)
 - **předmluva** (píše někdo jiný než autor)
 
-#### Obsahová
+### Obsahová
 
 Jde o text, který je uspořádán do odstavců a kapitol.
 
@@ -64,7 +64,7 @@ Jde o text, který je uspořádán do odstavců a kapitol.
 - **poznámky/vysvětlivky** (objasnění a vysvětlení podrobností v textu, mohou být tzv. pod čarou)
 - **tabulky, obrázky, grafy, schémata**
 
-#### Závěrečná
+### Závěrečná
 
 - **epilog** (doslov, dodatek autora)
 - **obsah**

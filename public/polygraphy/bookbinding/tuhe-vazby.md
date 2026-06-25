@@ -8,7 +8,7 @@ Tuhé vazby jsou **průmyslové knižní vazby** s tuhými knižními deskami z 
 
 ### Knižní blok
 
-- Složky jsou **nitěně sešity** – základ pevné tuhé vazby.
+- Složky jsou **šity nití** – základ pevné tuhé vazby.
 - Hřbet bloku se přelepí gázou a papírem; nalepí se **kapitálek** (horní a dolní okraj) a **lacetka** (záložková stužka).
 
 ### Knižní desky

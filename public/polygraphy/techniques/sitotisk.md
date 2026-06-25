@@ -15,8 +15,8 @@ zvyšovat) i **potisk tmavých materiálů**. Sítotisk se hojně využívá i p
 Síto bylo tvořeno hedvábím nebo lidskými vlasy, netisknoucí místa byla zakryta voskem nebo želatinou. Používal se
 na potisk kimon.
 **Sítotisk byl patentován roku 1907, Samuel Simon.** Použil hedvábí upnuté na dřevěném rámu s ručně kresleným vzorem.
-Po druhé světové válce s rozvojem chemie vznikaly **světlocitlové roztoky** pro výrobu sítotiskových forem. Používal
-se tehdy na tisk **textilií**, na **filmové plakáty** v Holywoodu a na pop-artové umělecké plakáty (umělecký sítotisk se
+Po druhé světové válce s rozvojem chemie vznikaly **světlocitlivé roztoky** pro výrobu sítotiskových forem. Používal
+se tehdy na tisk **textilií**, na **filmové plakáty** v Hollywoodu a na pop-artové umělecké plakáty (umělecký sítotisk se
 označuje jako **serografie**). **Do Čech se technika dostala roku 1989.**
 
 ---
@@ -32,7 +32,7 @@ Formy se dělí na **přímé, nepřímé, ručně řezané a computer to screen
 1. **Odmaštění síťoviny** – čištění a odstranění nečistot
 2. **Ovrstvování** – po napnutí síťoviny na rám se na ni nanese světlocitlivý (kopírovací) roztok, a to ručně
    v ovrstvovacím korýtku nebo strojově ovrstvovacími automaty, z obou stran zároveň
-3. **Sušení** v sušících skříních ve vodorovné poloze při 30O°C
+3. **Sušení** v sušících skříních ve vodorovné poloze při teplotě okolo 30°C
 4. **Kopírování** – z kopírovací předlohy, která se přiloží k sítu, odsaje se vzduch (předloha musí k sítu dokonale
    přilnout) a osvítí se UV světlem.
 5. **Vyvolání** – osvícená místa ztvrdnou, neosvícená se rozpustí ve vyvolávacím roztoku. Vyvolání ruční/strojové.

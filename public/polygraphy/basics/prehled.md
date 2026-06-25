@@ -45,7 +45,7 @@ Základní typy digitálního tisku:
 - **Termosublimační** nebo **Elektrosublimační tisk** – barva přechází z pevného do plynného skupenství a sublimuje
   přímo do povrchu materiálu. Díky velmi jemným přechodům se hodí pro tisk obrázků.
 
----
+***
 
 ## Vhodnost tiskových technik
 
@@ -59,7 +59,7 @@ Při volbě tiskové techniky je třeba zohlednit:
 Cílem je vždy zvolit technologii, která je pro konkrétní výrobek **nejefektivnější** a cenově **nejvýhodnější**, a to
 bez dopadu na kvalitu výsledku.
 
----
+***
 
 ### Tisk z výšky
 

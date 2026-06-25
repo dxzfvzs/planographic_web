@@ -24,7 +24,7 @@ export const technologyContent: ContentSection[] = [
       { name: "Kniha jako fenomén", url: "kniha-jako-fenomen", done: false },
       { name: "Mediální grafika", url: "medialni-grafika", done: false },
       { name: "Obaly", url: "obaly", done: false },
-      { name: "Příložitostné tiskoviny", url: "prilozitostne-tiskoviny", done: false },
+      { name: "Příležitostné tiskoviny", url: "prilozitostne-tiskoviny", done: false },
       { name: "Grafické zpracování knihy", url: "graficke-zpracovani-knihy", done: false },
       { name: "Zhotovení textu", url: "zhotoveni-textu", done: false }
     ]

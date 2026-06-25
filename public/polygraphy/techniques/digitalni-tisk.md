@@ -5,20 +5,20 @@ rozdíl od jiných technik **nevyžaduje přípravu filmu či desky**, namísto 
 obraz se přenáší na tiskové zařízení digitálně. Nejběžnější zakázkou digitálního tisku je v malých nákladech například:
 tisk letáků, plakátů, katalogů a brožur, tisk vizitek a další.
 
-#### Výhody
+## Výhody
 
 - Tisk variabilních dat v rámci jedné zakázky, tzv. personalizace tisku
 - Zrychlení celkového procesu
 - Tisk na požádání – lze dotiskovat další kusy zakázek (např. v nakladatelství)
 
-#### Nevýhody
+## Nevýhody
 
 - nemožnost tisku na strukturované papíry
 - vyšší cena pro vyšší náklady (od stovek kusů)
 - nemožnost tisku v přímých barvách
 - vysoké pořizovací náklady
 
-V současné době je nejvíce používánou digitální tiskovou metodou injektový tisk a elektrofotografie.
+V současné době je nejvíce používánou digitální tiskovou metodou inkjetový tisk a elektrofotografie.
 
 ---
 

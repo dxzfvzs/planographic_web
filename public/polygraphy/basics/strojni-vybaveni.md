@@ -1,6 +1,6 @@
 # Strojní vybavení kniháren
 
-### Předtisková příprava
+## Předtisková příprava
 
 Před samotnou výrobou knihy probíhá sada operací, které připraví tisková data a materiál. Cílem je minimalizovat chyby
 ještě před výrobou.
@@ -14,7 +14,7 @@ ještě před výrobou.
 
 ---
 
-### Tiskové stroje
+## Tiskové stroje
 
 Tisk je hlavní částí polygrafického procesu. Používají se různé typy tiskových strojů podle technologie:
 

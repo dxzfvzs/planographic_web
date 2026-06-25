@@ -7,7 +7,7 @@ obalové materiály, ceniny, to vše **ve vysokých nákladech**.
 
 Obecně o tisku z hloubky: [[techniques/tisk-z-hloubky]].
 
-#### Výhody
+## Výhody
 
 - vysoká kvalita tisku
 - tisk při vysokých nákladech
@@ -15,7 +15,7 @@ Obecně o tisku z hloubky: [[techniques/tisk-z-hloubky]].
 - možnost tzv. nekonečného tisku
 - vysoká výdržnost TF
 
-#### Nevýhody
+## Nevýhody
 
 - vysoká pořizovací cena TF
 - zdlouhavá výroba TF
@@ -23,7 +23,7 @@ Obecně o tisku z hloubky: [[techniques/tisk-z-hloubky]].
 
 ---
 
-### Historie
+## Historie
 
 - **mědiryt** 
   - předchůdce hlubotisku, jedna z nejstarších tiskových technik, objevuje se už v 15. století
@@ -38,7 +38,7 @@ Obecně o tisku z hloubky: [[techniques/tisk-z-hloubky]].
 
 Jako tisková forma slouží hlubotiskový válec.
 
-#### Zhotovení TF pro hlubotisk
+### Zhotovení TF pro hlubotisk
 
 1. **opracovávání ocelového jádra** – na **ocelové jádro** se nanáší tenká vrstva **niklu** (1–3 μm) která zvyšuje přilnavost mědi a chrání proti korozi
 2. **mědění** – základní měděná vrstva (1–2 mm)
@@ -58,7 +58,7 @@ Jako tisková forma slouží hlubotiskový válec.
 6. **leštění** – finální úprava povrchu před tiskem, zajišťuje správný přenos barvy
 
 
-#### Tvary tiskových míst na hlubotiskové formě
+### Tvary tiskových míst na hlubotiskové formě
 
 - **klasický hlubotisk** – tisknoucí místa mají stejnou šířku a variabilní dloubku
 - **autotypický hlubotisk** – tisknoucí místa mají variabilní šířku a stejnou hloubku
@@ -74,7 +74,7 @@ Rozlišujeme přímý, rotační a kotoučový tisk.
   tiskové formy je setřena ocelovým stěračem a za pomoci tlaku se z tiskového válce přenáší na PM.
 - Po tisku probíhá sušení barvy v sušícím zařízení
 
-#### Části kotoučového tiskového stroje
+### Části kotoučového tiskového stroje
 
 - **odvíjecí jednotka** – odvíjení potiskovaného materiálu do stroje
 - **transportní zařízení** – zajišťuje průchod potiskovaného materiálu strojem
@@ -84,7 +84,7 @@ Rozlišujeme přímý, rotační a kotoučový tisk.
 - **sušící zařízení** – nejčastěji horký vzduch
 - **navíjecí jednotka** – navíjí pás potištěného materiálu zpět do kotoučů
 
-#### Rozdělení tiskových strojů podle...
+### Rozdělení tiskových strojů podle...
 
 - **produkce**
     - obalářské – potisk papíru, kartonu, plastů, hliníku
