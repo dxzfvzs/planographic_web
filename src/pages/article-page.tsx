@@ -8,6 +8,11 @@ import PageNav from "../components/page-nav/page-nav";
 import { processWikiLinks } from "../utils/wiki-links";
 import type { SubjectStyle } from "../utils/css";
 
+const markdownModules = import.meta.glob(
+  "../content/markdown/**/*.md",
+  { query: "?raw", import: "default" }
+);
+
 export default function ArticlePage() {
   const { subjectSlug, sectionSlug, articleSlug } = useParams<{
     subjectSlug: string;
@@ -15,36 +20,35 @@ export default function ArticlePage() {
     articleSlug: string;
   }>();
 
-  const [content, setContent] = useState<string>("");
+  const [content, setContent] = useState<string | null>(null);
   const [neutralColor, setNeutralColor] = useNeutralColor();
-
-  useEffect(() => {
-    const controller = new AbortController();
-
-    async function loadArticle() {
-      const path = `${import.meta.env.BASE_URL}${subjectSlug}/${sectionSlug}/${articleSlug}.md`;
-      try {
-        setContent("");
-        const res = await fetch(path, { signal: controller.signal });
-        if (!res.ok) throw new Error("Article not found");
-        const text = await res.text();
-        setContent(text);
-      } catch (e) {
-        if ((e as Error).name === "AbortError") return;
-        setContent("# Článek nebyl nalezen");
-      }
-    }
-
-    void loadArticle();
-    return () => controller.abort();
-  }, [subjectSlug, sectionSlug, articleSlug]);
 
   const subjectKey = (Object.keys(subjects) as Subject[]).find(
     key => subjects[key].url === subjectSlug
   );
 
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadArticle() {
+      window.scrollTo(0, 0);
+      setContent(null);
+      const key = `../content/markdown/${subjectSlug}/${sectionSlug}/${articleSlug}.md`;
+      const loader = markdownModules[key];
+      if (!loader) {
+        if (!cancelled) setContent("# Článek nebyl nalezen");
+        return;
+      }
+      const text = await loader() as string;
+      if (!cancelled) setContent(text);
+    }
+
+    void loadArticle();
+    return () => { cancelled = true; };
+  }, [subjectSlug, sectionSlug, articleSlug]);
+
   const { processed: processedContent, related } = useMemo(
-    () => subjectKey ? processWikiLinks(content, subjectKey) : { processed: content, related: [] },
+    () => subjectKey && content !== null ? processWikiLinks(content, subjectKey) : { processed: content ?? "", related: [] },
     [content, subjectKey]
   );
 
@@ -52,29 +56,32 @@ export default function ArticlePage() {
 
   const config = subjects[subjectKey];
   const color = neutralColor ? neutralColorHex : config.color;
+  const headline =
+    ContentMap[subjectKey]
+      ?.find(s => s.sectionSlug === sectionSlug)
+      ?.articles.find(a => a.url === articleSlug)?.name
+    ?? config.cz;
 
   return (
-    <div className="flex-col">
+    <div className="flex-col" style={{ minHeight: '100vh' }}>
       <PageNav backUrl={`/${config.url}`} onColorToggle={() => setNeutralColor(prev => !prev)}/>
-      <div style={{ "--subject-color": color } as SubjectStyle}>
-        <Article
-          content={processedContent}
-          related={related}
-          headline={
-            ContentMap[subjectKey]
-              ?.find(s => s.sectionSlug === sectionSlug)
-              ?.articles.find(a => a.url === articleSlug)?.name
-            ?? config.cz
-          }
-          subject={config.cz}
-        />
-      </div>
-
-      <div className="note">
-        Poznámka: Textů je hodně. Pro urychlení psaní byla použita pomoc umělá inteligence (ChatGPT, Perplexity), a to
-        například pro odchycení chyb a překlepů, pomocí se strukturou textu, někde s formátováním, apod. Výsledek byl
-        ale vždy ještě nakonec okontrolován a upraven člověkem.
-      </div>
+      {content !== null && (
+        <div style={{ "--subject-color": color } as SubjectStyle}>
+          <Article
+            content={processedContent}
+            related={related}
+            headline={headline}
+            subject={config.cz}
+          />
+        </div>
+      )}
+      {content !== null && (
+        <div className="note">
+          Poznámka: Textů je hodně. Pro urychlení psaní byla použita pomoc umělá inteligence (ChatGPT, Perplexity), a to
+          například pro odchycení chyb a překlepů, pomocí se strukturou textu, někde s formátováním, apod. Výsledek byl
+          ale vždy ještě nakonec okontrolován a upraven člověkem.
+        </div>
+      )}
     </div>
   );
 }

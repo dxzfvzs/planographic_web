@@ -6,6 +6,11 @@
   --subject-color: var(--blue);
 }
 
+html {
+  scroll-padding-top: 3.5em;
+  overflow-y: scroll;
+}
+
 html, body {
   height: 100%;
   margin: 0;

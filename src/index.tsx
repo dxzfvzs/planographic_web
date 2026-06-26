@@ -6,6 +6,8 @@ import App from './App';
 import { HashRouter } from 'react-router-dom';
 
 
+window.history.scrollRestoration = 'manual';
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
