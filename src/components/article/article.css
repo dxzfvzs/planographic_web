@@ -32,6 +32,30 @@
   line-height: 1.55em;
 }
 
+.article-section {
+  transition: opacity 0.5s ease, filter 0.5s ease, transform 0.5s ease;
+}
+
+.article-section.locked {
+  opacity: 0.12;
+  filter: blur(5px);
+  transform: translateY(18px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.article-subsection {
+  transition: opacity 0.35s ease, filter 0.35s ease, transform 0.35s ease;
+}
+
+.article-subsection.locked {
+  opacity: 0.12;
+  filter: blur(4px);
+  transform: translateY(14px);
+  pointer-events: none;
+  user-select: none;
+}
+
 .article-content h1 {
   display: none;
 }
