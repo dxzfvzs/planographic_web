@@ -2,77 +2,63 @@ import type { ContentSection } from "./content";
 
 export const technologyContent: ContentSection[] = [
   {
-    section: "Text a písmo",
-    sectionSlug: "text",
-    intro: `Sekce zaměřená na typografii, práci s písmem a zpracování textu.`,
+    section: "Polygrafická produkce a písmo",
+    sectionSlug: "production-fonts",
+    intro: "Základní přehled polygrafické produkce a písma používaného v tiskovinách.",
     articles: [
-      { name: "Písmo a typografie", url: "pismo-a-typografie" },
-      { name: "Zpracování textu", url: "zpracovani-textu" },
-      { name: "Zpracování textu – 2. část", url: "zpracovani-textu-2" }
+      { name: "Polygrafická produkce", url: "polygraficka-produkce", done: false },
+      { name: "Písmo", url: "pismo", done: false },
+      { name: "Zpracování předloh", url: "zpracovani-predloh", done: false },
+      { name: "Hladká sazba", url: "hladka-sazba", done: false }
     ]
   },
   {
-    section: "Barvy",
-    sectionSlug: "colors",
-    intro: `Základy kolorimetrie, správy barev a práce s barevnými prostory v polygrafii.`,
+    section: "Tiskoviny a grafika",
+    sectionSlug: "print-graphics",
+    intro: "Různé typy tiskovin a grafických materiálů v polygrafii a reklamě.",
     articles: [
-      { name: "Kolorimetrie a správa barev", url: "kolorimetrie-a-sprava-barev" },
-      { name: "Kolorimetrie a správa barev – 2. část", url: "kolorimetrie-a-sprava-barev-2" }
+      { name: "Akcidenční tiskoviny", url: "akcidenční-tiskoviny", done: false },
+      { name: "Propagační grafika", url: "propagacni-grafika", done: false },
+      { name: "Firemní identita", url: "firemni-identita", done: false },
+      { name: "Periodické tiskoviny", url: "periodicke-tiskoviny", done: false },
+      { name: "Kniha jako fenomén", url: "kniha-jako-fenomen", done: false },
+      { name: "Mediální grafika", url: "medialni-grafika", done: false },
+      { name: "Obaly", url: "obaly", done: false },
+      { name: "Příležitostné tiskoviny", url: "prilozitostne-tiskoviny", done: false },
+      { name: "Grafické zpracování knihy", url: "graficke-zpracovani-knihy", done: false },
+      { name: "Zhotovení textu", url: "zhotoveni-textu", done: false }
     ]
   },
   {
-    section: "Proces tvorby tiskovin",
-    sectionSlug: "process",
-    intro: `Postup vzniku tiskoviny od návrhu přes zpracování dat až po finální produkci.`,
+    section: "Digitální zpracování obrazu",
+    sectionSlug: "digital-image",
+    intro: "Zpracování tónového obrazu, digitalizace a správa barev.",
     articles: [
-      { name: "DTP", url: "dtp" },
-      { name: "Zpracování předloh", url: "zpracovani-predloh" },
-      { name: "Polygrafická produkce + zdraví a počítače", url: "polygraficka-produkce-zdravi" },
-      { name: "Polygrafická montáž", url: "polygraficka-montaz" },
-      { name: "Zpracování obrazu", url: "zpracovani-obrazu" },
-      { name: "Příprava dat pro tisk", url: "priprava-dat-pro-tisk" }
+      { name: "Zpracování tónového obrazu", url: "zpracovani-tonoveho-obrazu", done: false },
+      { name: "Digitalizace obrazu", url: "digitalizace-obrazu", done: false },
+      { name: "Správa barev", url: "sprava-barev", done: false },
+      { name: "Teorie světla, barev a jejich charakteristiky", url: "teorie-svetla-a-barev", done: false }
     ]
   },
   {
-    section: "Typy publikací",
-    sectionSlug: "publishing",
-    intro: `Přehled druhů publikací a jejich specifik v oblasti polygrafie a grafiky.`,
+    section: "Digitální technologie a workflow",
+    sectionSlug: "digital-technology",
+    intro: "Digitální technologie, DTP, webdesign a výstupní formáty.",
     articles: [
-      { name: "Publikace", url: "publikace" },
-      { name: "Publikace – 2. část", url: "publikace-2" },
-      { name: "Periodické tiskoviny", url: "periodicke-tiskoviny" },
-      { name: "Akcidence – 1. část", url: "akcidence-1" },
-      { name: "Akcidence – 2. část", url: "akcidence-2" },
-      { name: "Propagační grafika", url: "propagacni-grafika" },
-      { name: "Propagační grafika – 2. část", url: "propagacni-grafika-2" },
-      { name: "Mediální grafika", url: "medialni-grafika" }
+      { name: "DTP studio", url: "dtp-studio", done: false },
+      { name: "Digitální technologie", url: "digitalni-technologie", done: false },
+      { name: "Webdesign", url: "webdesign", done: false },
+      { name: "Výstupní datové formáty", url: "vystupni-datove-formaty", done: false },
+      { name: "Digitální workflow", url: "digitalni-workflow", done: false }
     ]
   },
   {
-    section: "Digitální věci",
-    sectionSlug: "digital",
-    intro: `Digitální technologie, tiskové techniky a práce s webem a PDF.`,
+    section: "Polygrafická montáž a nosiče",
+    sectionSlug: "assembly-carriers",
+    intro: "Montáž polygrafických výrobků a nosiče reklamního sdělení.",
     articles: [
-      { name: "Digitální technologie", url: "digitalni-technologie" },
-      { name: "Digitální tiskové techniky", url: "digitalni-tiskove-techniky" },
-      { name: "Webdesign a internet", url: "webdesign-a-internet" },
-      { name: "PostScript a PDF", url: "postscript-a-pdf" }
-    ]
-  },
-  {
-    section: "Obaly",
-    sectionSlug: "obaly",
-    intro: `Problematika obalového designu a produkce obalů.`,
-    articles: [
-      { name: "Obaly", url: "obaly" }
-    ]
-  },
-  {
-    section: "Corporate identity",
-    sectionSlug: "corporate",
-    intro: `Základy vizuální identity a tvorby jednotného grafického stylu.`,
-    articles: [
-      { name: "Corporate identity", url: "corporate-identity" }
+      { name: "Polygrafická montáž", url: "polygraficka-montaz", done: false },
+      { name: "Nosiče reklamního sdělení", url: "nosice-reklamniho-sdeleni", done: false }
     ]
   }
 ];

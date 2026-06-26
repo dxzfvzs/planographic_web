@@ -1,10 +1,11 @@
-import React from "react";
+import type { SubjectStyle } from "../utils/css";
 import NavButton from "../components/button/nav-button";
 import { ContentMap } from "../content/content";
 import type { Subject } from "../utils/subjects";
 import { subjects } from "../utils/subjects";
 import { useParams } from "react-router-dom";
 import { neutralColorHex, useNeutralColor } from "../hooks/useNeutralColor";
+import PageNav from "../components/page-nav/page-nav";
 
 export default function SubjectPage() {
   const { subjectSlug } = useParams<{ subjectSlug: string }>();
@@ -13,7 +14,7 @@ export default function SubjectPage() {
     key => subjects[key].url === subjectSlug
   );
 
-  const [neutralColor] = useNeutralColor();
+  const [neutralColor, setNeutralColor] = useNeutralColor();
 
   if (!subjectKey) return <p>Předmětová stránka nenalezena</p>;
 
@@ -22,8 +23,10 @@ export default function SubjectPage() {
   const contentSections = ContentMap[subjectKey] || [];
 
   return (
-    <>
-      <section style={{ "--subject-color": color } as React.CSSProperties} className="article-background">
+    <div className="flex-col">
+      <PageNav backUrl={"/"} onColorToggle={() => setNeutralColor(prev => !prev)}/>
+
+      <section style={{ "--subject-color": color } as SubjectStyle} className="article-background">
         <h1>{config.cz}</h1>
         <p className="intro">{config.intro}</p>
       </section>
@@ -31,7 +34,7 @@ export default function SubjectPage() {
       {contentSections.map((section) => (
         <section
           key={section.sectionSlug}
-          style={{ "--subject-color": color } as React.CSSProperties}
+          style={{ "--subject-color": color } as SubjectStyle}
           className="article-background link-section"
         >
           <h2>{section.section}</h2>
@@ -43,11 +46,13 @@ export default function SubjectPage() {
                 url={`/${config.url}/${section.sectionSlug}/${article.url}`}
                 text={article.name}
                 color={color}
+                disabled={!article.done}
+                className="button--pill"
               />
             ))}
           </div>
         </section>
       ))}
-    </>
+    </div>
   );
 }

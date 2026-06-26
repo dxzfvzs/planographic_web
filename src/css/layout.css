@@ -3,6 +3,7 @@
   --blue-hover: #198bb1;
   --white: #ffffff;
   --yellow: #ffcc00;
+  --subject-color: var(--blue);
 }
 
 html, body {
@@ -32,7 +33,7 @@ main {
   flex-wrap: wrap;
   flex-direction: column;
   gap: 1em;
-  width: 80%;
+  width: 70%;
   flex-grow: 1;
   margin: 3em auto 3em auto;
   box-sizing: border-box;
@@ -71,6 +72,19 @@ main {
 @media (max-width: 1042px) {
   .hero {
     display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    width: 94%;
+    margin: 1.5em auto;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  main {
+    width: 85%;
   }
 }
 

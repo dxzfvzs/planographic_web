@@ -1,20 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Subject, subjects } from "../utils/subjects";
 import { useParams } from "react-router-dom";
 import Article from "../components/article/article";
-import NavButton from "../components/button/nav-button";
 import { ContentMap } from "../content/content";
-import Button from "../components/button/button";
 import { neutralColorHex, useNeutralColor } from "../hooks/useNeutralColor";
-
-interface Params {
-  subjectSlug: string;
-  sectionSlug: string;
-  articleSlug: string;
-}
+import PageNav from "../components/page-nav/page-nav";
+import { processWikiLinks } from "../utils/wiki-links";
+import type { SubjectStyle } from "../utils/css";
 
 export default function ArticlePage() {
-  const { subjectSlug, sectionSlug, articleSlug } = useParams<Record<keyof Params, string>>();
+  const { subjectSlug, sectionSlug, articleSlug } = useParams<{
+    subjectSlug: string;
+    sectionSlug: string;
+    articleSlug: string;
+  }>();
 
   const [content, setContent] = useState<string>("");
   const [neutralColor, setNeutralColor] = useNeutralColor();
@@ -23,7 +22,7 @@ export default function ArticlePage() {
     const controller = new AbortController();
 
     async function loadArticle() {
-      const path = `${process.env.PUBLIC_URL}/${subjectSlug}/${sectionSlug}/${articleSlug}.md`;
+      const path = `${import.meta.env.BASE_URL}${subjectSlug}/${sectionSlug}/${articleSlug}.md`;
       try {
         setContent("");
         const res = await fetch(path, { signal: controller.signal });
@@ -44,6 +43,11 @@ export default function ArticlePage() {
     key => subjects[key].url === subjectSlug
   );
 
+  const { processed: processedContent, related } = useMemo(
+    () => subjectKey ? processWikiLinks(content, subjectKey) : { processed: content, related: [] },
+    [content, subjectKey]
+  );
+
   if (!subjectKey) return <p>Předmětová stránka nenalezena</p>;
 
   const config = subjects[subjectKey];
@@ -51,13 +55,11 @@ export default function ArticlePage() {
 
   return (
     <div className="flex-col">
-      <div className="article__nav flex-gap">
-        <NavButton url={`/${config.url}`} text={"Zpátky na výběr"} color={color}/>
-        <Button text={"Změň barvu"} color={color} onClick={() => setNeutralColor(prev => !prev)}/>
-      </div>
-      <div style={{ "--subject-color": color } as React.CSSProperties} className="section--darker">
+      <PageNav backUrl={`/${config.url}`} onColorToggle={() => setNeutralColor(prev => !prev)}/>
+      <div style={{ "--subject-color": color } as SubjectStyle}>
         <Article
-          content={content}
+          content={processedContent}
+          related={related}
           headline={
             ContentMap[subjectKey]
               ?.find(s => s.sectionSlug === sectionSlug)

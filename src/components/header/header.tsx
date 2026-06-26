@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './header.css';
 import { subjects } from "../../utils/subjects";
 import { Link } from "react-router-dom";
+import type { SubjectStyle } from "../../utils/css";
 
 // clickable buttons on the header for each subject, for desktop/wide screen
 // will disappear on close zoom
@@ -11,7 +12,7 @@ function HeaderNav() {
       {Object.entries(subjects).map(([key, sub]) => (
         <Link key={key} to={sub.url}
            className="link header_link"
-           style={{ textDecoration: 'none' }}
+           style={{ textDecoration: 'none', "--subject-color": sub.color } as SubjectStyle}
         >
           {sub.cz}
         </Link>
@@ -34,6 +35,7 @@ function BurgerMenu() {
               key={key}
               to={sub.url}
               className="header_link link"
+              style={{ "--subject-color": sub.color } as SubjectStyle}
               onClick={() => setMenuOpen(false)}
             >
               {sub.cz}
@@ -49,7 +51,7 @@ export default function Header() {
   return (
     <header>
       <Link to={`/`} className="header__link-container link link--thicker">
-        <img alt="Planographic" src={`${process.env.PUBLIC_URL}/img/logo.svg`} className="header_logo"/>
+        <img alt="Planographic" src={`${import.meta.env.BASE_URL}img/logo.svg`} className="header_logo"/>
       </Link>
       <HeaderNav/>
       <BurgerMenu/>

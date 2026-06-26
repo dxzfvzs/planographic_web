@@ -6,17 +6,17 @@ export const czechContent: ContentSection[] = [
     sectionSlug: "rozbory",
     intro: `Literární rozbory vybraných děl světové a české literatury.`,
     articles: [
-      { name: "1984", url: "1984" },
-      { name: "451° Fahrenheita", url: "451-fahrenheita" },
-      { name: "Alchymista", url: "alchymista" },
-      { name: "Konec civilizace", url: "konec-civilizace" },
-      { name: "O myších a lidech", url: "o-mysich-a-lidech" },
-      { name: "Proměna", url: "promena" },
-      { name: "Robinson Crusoe", url: "robinson-crusoe" },
-      { name: "Sluha dvou pánů", url: "sluha-dvou-panu" },
-      { name: "Spalovač mrtvol", url: "spalovac-mrtvol" },
-      { name: "Továrna na absolutno", url: "tovarna-na-absolutno" },
-      { name: "Válka s mloky", url: "valka-s-mloky" }
+      { name: "1984", url: "1984", done: false },
+      { name: "451° Fahrenheita", url: "451-fahrenheita", done: false },
+      { name: "Alchymista", url: "alchymista", done: false },
+      { name: "Konec civilizace", url: "konec-civilizace", done: false },
+      { name: "O myších a lidech", url: "o-mysich-a-lidech", done: false },
+      { name: "Proměna", url: "promena", done: false },
+      { name: "Robinson Crusoe", url: "robinson-crusoe", done: false },
+      { name: "Sluha dvou pánů", url: "sluha-dvou-panu", done: false },
+      { name: "Spalovač mrtvol", url: "spalovac-mrtvol", done: false },
+      { name: "Továrna na absolutno", url: "tovarna-na-absolutno", done: false },
+      { name: "Válka s mloky", url: "valka-s-mloky", done: false }
     ]
   },
   {
@@ -24,8 +24,8 @@ export const czechContent: ContentSection[] = [
     sectionSlug: "zapisky",
     intro: `Studijní poznámky k literární teorii a vývoji literatury.`,
     articles: [
-      { name: "Počátky literatury", url: "pocatky-literatury" },
-      { name: "Figury a tropy", url: "figury-a-tropy" }
+      { name: "Počátky literatury", url: "pocatky-literatury", done: false },
+      { name: "Figury a tropy", url: "figury-a-tropy", done: false }
     ]
   }
 ];

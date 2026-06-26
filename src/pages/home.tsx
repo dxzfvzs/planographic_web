@@ -1,44 +1,31 @@
 import React from 'react';
 import ClickableLink from "../components/clickable-link/clickable-link";
-import NavButton from "../components/button/nav-button";
 
 export default function Home() {
   return (
-    <>
-      <section className="article-background">
-        <h1>Od studentů, pro studenty</h1>
-        <p className="intro">
-          {`Na tomto webu naleznete různé zpracované zápisky, výpisky, témata, otázky... `}
-        </p>
-
-        <p className="intro">
-          {`Vše pro studenty `}
-          <ClickableLink
-            url={"https://ssgbrno.cz/"}>
-            <strong>Střední školy grafické v Brně</strong>
-          </ClickableLink>
-
-          {`, přesněji pro obor `}
-
-          <ClickableLink
-            url={"https://www.infoabsolvent.cz/Skoly/Skola/600013910/Stredni-skola-graficka-Brno-prispevkova-/SOS?kodOboru=3453L01"}>
-            <strong>Reprodukční grafik pro média</strong>
-            {` (`}
-            34-53-L/01
-            {`).`}
-          </ClickableLink>
-        </p>
-      </section>
-
-      <section>
-        <div className="flex-gap">
-          <NavButton url={"/polygraphy"} text={"Polygrafie"}/>
-          <NavButton url={"/technology"} text={"Technologie"}/>
-          <NavButton url={"/materials"} text={"Polygrafické materiály"}/>
-          <NavButton url={"/english"} text={"Angličtina"}/>
-          <NavButton url={"/czech"} text={"Čeština"}/>
-        </div>
-      </section>
-    </>
+    <div className="flex-col" style={{ gap: '1.2em' }}>
+      <p>
+        Zápisky a výpisky ke státní maturitní zkoušce pro studenty{" "}
+        <ClickableLink url={"https://ssgbrno.cz/"}>
+          Střední školy grafické v Brně
+        </ClickableLink>
+        {", obor "}
+        <ClickableLink url={"https://www.infoabsolvent.cz/Skoly/Skola/600013910/Stredni-skola-graficka-Brno-prispevkova-/SOS?kodOboru=3453L01"}>
+          Reprodukční grafik pro média
+        </ClickableLink>
+        {" (34-53-L/01)."}
+      </p>
+      <p>
+        Web je otevřený příspěvkům – pokud najdete chybu, máte lepší zápisky nebo chcete doplnit nová témata,{" "}
+        <ClickableLink url={"https://github.com/dxzfvzs/planographic_web"}>
+          pošlete pull request na GitHubu
+        </ClickableLink>
+        . Chyby a náměty lze také nahlásit přímo přes{" "}
+        <ClickableLink url={"https://github.com/dxzfvzs/planographic_web/issues"}>
+          GitHub Issues
+        </ClickableLink>
+        .
+      </p>
+    </div>
   );
 }

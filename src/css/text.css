@@ -18,7 +18,7 @@ h1 {
   margin-bottom: 1.4em;
   border-radius: 15px 15px 0 0;
   font-size: 25px;
-  background: var(--subject-color, var(--blue));
+  background: var(--subject-color);
 }
 
 h2 {
@@ -28,7 +28,7 @@ h2 {
   border: 0;
   font-size: 1.5em;
   text-align: left;
-  color: var(--subject-color, var(--blue));
+  color: var(--subject-color);
   font-weight: normal;
 }
 
@@ -48,7 +48,7 @@ p {
 }
 
 strong {
-  color: var(--blue);
+  color: var(--subject-color);
   font-weight: bolder;
 }
 
@@ -63,4 +63,5 @@ strong {
   border-radius: 8px;
   font-size: 14px;
   opacity: 0.8;
+  margin-top: 1.5em;
 }
