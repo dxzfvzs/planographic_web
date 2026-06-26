@@ -23,7 +23,7 @@ export default function Article({ content, headline, subject, related }: Article
       </article>
       {related && related.length > 0 && (
         <div className="article-related">
-          <p className="article-related__label">Viz také</p>
+          <p className="article-related__label">Související články</p>
           <div className="article-related__links">
             {related.map(r => (
               <a key={r.href} href={r.href} className="article-related__link">
