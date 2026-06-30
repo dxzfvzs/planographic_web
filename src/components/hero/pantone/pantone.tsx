@@ -37,8 +37,9 @@ export default function Pantone({ subject, main = true }: NavButtonProps) {
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
 
-    const rotateX = -(y - centerY) / 12;
-    const rotateY = (x - centerX) / 12;
+    const divisor = main ? 12 : 7;
+    const rotateX = -(y - centerY) / divisor;
+    const rotateY = (x - centerX) / divisor;
 
     setStyle({
       transform: `
