@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import { RelatedArticle } from "../../utils/wiki-links";
 import "./article.css"
 
-const REVEAL_THRESHOLD_PX = 200;
+const REVEAL_THRESHOLD_PX = () => Math.round(window.innerHeight * 0.25);
 
 // Groups h2 sections (and h3 subsections within them) into wrapper divs
 // so the whole block can be blurred/revealed as a unit.
@@ -82,7 +82,7 @@ export default function Article({ content, headline, subject, related }: Article
           }
         });
       },
-      { rootMargin: `0px 0px -${REVEAL_THRESHOLD_PX}px 0px`, threshold: 0 }
+      { rootMargin: `0px 0px -${REVEAL_THRESHOLD_PX()}px 0px`, threshold: 0 }
     );
 
     all.forEach(section => {
