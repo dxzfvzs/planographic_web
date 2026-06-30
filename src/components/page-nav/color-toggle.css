@@ -1,0 +1,94 @@
+.color-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.55em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  margin-left: auto;
+}
+
+.color-toggle__label {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+  white-space: nowrap;
+}
+
+.color-toggle__pill {
+  position: relative;
+  width: 90px;
+  height: 34px;
+  background: rgba(0, 0, 0, 0.09);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  transition: background 0.15s;
+}
+
+.color-toggle:hover .color-toggle__pill {
+  background: rgba(0, 0, 0, 0.14);
+}
+
+/* Ghost labels visible in the inactive half */
+.color-toggle__option {
+  flex: 1;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.28);
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 0.22s;
+}
+
+/* BW ghost hidden when BW thumb is on top; visible when thumb moved away */
+.color-toggle__option--bw { opacity: 0; }
+.color-toggle--rgb .color-toggle__option--bw { opacity: 1; }
+
+/* RGB ghost visible when BW is active; hidden when RGB thumb covers it */
+.color-toggle__option--rgb { opacity: 1; }
+.color-toggle--rgb .color-toggle__option--rgb { opacity: 0; }
+
+/* Sliding thumb */
+.color-toggle__thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  border-radius: 13px;
+  background: #383838;
+  transition:
+    transform 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.color-toggle--rgb .color-toggle__thumb {
+  transform: translateX(100%);
+  background-color: var(--toggle-color, #404040);
+}
+
+/* Cross-fading text on the thumb */
+.color-toggle__thumb-text {
+  position: absolute;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: white;
+  pointer-events: none;
+  transition: opacity 0.18s;
+}
+
+.color-toggle__thumb-text--bw { opacity: 1; }
+.color-toggle--rgb .color-toggle__thumb-text--bw { opacity: 0; }
+
+.color-toggle__thumb-text--rgb { opacity: 0; }
+.color-toggle--rgb .color-toggle__thumb-text--rgb { opacity: 1; }

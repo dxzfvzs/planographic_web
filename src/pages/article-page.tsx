@@ -64,7 +64,7 @@ export default function ArticlePage() {
 
   return (
     <div className="flex-col" style={{ minHeight: '100vh' }}>
-      <PageNav backUrl={`/${config.url}`} onColorToggle={() => setNeutralColor(prev => !prev)}/>
+      <PageNav backUrl={`/${config.url}`} onColorToggle={() => setNeutralColor(prev => !prev)} isNeutral={neutralColor} color={config.color}/>
       {content !== null && (
         <div style={{ "--subject-color": color } as SubjectStyle}>
           <Article

@@ -24,7 +24,7 @@ export default function SubjectPage() {
 
   return (
     <div className="flex-col">
-      <PageNav backUrl={"/"} onColorToggle={() => setNeutralColor(prev => !prev)}/>
+      <PageNav backUrl={"/"} onColorToggle={() => setNeutralColor(prev => !prev)} isNeutral={neutralColor} color={config.color}/>
 
       <section style={{ "--subject-color": color } as SubjectStyle} className="article-background">
         <h1>{config.cz}</h1>
