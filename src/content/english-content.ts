@@ -6,13 +6,13 @@ export const englishContent: ContentSection[] = [
     sectionSlug: "countries-cities",
     intro: "Overview of countries and major cities.",
     articles: [
-      { name: "The Czech Republic", url: "czech-republic", done: false },
-      { name: "Prague", url: "prague", done: false },
-      { name: "The UK", url: "uk", done: false },
-      { name: "London", url: "london", done: false },
-      { name: "The USA", url: "usa", done: false },
-      { name: "Canada", url: "canada", done: false },
-      { name: "Australia, New Zealand", url: "australia-new-zealand", done: false }
+      { name: "The Czech Republic", url: "czech-republic", done: true },
+      { name: "Prague", url: "prague", done: true },
+      { name: "The UK", url: "uk", done: true },
+      { name: "London", url: "london", done: true },
+      { name: "The USA", url: "usa", done: true },
+      { name: "Canada", url: "canada", done: true },
+      { name: "Australia, New Zealand", url: "australia-new-zealand", done: true }
     ]
   },
   {
@@ -20,11 +20,11 @@ export const englishContent: ContentSection[] = [
     sectionSlug: "education-daily-life",
     intro: "Topics related to school, everyday routines, and daily life.",
     articles: [
-      { name: "Education, Our school", url: "education-our-school", done: false },
-      { name: "Everyday life", url: "everyday-life", done: false },
-      { name: "Jobs", url: "jobs", done: false },
-      { name: "Shopping and services", url: "shopping-services", done: false },
-      { name: "Housing and living", url: "housing-living", done: false }
+      { name: "Education, Our school", url: "education-our-school", done: true },
+      { name: "Everyday life", url: "everyday-life", done: true },
+      { name: "Jobs", url: "jobs", done: true },
+      { name: "Shopping and services", url: "shopping-services", done: true },
+      { name: "Housing and living", url: "housing-living", done: true }
     ]
   },
   {
@@ -32,11 +32,11 @@ export const englishContent: ContentSection[] = [
     sectionSlug: "culture-leisure",
     intro: "Topics on literature, holidays, cultural life, and lifestyle.",
     articles: [
-      { name: "Literature", url: "literature", done: false },
-      { name: "Holidays and festivals", url: "holidays-festivals", done: false },
-      { name: "Cultural life", url: "cultural-life", done: false },
-      { name: "Healthy lifestyle", url: "healthy-lifestyle", done: false },
-      { name: "Food and meals", url: "food-meals", done: false }
+      { name: "Literature", url: "literature", done: true },
+      { name: "Holidays and festivals", url: "holidays-festivals", done: true },
+      { name: "Cultural life", url: "cultural-life", done: true },
+      { name: "Healthy lifestyle", url: "healthy-lifestyle", done: true },
+      { name: "Food and meals", url: "food-meals", done: true }
     ]
   },
   {
@@ -44,9 +44,9 @@ export const englishContent: ContentSection[] = [
     sectionSlug: "family-global",
     intro: "Topics about family, relationships, and global issues.",
     articles: [
-      { name: "Family and relationships", url: "family-relationships", done: false },
-      { name: "Travelling", url: "travelling", done: false },
-      { name: "Global problems", url: "global-problems", done: false }
+      { name: "Family and relationships", url: "family-relationships", done: true },
+      { name: "Travelling", url: "travelling", done: true },
+      { name: "Global problems", url: "global-problems", done: true }
     ]
   }
 ];
