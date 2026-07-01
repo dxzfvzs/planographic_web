@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const scrollPositions = new Map<string, number>();
@@ -13,7 +13,7 @@ function isArticlePath(pathname: string) {
 export default function useScrollRestoration() {
   const location = useLocation();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const key = location.pathname;
     if (isArticlePath(key)) {
       window.scrollTo(0, 0);
