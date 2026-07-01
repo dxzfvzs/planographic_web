@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef } from "react";
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown, { Components } from "react-markdown";
 import { RelatedArticle } from "../../utils/wiki-links";
+import LinkIcon from "../icons/link-icon";
 import "./article.css"
 
 const REVEAL_THRESHOLD_PX = () => Math.round(window.innerHeight * 0.25);
@@ -54,6 +55,18 @@ function wrapAs(className: string, children: any[]) {
   };
 }
 
+// Render every markdown link as an icon + the link text.
+const markdownComponents: Components = {
+  a({ node, children, ...props }: any) {
+    return (
+      <a {...props}>
+        <LinkIcon className="article-link-icon"/>
+        {children}
+      </a>
+    );
+  },
+};
+
 interface ArticleProps {
   content?: string,
   headline: string,
@@ -102,7 +115,7 @@ export default function Article({ content, headline, subject, related }: Article
         <span className="article-headline--subject">{subject} {">"} </span> {headline}
       </h1>
       <article className="article-content" ref={articleRef}>
-        <ReactMarkdown rehypePlugins={[sectionWrapper] as any}>
+        <ReactMarkdown rehypePlugins={[sectionWrapper] as any} components={markdownComponents}>
           {content}
         </ReactMarkdown>
       </article>

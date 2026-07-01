@@ -3,3 +3,13 @@
   display: flex;
   gap: 1em;
 }
+
+.page-nav__print {
+  display: inline-flex;
+  align-items: center;
+}
+
+.page-nav__print-icon {
+  flex-shrink: 0;
+  margin-right: 0.5em;
+}

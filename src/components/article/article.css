@@ -132,6 +132,13 @@
   vertical-align: middle;
 }
 
+.article-link-icon {
+  width: 0.9em;
+  height: 0.9em;
+  margin-right: 0.35em;
+  vertical-align: -0.12em;
+}
+
 .article-content a:hover {
   background: color-mix(in srgb, var(--subject-color) 12%, transparent);
 }

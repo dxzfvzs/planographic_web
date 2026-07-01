@@ -60,6 +60,17 @@ export default function ArticlePage() {
     [content, subjectKey]
   );
 
+  // Drives the browser tab title and the default filename when saving as PDF.
+  // Uses URL slugs to compose the name as {subjectSlug}-{articleSlug}
+  useEffect(() => {
+    if (!subjectSlug || !articleSlug) return;
+    const previous = document.title;
+    document.title = `${subjectSlug}-${articleSlug}`;
+    return () => {
+      document.title = previous;
+    };
+  }, [subjectSlug, articleSlug]);
+
   if (!subjectKey) return <p>Předmětová stránka nenalezena</p>;
 
   const config = subjects[subjectKey];
