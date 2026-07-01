@@ -1,6 +1,4 @@
-interface IconProps {
-  className?: string;
-}
+import { IconProps } from "./icon-props";
 
 /**
  * Little document icon shown before in-article links. Uses currentColor so it follows the link color on screen and in print.

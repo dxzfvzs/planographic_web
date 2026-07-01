@@ -1,6 +1,4 @@
-interface IconProps {
-  className?: string;
-}
+import { IconProps } from "./icon-props";
 
 /**
  * Download (arrow-into-tray) icon for the "Stáhnout PDF" button.

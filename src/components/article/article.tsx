@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useRef } from "react";
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown, { Components } from "react-markdown";
 import { RelatedArticle } from "../../utils/wiki-links";
 import LinkIcon from "../icons/link-icon";
 import "./article.css"
@@ -56,7 +56,7 @@ function wrapAs(className: string, children: any[]) {
 }
 
 // Render every markdown link as an icon + the link text.
-const markdownComponents = {
+const markdownComponents: Components = {
   a({ node, children, ...props }: any) {
     return (
       <a {...props}>
