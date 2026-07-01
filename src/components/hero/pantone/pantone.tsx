@@ -29,6 +29,7 @@ export default function Pantone({ subject, main = true }: NavButtonProps) {
   const handleMouseMove = (e: React.MouseEvent) => {
     const card = cardRef.current;
     if (!card) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
@@ -37,8 +38,9 @@ export default function Pantone({ subject, main = true }: NavButtonProps) {
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
 
-    const rotateX = -(y - centerY) / 12;
-    const rotateY = (x - centerX) / 12;
+    const divisor = main ? 12 : 7;
+    const rotateX = -(y - centerY) / divisor;
+    const rotateY = (x - centerX) / divisor;
 
     setStyle({
       transform: `

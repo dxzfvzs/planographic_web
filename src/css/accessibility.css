@@ -1,0 +1,16 @@
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  .article-section.locked,
+  .article-subsection.locked {
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
+}

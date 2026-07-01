@@ -36,7 +36,7 @@ async function run() {
 
   const content = contentModule[contentKey];
 
-  const BASE_DIR = path.resolve(process.cwd(), "public", subject);
+  const BASE_DIR = path.resolve(process.cwd(), "src", "content", "markdown", subject);
 
   function ensureDir(dirPath: string) {
     if (!fs.existsSync(dirPath)) {

@@ -6,6 +6,11 @@ interface ResolvedLink {
   href: string;
 }
 
+/**
+ * Resolves a `[[slug]]` reference into a link. A 2-part slug
+ * (`section/article`) stays within the current subject; a 3-part slug
+ * (`subject/section/article`) can cross into another subject.
+ */
 function resolveWikiLink(slug: string, currentSubjectKey: Subject): ResolvedLink | null {
   const parts = slug.trim().split("/");
 
@@ -44,6 +49,10 @@ export interface RelatedArticle {
   href: string;
 }
 
+/**
+ * Replaces `[[slug]]` wiki-links in markdown with resolved article links,
+ * and collects the unique set of resolved links as related-article entries.
+ */
 export function processWikiLinks(
   markdown: string,
   currentSubjectKey: Subject

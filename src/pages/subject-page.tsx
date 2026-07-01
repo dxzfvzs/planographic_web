@@ -23,10 +23,10 @@ export default function SubjectPage() {
   const contentSections = ContentMap[subjectKey] || [];
 
   return (
-    <div className="flex-col">
-      <PageNav backUrl={"/"} onColorToggle={() => setNeutralColor(prev => !prev)}/>
+    <div className="flex-col" style={{ "--subject-color": color } as SubjectStyle}>
+      <PageNav backUrl={"/"} onColorToggle={() => setNeutralColor(prev => !prev)} isNeutral={neutralColor}/>
 
-      <section style={{ "--subject-color": color } as SubjectStyle} className="article-background">
+      <section className="article-background">
         <h1>{config.cz}</h1>
         <p className="intro">{config.intro}</p>
       </section>
@@ -34,7 +34,6 @@ export default function SubjectPage() {
       {contentSections.map((section) => (
         <section
           key={section.sectionSlug}
-          style={{ "--subject-color": color } as SubjectStyle}
           className="article-background link-section"
         >
           <h2>{section.section}</h2>
@@ -45,7 +44,6 @@ export default function SubjectPage() {
                 key={article.url}
                 url={`/${config.url}/${section.sectionSlug}/${article.url}`}
                 text={article.name}
-                color={color}
                 disabled={!article.done}
                 className="button--pill"
               />
