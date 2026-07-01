@@ -31,7 +31,6 @@ export default function ArticlePage() {
     let cancelled = false;
 
     async function loadArticle() {
-      window.scrollTo(0, 0);
       setContent(null);
       const key = `../content/markdown/${subjectSlug}/${sectionSlug}/${articleSlug}.md`;
       const loader = markdownModules[key];

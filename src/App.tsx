@@ -6,10 +6,12 @@ import Footer from "./components/footer/footer";
 import SubjectPage from "./pages/subject-page";
 import Hero from "./components/hero/hero";
 import ArticlePage from "./pages/article-page";
+import useScrollRestoration from "./hooks/useScrollRestoration";
 
 function App() {
   const location = useLocation();
   const currentCore = location.pathname.split("/")[1];
+  useScrollRestoration();
 
   return (
     <>
