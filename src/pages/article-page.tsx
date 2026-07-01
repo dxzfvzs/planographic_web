@@ -97,9 +97,12 @@ export default function ArticlePage() {
       )}
       {content !== null && (
         <div className="note">
-          Poznámka: Textů je hodně. Pro urychlení psaní byla použita pomoc umělá inteligence (ChatGPT, Perplexity), a to
-          například pro odchycení chyb a překlepů, pomocí se strukturou textu, někde s formátováním, apod. Výsledek byl
-          ale vždy ještě nakonec okontrolován a upraven člověkem.
+          Poznámka: Textů je hodně. Pro urychlení psaní byla použita pomoc umělé inteligence (ChatGPT, Perplexity,
+          Claude), a to například pro odchycení chyb a překlepů, pomoc se strukturou textu, někde s formátováním, apod.
+          Výsledek byl ale vždy ještě nakonec okontrolován a upraven člověkem. Našli jste chybu? Dejte nám vědět{" "}
+          <a href="https://github.com/dxzfvzs/planographic_web/issues" target="_blank" rel="noreferrer">
+            na GitHubu
+          </a>.
         </div>
       )}
     </div>

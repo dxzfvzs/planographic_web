@@ -28,6 +28,15 @@ export const materialsContent: ContentSection[] =
       ]
     },
     {
+      section: "Tiskové papíry",
+      sectionSlug: "paper",
+      intro: "Rozdělení a zušlechťování papírů pro tisk.",
+      articles: [
+        { name: "Rozdělení tiskových papírů", url: "rozdeleni-tiskovych-papiru", done: false },
+        { name: "Zušlechťování tiskových papírů", url: "zuslechtovani-tiskovych-papiru", done: false }
+      ]
+    },
+    {
       section: "Materiály využívané v dokončovacím zpracování",
       sectionSlug: "materials",
       intro: "Materiály využívané v dokončovacím zpracování.",
@@ -73,9 +82,10 @@ export const materialsContent: ContentSection[] =
     {
       section: "Elektrochemie a chemické procesy",
       sectionSlug: "electrochem",
-      intro: "Elektrochemické procesy využívané v tisku.",
+      intro: "Chemické a elektrochemické děje využívané v polygrafii.",
       articles: [
-        { name: "Elektrochemické procesy v polygrafii", url: "elektrochemicke-procesy", done: false } // 18
+        { name: "Elektrochemické procesy v polygrafii", url: "elektrochemicke-procesy", done: false }, // 18
+        { name: "Acidobazické teorie, síla kyselin a zásad", url: "acidobazicke-teorie-sila-kyselin-a-zasad", done: false }
       ]
     }
   ];
