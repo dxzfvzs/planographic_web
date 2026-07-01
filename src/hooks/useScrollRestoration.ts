@@ -3,13 +3,21 @@ import { useLocation } from "react-router-dom";
 
 const scrollPositions = new Map<string, number>();
 
-// Article pages (/:subjectSlug/:sectionSlug/:articleSlug) always open at the top;
-// their content loads asynchronously, which makes restoring a mid-article
-// position unreliable, so they're excluded from restoration entirely.
+/**
+ * Article pages (/:subjectSlug/:sectionSlug/:articleSlug) always open at the top;
+ * their content loads asynchronously, which makes restoring a mid-article
+ * position unreliable, so they're excluded from restoration entirely.
+ *
+ * @param pathname The current route path
+ */
 function isArticlePath(pathname: string) {
   return pathname.split("/").filter(Boolean).length >= 3;
 }
 
+/**
+ * Restores each route's scroll position on navigation (keyed by pathname),
+ * except article pages, which always open at the top.
+ */
 export default function useScrollRestoration() {
   const location = useLocation();
 
