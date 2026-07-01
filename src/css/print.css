@@ -1,0 +1,140 @@
+/*
+  Print / "Save as PDF" styles.
+  Goal: a clean, ink-friendly A4 printout of the current article only —
+ */
+
+@media print {
+  @page {
+    size: A4;
+    margin: 1.6cm 1.4cm;
+  }
+
+  /* only the article should print, drop everything else */
+  header,
+  footer,
+  .hero,
+  .page-nav,
+  .note,
+  .article-related {
+    display: none !important;
+  }
+
+  /* white bg to not waste printer ink */
+  html,
+  body,
+  .article-background {
+    background: #fff !important;
+  }
+
+  /* use the full page for print */
+  main {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* reveal every scroll-locked sections */
+  .article-section.locked,
+  .article-subsection.locked {
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+  }
+
+  .article-background {
+    border-radius: 0 !important;
+    padding: 0 !important;
+  }
+
+  .article-content {
+    width: 100% !important;
+    color: #000;
+    line-height: 1.5;
+  }
+
+  /* Headline: drop fill, replace with simple underline */
+  .article-headline {
+    color: #000 !important;
+    background: none !important;
+    border-radius: 0 !important;
+    border-bottom: 2px solid var(--subject-color);
+    padding: 0.15em 0 0.35em 0 !important;
+    margin-bottom: 1em !important;
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .article-headline--subject {
+    color: #000 !important;
+    opacity: 0.6;
+  }
+
+  /* Sub-headings: no fill, hierarchy via weight + indentation */
+  .article-content h2,
+  .article-content h3,
+  .article-content h4,
+  .article-content h5,
+  .article-content h6 {
+    background: none !important;
+    color: #000 !important;
+    border-radius: 0 !important;
+    width: auto !important;
+    opacity: 1 !important;
+    font-weight: bold;
+    padding: 0 !important;
+    line-height: 1.25;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .article-content h2 {
+    border-left: 3px solid var(--subject-color);
+    padding-left: 0.5em !important;
+    font-size: 17px;
+    margin-top: 1.2em !important;
+  }
+
+  .article-content h3 {
+    font-size: 15px;
+    margin-top: 1em !important;
+  }
+
+  .article-content h4 {
+    font-size: 14px;
+    margin-left: 1em;
+    margin-top: 0.9em !important;
+  }
+
+  .article-content h5 {
+    font-size: 13px;
+    margin-left: 2em;
+    margin-top: 0.9em !important;
+  }
+
+  .article-content h6 {
+    font-size: 12px;
+    margin-left: 3em;
+    margin-top: 0.9em !important;
+  }
+
+  /* article link references keep pill outline + icon */
+  .article-content a {
+    background: none !important;
+  }
+
+  .article-content strong {
+    color: #000 !important;
+    font-weight: bold;
+  }
+
+  .article-content hr {
+    background: rgba(0, 0, 0, 0.3) !important;
+  }
+
+  /* avoids odd split breaks between pages */
+  .article-content p,
+  .article-content li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
