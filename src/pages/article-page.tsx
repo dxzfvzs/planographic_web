@@ -38,16 +38,25 @@ export default function ArticlePage() {
         if (!cancelled) setContent("# Článek nebyl nalezen");
         return;
       }
-      const text = await loader() as string;
-      if (!cancelled) setContent(text);
+      try {
+        const text = await loader() as string;
+        if (!cancelled) setContent(text);
+      } catch {
+        if (!cancelled) setContent("# Článek nebyl nalezen");
+      }
     }
 
     void loadArticle();
-    return () => { cancelled = true; };
+    return () => {
+      cancelled = true;
+    };
   }, [subjectSlug, sectionSlug, articleSlug]);
 
   const { processed: processedContent, related } = useMemo(
-    () => subjectKey && content !== null ? processWikiLinks(content, subjectKey) : { processed: content ?? "", related: [] },
+    () => subjectKey && content !== null ? processWikiLinks(content, subjectKey) : {
+      processed: content ?? "",
+      related: []
+    },
     [content, subjectKey]
   );
 
@@ -63,7 +72,8 @@ export default function ArticlePage() {
 
   return (
     <div className="flex-col" style={{ minHeight: '100vh', "--subject-color": color } as SubjectStyle}>
-      <PageNav backUrl={`/${config.url}`} onColorToggle={() => setNeutralColor(prev => !prev)} isNeutral={neutralColor}/>
+      <PageNav backUrl={`/${config.url}`} onColorToggle={() => setNeutralColor(prev => !prev)}
+               isNeutral={neutralColor}/>
       {content !== null && (
         <div>
           <Article
