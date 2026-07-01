@@ -63,10 +63,10 @@ export default function ArticlePage() {
     ?? config.cz;
 
   return (
-    <div className="flex-col" style={{ minHeight: '100vh' }}>
-      <PageNav backUrl={`/${config.url}`} onColorToggle={() => setNeutralColor(prev => !prev)} isNeutral={neutralColor} color={config.color}/>
+    <div className="flex-col" style={{ minHeight: '100vh', "--subject-color": color } as SubjectStyle}>
+      <PageNav backUrl={`/${config.url}`} onColorToggle={() => setNeutralColor(prev => !prev)} isNeutral={neutralColor}/>
       {content !== null && (
-        <div style={{ "--subject-color": color } as SubjectStyle}>
+        <div>
           <Article
             content={processedContent}
             related={related}

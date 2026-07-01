@@ -1,19 +1,16 @@
 import { Link } from "react-router-dom";
 import "./button.css"
-import React from "react";
 
 interface NavButtonProps {
   url: string;
   text: string;
-  color?: string;
   disabled?: boolean;
   className?: string;
 }
 
-export default function NavButton({ url, text, color, disabled, className }: NavButtonProps) {
+export default function NavButton({ url, text, disabled, className }: NavButtonProps) {
   return (
-    <Link to={url} className={`button ${className ?? ""} ${disabled ? "button--disabled" : ""}`}
-          style={{ "--subject-color": color } as React.CSSProperties}>
+    <Link to={url} className={`button ${className ?? ""} ${disabled ? "button--disabled" : ""}`}>
       {text}
     </Link>
   );
