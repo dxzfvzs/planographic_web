@@ -97,7 +97,7 @@ export default function Article({ content, headline, subject, related }: Article
   }, [content]);
 
   return (
-    <section className="article-background">
+    <section className="article-background article-enter-animation">
       <h1 className="article-headline">
         <span className="article-headline--subject">{subject} {">"} </span> {headline}
       </h1>
