@@ -10,7 +10,7 @@
   border: none;
   font-family: inherit;
   font-size: 16px;
-  transition: all var(--color-transition-duration);
+  transition: background-color var(--color-transition-duration), color var(--color-transition-duration), filter var(--color-transition-duration);
 }
 
 .button--disabled {
