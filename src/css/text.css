@@ -9,6 +9,12 @@ html, body {
   line-height: 1.2em;
 }
 
+h1,
+h2,
+strong {
+  transition: all var(--color-transition-duration);
+}
+
 h1 {
   margin-top: 0;
   text-align: left;

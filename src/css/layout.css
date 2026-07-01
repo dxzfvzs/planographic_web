@@ -4,6 +4,7 @@
   --white: #ffffff;
   --yellow: #ffcc00;
   --subject-color: var(--blue);
+  --color-transition-duration: 0.3s;
 }
 
 html {

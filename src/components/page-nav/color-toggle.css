@@ -24,7 +24,7 @@
   border-radius: 17px;
   display: flex;
   align-items: center;
-  transition: background 0.15s;
+  transition: background var(--color-transition-duration);
 }
 
 .color-toggle:hover .color-toggle__pill {
@@ -42,7 +42,7 @@
   position: relative;
   z-index: 1;
   pointer-events: none;
-  transition: opacity 0.22s;
+  transition: opacity var(--color-transition-duration);
 }
 
 /* BW ghost hidden when BW thumb is on top; visible when thumb moved away */
@@ -63,8 +63,8 @@
   border-radius: 13px;
   background: #383838;
   transition:
-    transform 0.28s cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    transform var(--color-transition-duration) cubic-bezier(0.4, 0, 0.2, 1),
+    background-color var(--color-transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +84,7 @@
   letter-spacing: 0.04em;
   color: white;
   pointer-events: none;
-  transition: opacity 0.18s;
+  transition: opacity 0.1s;
 }
 
 .color-toggle__thumb-text--bw { opacity: 1; }
