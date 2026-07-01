@@ -29,6 +29,7 @@ export default function Pantone({ subject, main = true }: NavButtonProps) {
   const handleMouseMove = (e: React.MouseEvent) => {
     const card = cardRef.current;
     if (!card) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
