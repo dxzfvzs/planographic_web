@@ -10,7 +10,11 @@ interface NavButtonProps {
 
 export default function NavButton({ url, text, disabled, className }: NavButtonProps) {
   return (
-    <Link to={url} className={`button ${className ?? ""} ${disabled ? "button--disabled" : ""}`}>
+    <Link
+      to={url}
+      state={{ preserveScroll: true }}
+      className={`button ${className ?? ""} ${disabled ? "button--disabled" : ""}`}
+    >
       {text}
     </Link>
   );

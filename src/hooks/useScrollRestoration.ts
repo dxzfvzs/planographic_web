@@ -1,5 +1,5 @@
 import { useLayoutEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigationType } from "react-router-dom";
 
 const scrollPositions = new Map<string, number>();
 
@@ -15,23 +15,31 @@ function isArticlePath(pathname: string) {
 }
 
 /**
- * Restores each route's scroll position on navigation (keyed by pathname),
- * except article pages, which always open at the top.
+ * Restores each route's scroll position (keyed by pathname) when navigating
+ * via the browser back/forward buttons or the in-page "Zpátky" back button
+ * (which marks its navigation with `preserveScroll` state). Any other
+ * navigation, e.g. header or hero links, always lands at the top, and
+ * article pages always open at the top regardless of navigation type.
  */
 export default function useScrollRestoration() {
   const location = useLocation();
+  const navigationType = useNavigationType();
 
   useLayoutEffect(() => {
     const key = location.pathname;
-    if (isArticlePath(key)) {
-      window.scrollTo(0, 0);
-      return;
-    }
+    const shouldRestore =
+      !isArticlePath(key) &&
+      (navigationType === "POP" || (location.state as { preserveScroll?: boolean } | null)?.preserveScroll === true);
 
-    window.scrollTo(0, scrollPositions.get(key) ?? 0);
+    if (!shouldRestore) {
+      window.scrollTo(0, 0);
+      if (isArticlePath(key)) return;
+    } else {
+      window.scrollTo(0, scrollPositions.get(key) ?? 0);
+    }
 
     const handleScroll = () => scrollPositions.set(key, window.scrollY);
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [location.pathname]);
+  }, [location.pathname, location.state, navigationType]);
 }
