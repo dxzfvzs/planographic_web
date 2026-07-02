@@ -10,17 +10,17 @@ Umělecké jazykové prostředky, které oživují text. Dělí se na dvě skupi
 
 - **METAFORA** – přenesení významu na základě vnější podobnosti (*hlava rodiny*).
     - **PERSONIFIKACE** – zosobnění; věc/zvíře má lidskou vlastnost nebo činnost (*vítr si hraje*).
-    - **EPITETON** – básnický přívlastek; přídavné jméno, které by v běžné řeči „nedávalo smysl" (*cibulový kostel, kvílící stín*).
+    - **EPITETON** – básnický přívlastek; přídavné jméno, které by v běžné řeči „nedávalo smysl“ (*cibulový kostel, kvílící stín*).
     - **OXYMÓRON** – spojení slov, jejichž významy si protiřečí (*živá mrtvola, svítání na západě*).
-- **PŘIROVNÁNÍ** – něco je **jako** něco (*mlčí jako hrob*). *(Přísně vzato nejde o přenesení významu – slovo „jako" zůstává – ale učí se spolu s metaforou.)*
+- **PŘIROVNÁNÍ** – něco je **jako** něco (*mlčí jako hrob*). *(Přísně vzato nejde o přenesení významu – slovo „jako“ zůstává – ale učí se spolu s metaforou.)*
 
 ### Na základě vnitřní souvislosti
 
 - **METONYMIE** – přenesení významu na základě vnitřní souvislosti (*číst Čapka* = číst Čapkovy knihy).
     - **SYNEKDOCHA** – záměna celku za část nebo naopak (*nepřišla ani noha*).
 - **HYPERBOLA** – nadsázka, zveličení (*říkal jsem ti to tisíckrát*).
-- **EUFEMISMUS** – zjemnění nepříjemného výrazu (*„už na něm rostou kytičky"* = zemřel; ty kytičky jsou eufemismus, ok?).
-- **IRONIE** – vyjádření záporu kladem; myslí se opak toho, co se říká (*„To se ti teda povedlo."*).
+- **EUFEMISMUS** – zjemnění nepříjemného výrazu (*„už na něm rostou kytičky“* = zemřel; ty kytičky jsou eufemismus, ok?).
+- **IRONIE** – vyjádření záporu kladem; myslí se opak toho, co se říká (*„To se ti teda povedlo.“*).
     - **SARKASMUS** – zesílená, útočná ironie.
 
 ---
@@ -41,8 +41,8 @@ Umělecké jazykové prostředky, které oživují text. Dělí se na dvě skupi
 
 ### Syntaktické (větné) figury
 
-- **APOZIOPEZE** – nedokončená výpověď, tři tečky… (*„Jestli ty ještě jednou…"*)
-- **APOSTROFA** – oslovení neživé věci nebo nepřítomné osoby (*„Čechy krásné, Čechy mé!"*)
+- **APOZIOPEZE** – nedokončená výpověď, tři tečky… (*„Jestli ty ještě jednou…“*)
+- **APOSTROFA** – oslovení neživé věci nebo nepřítomné osoby (*„Čechy krásné, Čechy mé!“*)
 - **ŘEČNICKÁ OTÁZKA** – otázka, na kterou se neočekává odpověď.
 - **INVERZE** – obrácený (neobvyklý) slovosled (*lásky mé sen*).
 - **ELIPSA** – vypuštění slova, které si lze domyslet (*My o vlku [mluvíme], a vlk za humny.*)
@@ -54,4 +54,4 @@ Umělecké jazykové prostředky, které oživují text. Dělí se na dvě skupi
 
 1. Mění se **význam slova**? → **trop** (metafora × metonymie podle typu podobnosti).
 2. **Opakuje se** něco nebo je zvláštní slovosled? → **figura** (podle místa opakování: anafora/epifora/epanastrofa/epizeuxis).
-3. Nedokončená věta = apoziopeze; oslovení měsíce = apostrofa; „jako" = přirovnání.
+3. Nedokončená věta = apoziopeze; oslovení měsíce = apostrofa; „jako“ = přirovnání.

@@ -29,14 +29,14 @@ Psychologický horor o tom, jak se ze spořádaného, milujícího otce vlivem n
 ## Vypravěč a jazyk
 
 - **Vypravěč:** er-forma, vševědoucí vypravěč.
-- **Vypravěcí způsoby:** přímá řeč, vyprávěcí postupy; metafory, přirovnání; **striktně spisovný jazyk i v přímé řeči**; vznešená, knižní až archaická jména; **často opakované motivy** (růžolící dívka v černých šatech, „nekuřák a abstinent", věta o Tibetu). Extrémně zřídka slova negativně citově zabarvená či hovorový jazyk.
+- **Vypravěcí způsoby:** přímá řeč, vyprávěcí postupy; metafory, přirovnání; **striktně spisovný jazyk i v přímé řeči**; vznešená, knižní až archaická jména; **často opakované motivy** (růžolící dívka v černých šatech, „nekuřák a abstinent“, věta o Tibetu). Extrémně zřídka slova negativně citově zabarvená či hovorový jazyk.
 - **Typy promluv:** přímá řeč, monology (Kopfrkingl mluví téměř nepřetržitě), dialogy.
 
 ---
 
 ## Postavy
 
-- **Karel Kopfrkingl** – hlavní postava, pracuje v krematoriu. Navenek spořádaný, milý, proti násilí, tolerantní; abstinent a nekuřák. **Fascinován smrtí** – bere ji jako osvobození od pozemských strastí, silně ovlivněn knihou o Tibetu. Zpočátku se o politiku nezajímá, dokud ho Willi nepřesvědčí. Po vstupu do strany se z něj stává donašeč a začíná věřit myšlence rasové čistoty. Zabije svou ženu a syna – věří, že je tím „spasí". Nakonec odvezen do psychiatrické léčebny.
+- **Karel Kopfrkingl** – hlavní postava, pracuje v krematoriu. Navenek spořádaný, milý, proti násilí, tolerantní; abstinent a nekuřák. **Fascinován smrtí** – bere ji jako osvobození od pozemských strastí, silně ovlivněn knihou o Tibetu. Zpočátku se o politiku nezajímá, dokud ho Willi nepřesvědčí. Po vstupu do strany se z něj stává donašeč a začíná věřit myšlence rasové čistoty. Zabije svou ženu a syna – věří, že je tím „spasí“. Nakonec odvezen do psychiatrické léčebny.
 - **Marie (Lakmé)** – Kopfrkinglova žena, poloviční Židovka; tichá. Kopfrkingl ji oběsí.
 - **Zina** – dcera, 16 let, hraje na klavír. Otec se chystá zabít i ji, ale už to nestihne.
 - **Milivoj (Mili)** – syn, 14 let, rád se toulá. Kopfrkingl ho zabije v krematoriu.

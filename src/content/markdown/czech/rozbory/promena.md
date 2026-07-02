@@ -62,6 +62,6 @@ Rodina Řehoře postupně přestává vnímat jako člověka a stává se pro ni
 
 ### Současníci a podobná díla
 
-- **Egon Erwin Kisch** (Pražský pitaval) – „zuřivý reportér",
+- **Egon Erwin Kisch** (Pražský pitaval) – „zuřivý reportér“,
 - **Gustav Meyrink** (Golem) – mystická Praha,
 - **Max Brod** – Kafkův přítel a vydavatel jeho díla.

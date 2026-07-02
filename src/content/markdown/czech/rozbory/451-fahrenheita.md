@@ -44,9 +44,9 @@ Dystopie o světě, kde se knihy pálí, aby nikoho neurážely a nenutily přem
 - **Guy Montag** – hlavní postava, požárník (stejně jako jeho otec i děd); úkolem požárníků je **pálit knihy**. Občas si z požárů odnese knihu domů, kde ji ukrývá ve ventilátoru. Myslí si, že ho práce baví jako ostatní, dokud nepotká Clarissu – začne si uvědomovat, že není šťastný. Snaží se přimět ostatní ke čtení (svou ženu a její přítelkyně). Nakonec prchá na venkov.
 - **Clarissa** – sedmnáctiletá dívka, nově přistěhovaná sousedka. S rodinou jsou vnímáni jako nespolečenští podivíni. Pozoruje přírodu, je všímavá, zvědavá a přátelská, naslouchá ostatním. Údajně zabita při srážce s autem.
 - **Kapitán Beatty** – záporná postava, Montagův nadřízený. Vzdělaný, vypočítavý a manipulující; často cituje z knih a provokuje. Upálen Montagem.
-- **Mildred (Millie)** – Montagova žena. Zajímá se víc o svou televizní „rodinku" než o muže a jeho city. Fixovaná na technologie, nechce přemýšlet. Popírá pokus o sebevraždu. Udá svého manžela kvůli knihám a odjíždí pryč chvíli před tím, než je jejich dům zapálen.
+- **Mildred (Millie)** – Montagova žena. Zajímá se víc o svou televizní „rodinku“ než o muže a jeho city. Fixovaná na technologie, nechce přemýšlet. Popírá pokus o sebevraždu. Udá svého manžela kvůli knihám a odjíždí pryč chvíli před tím, než je jejich dům zapálen.
 - **Profesor Faber** – věří v sílu jednotlivce, sám má však strach cokoli udělat na vlastní pěst. Na dálku přes vysílačku radí Montagovi, co dělat. Ke konci odjíždí do St. Louis za známým, kde by mohl tisknout knihy.
-- **Granger** – jeden ze starců na venkově, „živoucí kniha" (jeden z lidí, kteří si knihy zapamatovali, aby je mohli později obnovit).
+- **Granger** – jeden ze starců na venkově, „živoucí kniha“ (jeden z lidí, kteří si knihy zapamatovali, aby je mohli později obnovit).
 - **Mechanický ohař** – kovová bestie schopná podle pachu a chemického složení vystopovat až 10 000 obětí; na těle má bodec s morfiem. Trestá ty, kdo nedodrží zákony společnosti.
 
 ## Děj

@@ -44,7 +44,7 @@ Literatura je starší než písmo – nejdřív existovala **ústní lidová sl
 
 - **863** – na Velkou Moravu přicházejí věrozvěsti **Konstantin (Cyril) a Metoděj** ze Soluně,
 - vytvořili písmo **hlaholici** a první spisovný jazyk Slovanů – **staroslověnštinu**,
-- **Proglas** – veršovaná předmluva k překladu evangelia, první „báseň" ve staroslověnštině (obhajoba srozumitelného jazyka),
+- **Proglas** – veršovaná předmluva k překladu evangelia, první „báseň“ ve staroslověnštině (obhajoba srozumitelného jazyka),
 - **Život Konstantinův a Život Metodějův** (tzv. moravsko-panonské legendy).
 
 ### Latinské období (10.–13. století)
@@ -52,7 +52,7 @@ Literatura je starší než písmo – nejdřív existovala **ústní lidová sl
 - po zániku Velké Moravy převládá **latina**,
 - **legendy** o českých světcích – sv. Václavovi, sv. Ludmile, sv. Vojtěchovi (Kristiánova legenda),
 - **Kosmas: Kronika česká** (Chronica Boemorum, dokončena 1125) – první česká kronika, latinsky; dějiny Čechů od praotce Čecha,
-- nejstarší duchovní písně: **Hospodine, pomiluj ny** (staroslověnské prvky), **Svatý Václave** (12.–13. století) – plnily roli „hymen".
+- nejstarší duchovní písně: **Hospodine, pomiluj ny** (staroslověnské prvky), **Svatý Václave** (12.–13. století) – plnily roli „hymen“.
 
 ### Nástup češtiny (13.–14. století)
 
