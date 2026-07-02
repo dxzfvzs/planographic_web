@@ -1,31 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './mobile-subject-nav.css';
 import { getSubjectEntries } from '../../utils/subjects';
 import type { SubjectStyle } from '../../utils/css';
 
-interface MobileSubjectNavProps {
-  currentCore: string;
-}
-
 /**
  * Compact color-matched subject chips shown instead of the hero on narrow screens
  * */
-export default function MobileSubjectNav({ currentCore }: MobileSubjectNavProps) {
+export default function MobileSubjectNav() {
   const entries = getSubjectEntries();
 
   return (
-    <nav className="mobile_subject_nav">
+    <nav className="mobile_subject_nav" aria-label="Navigace po předmětech">
       {entries.map(([key, info]) => (
-        <Link
+        <NavLink
           key={key}
           to={`/${info.url}`}
-          className={`mobile_subject_chip ${info.url === currentCore ? 'mobile_subject_chip--active' : ''}`}
+          className={({ isActive }) => `mobile_subject_chip ${isActive ? 'mobile_subject_chip--active' : ''}`}
           style={{ '--subject-color': info.color } as SubjectStyle}
         >
           <span className="mobile_subject_chip__swatch" style={{ backgroundColor: info.color }}/>
           {info.cz}
-        </Link>
+        </NavLink>
       ))}
     </nav>
   );

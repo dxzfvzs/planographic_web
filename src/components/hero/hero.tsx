@@ -22,7 +22,7 @@ export default function Hero({ currentCore, showMobileNav = true }: HeroProps) {
           />
         ))}
       </div>
-      {showMobileNav && <MobileSubjectNav currentCore={currentCore}/>}
+      {showMobileNav && <MobileSubjectNav/>}
     </>
   );
 }
