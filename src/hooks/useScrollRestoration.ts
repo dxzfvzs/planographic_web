@@ -1,18 +1,8 @@
 import { useLayoutEffect } from "react";
 import { useLocation, useNavigationType } from "react-router-dom";
+import { isArticlePath } from "../utils/routes";
 
 const scrollPositions = new Map<string, number>();
-
-/**
- * Article pages (/:subjectSlug/:sectionSlug/:articleSlug) always open at the top;
- * their content loads asynchronously, which makes restoring a mid-article
- * position unreliable, so they're excluded from restoration entirely.
- *
- * @param pathname The current route path
- */
-function isArticlePath(pathname: string) {
-  return pathname.split("/").filter(Boolean).length >= 3;
-}
 
 /**
  * Restores each route's scroll position (keyed by pathname) when navigating

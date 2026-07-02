@@ -7,11 +7,12 @@ import SubjectPage from "./pages/subject-page";
 import Hero from "./components/hero/hero";
 import ArticlePage from "./pages/article-page";
 import useScrollRestoration from "./hooks/useScrollRestoration";
+import { isArticlePath } from "./utils/routes";
 
 function App() {
   const location = useLocation();
   const currentCore = location.pathname.split("/")[1];
-  const isArticlePage = location.pathname.split("/").filter(Boolean).length >= 3;
+  const isArticlePage = isArticlePath(location.pathname);
   useScrollRestoration();
 
   return (
