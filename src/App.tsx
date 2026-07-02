@@ -7,21 +7,23 @@ import SubjectPage from "./pages/subject-page";
 import Hero from "./components/hero/hero";
 import ArticlePage from "./pages/article-page";
 import useScrollRestoration from "./hooks/useScrollRestoration";
+import { isArticlePath } from "./utils/routes";
 
 function App() {
   const location = useLocation();
   const currentCore = location.pathname.split("/")[1];
+  const isArticlePage = isArticlePath(location.pathname);
   useScrollRestoration();
 
   return (
     <>
       <Header/>
-      <Hero currentCore={currentCore}/>
+      <Hero currentCore={currentCore} showMobileNav={!isArticlePage}/>
       <main>
         <Routes>
           <Route path="/" element={<Home/>}/>
 
-          <Route path="/:subjectSlug" element={<SubjectPage />}/>
+          <Route path="/:subjectSlug" element={<SubjectPage/>}/>
           <Route path="/:subjectSlug/:sectionSlug/:articleSlug" element={
             <ArticlePage/>
           }/>

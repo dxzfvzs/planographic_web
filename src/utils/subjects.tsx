@@ -35,3 +35,7 @@ export const subjects = {
 } as const;
 
 export type Subject = keyof typeof subjects;
+
+export function getSubjectEntries() {
+  return Object.entries(subjects) as [Subject, typeof subjects[Subject]][];
+}

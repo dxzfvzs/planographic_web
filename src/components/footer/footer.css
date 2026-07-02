@@ -17,8 +17,10 @@ footer .link {
   text-underline-offset: 3px;
 }
 
-footer .link:hover {
-  color: var(--white);
+@media (hover: hover) {
+  footer .link:hover {
+    color: var(--white);
+  }
 }
 
 footer .link::after {

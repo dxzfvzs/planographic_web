@@ -8,8 +8,10 @@
   position: relative;
 }
 
-.link:hover {
-  text-decoration: none;
+@media (hover: hover) {
+  .link:hover {
+    text-decoration: none;
+  }
 }
 
 .link::after {
@@ -29,7 +31,9 @@
   height: 5px;
 }
 
-.link:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+@media (hover: hover) {
+  .link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 }

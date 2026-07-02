@@ -12,9 +12,10 @@ interface ButtonProps {
 
 export default function Button({ text, color, onClick, type = "button", className, icon }: ButtonProps) {
   return (
-    <button type={type} className={`button ${className ?? ""}`} style={{ "--subject-color": color } as React.CSSProperties} onClick={onClick}>
-      {icon}
-      {text}
+    <button type={type} className={`button ${className ?? ""}`}
+            style={{ "--subject-color": color } as React.CSSProperties} onClick={onClick} aria-label={text}>
+      {icon && <span aria-hidden="true">{icon}</span>}
+      <span className="button__label">{text}</span>
     </button>
   );
 }

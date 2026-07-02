@@ -19,6 +19,10 @@ html, body {
   font-family: 'CustomFont', sans-serif;
 }
 
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 #root {
   min-height: 100vh;
   display: flex;
@@ -91,6 +95,13 @@ main {
 @media (min-width: 901px) and (max-width: 1200px) {
   main {
     width: 85%;
+  }
+}
+
+/* mobile_subject_nav replaces the tall hero at this breakpoint, so main needs less top margin */
+@media (max-width: 1042px) {
+  main {
+    margin-top: 0;
   }
 }
 
