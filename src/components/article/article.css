@@ -37,6 +37,7 @@
   margin-bottom: 1.4em;
   border-radius: 15px 15px 0 0;
   font-size: 25px;
+  line-height: 1.4;
   background: var(--subject-color);
 }
 
@@ -44,6 +45,17 @@
   font-size: 12px;
   font-weight: lighter;
   opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+  .article-headline {
+    font-size: 20px;
+  }
+
+  .article-headline--subject {
+    display: block;
+    margin-bottom: 0.3em;
+  }
 }
 
 .article-content {
@@ -139,8 +151,10 @@
   vertical-align: -0.12em;
 }
 
-.article-content a:hover {
-  background: color-mix(in srgb, var(--subject-color) 12%, transparent);
+@media (hover: hover) {
+  .article-content a:hover {
+    background: color-mix(in srgb, var(--subject-color) 12%, transparent);
+  }
 }
 
 .article-content h4 {
@@ -247,6 +261,8 @@
   text-decoration: none;
 }
 
-.article-related__link:hover {
-  background: color-mix(in srgb, var(--subject-color) 12%, transparent);
+@media (hover: hover) {
+  .article-related__link:hover {
+    background: color-mix(in srgb, var(--subject-color) 12%, transparent);
+  }
 }

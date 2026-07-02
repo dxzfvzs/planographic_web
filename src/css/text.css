@@ -62,6 +62,12 @@ strong {
   font-weight: 900;
 }
 
+@media (max-width: 900px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
 .note {
   background: #efefef;
   padding: 1em 2em;

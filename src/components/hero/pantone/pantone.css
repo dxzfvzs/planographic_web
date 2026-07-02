@@ -12,10 +12,12 @@
   transition: 0.3s ease;
 }
 
-.pantone:hover {
-  will-change: transform;
-  box-shadow: 25px 25px 40px rgba(0, 0, 0, 0.45),
-  0 0 30px rgba(168, 168, 168, 0.15);
+@media (hover: hover) {
+  .pantone:hover {
+    will-change: transform;
+    box-shadow: 25px 25px 40px rgba(0, 0, 0, 0.45),
+    0 0 30px rgba(168, 168, 168, 0.15);
+  }
 }
 
 .pantone__color-block {
@@ -79,6 +81,8 @@
   transition: 0.3s;
 }
 
-.pantone--sub:hover .pantone__color-block {
-  opacity: 1;
+@media (hover: hover) {
+  .pantone--sub:hover .pantone__color-block {
+    opacity: 1;
+  }
 }

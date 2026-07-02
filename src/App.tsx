@@ -11,17 +11,18 @@ import useScrollRestoration from "./hooks/useScrollRestoration";
 function App() {
   const location = useLocation();
   const currentCore = location.pathname.split("/")[1];
+  const isArticlePage = location.pathname.split("/").filter(Boolean).length >= 3;
   useScrollRestoration();
 
   return (
     <>
       <Header/>
-      <Hero currentCore={currentCore}/>
+      <Hero currentCore={currentCore} showMobileNav={!isArticlePage}/>
       <main>
         <Routes>
           <Route path="/" element={<Home/>}/>
 
-          <Route path="/:subjectSlug" element={<SubjectPage />}/>
+          <Route path="/:subjectSlug" element={<SubjectPage/>}/>
           <Route path="/:subjectSlug/:sectionSlug/:articleSlug" element={
             <ArticlePage/>
           }/>

@@ -23,9 +23,11 @@
   background-color: #525252;
 }
 
-.button:not(.button--disabled):hover {
-  cursor: pointer;
-  filter: brightness(0.82);
+@media (hover: hover) {
+  .button:not(.button--disabled):hover {
+    cursor: pointer;
+    filter: brightness(0.82);
+  }
 }
 
 .button--pill {
@@ -37,9 +39,11 @@
   padding: 0.55em 1.2em;
 }
 
-.button--pill:not(.button--disabled):hover {
-  background: color-mix(in srgb, var(--subject-color) 12%, transparent);
-  filter: none;
+@media (hover: hover) {
+  .button--pill:not(.button--disabled):hover {
+    background: color-mix(in srgb, var(--subject-color) 12%, transparent);
+    filter: none;
+  }
 }
 
 .button--ghost {
@@ -54,8 +58,10 @@
   transition: background 0.15s, color 0.15s;
 }
 
-.button--ghost:not(.button--disabled):hover {
-  background: rgba(0, 0, 0, 0.1);
-  color: rgba(0, 0, 0, 0.78);
-  filter: none;
+@media (hover: hover) {
+  .button--ghost:not(.button--disabled):hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.78);
+    filter: none;
+  }
 }
