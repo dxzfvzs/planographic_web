@@ -14,7 +14,7 @@ export default function Button({ text, color, onClick, type = "button", classNam
   return (
     <button type={type} className={`button ${className ?? ""}`}
             style={{ "--subject-color": color } as React.CSSProperties} onClick={onClick} aria-label={text}>
-      {icon}
+      {icon && <span aria-hidden="true">{icon}</span>}
       <span className="button__label">{text}</span>
     </button>
   );
