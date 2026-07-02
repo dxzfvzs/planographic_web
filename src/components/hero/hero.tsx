@@ -1,7 +1,7 @@
 import React from 'react';
 import Pantone from "./pantone/pantone";
 import MobileSubjectNav from "./mobile-subject-nav";
-import { Subject, subjects } from "../../utils/subjects";
+import { getSubjectEntries } from "../../utils/subjects";
 
 interface HeroProps {
   currentCore: string;
@@ -9,7 +9,7 @@ interface HeroProps {
 }
 
 export default function Hero({ currentCore, showMobileNav = true }: HeroProps) {
-  const entries = Object.entries(subjects) as [Subject, typeof subjects[Subject]][];
+  const entries = getSubjectEntries();
 
   return (
     <>

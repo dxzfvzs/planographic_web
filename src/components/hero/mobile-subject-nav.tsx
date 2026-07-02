@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './mobile-subject-nav.css';
-import { Subject, subjects } from '../../utils/subjects';
+import { getSubjectEntries } from '../../utils/subjects';
 import type { SubjectStyle } from '../../utils/css';
 
 interface MobileSubjectNavProps {
@@ -12,7 +12,7 @@ interface MobileSubjectNavProps {
  * Compact color-matched subject chips shown instead of the hero on narrow screens
  * */
 export default function MobileSubjectNav({ currentCore }: MobileSubjectNavProps) {
-  const entries = Object.entries(subjects) as [Subject, typeof subjects[Subject]][];
+  const entries = getSubjectEntries();
 
   return (
     <nav className="mobile_subject_nav">
