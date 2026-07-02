@@ -55,6 +55,9 @@
   }
 
   /* Headline: drop fill, replace with simple underline */
+  /* !important throughout: overrides article.css's max-width:900px rules,
+     which mobile print engines can still match against the device's screen
+     width even though the printed page is A4 */
   .article-headline {
     color: #000 !important;
     background: none !important;
@@ -62,11 +65,13 @@
     border-bottom: 2px solid var(--subject-color);
     padding: 0.15em 0 0.35em 0 !important;
     margin-bottom: 1em !important;
-    font-size: 22px;
-    line-height: 1.4;
+    font-size: 22px !important;
+    line-height: 1.4 !important;
   }
 
   .article-headline--subject {
+    display: inline !important;
+    margin-bottom: 0 !important;
     color: #000 !important;
     opacity: 0.6;
   }
