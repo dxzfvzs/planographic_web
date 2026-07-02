@@ -28,7 +28,7 @@ Food is a daily necessity, but also a pleasure and part of every culture. In thi
 
 - **Eating out**: restaurants, pizzerias, bistros, fast food, food courts in shopping centres; **food delivery** apps are very popular.
 - In a restaurant: menu, ordering, asking for the bill, **tip** (about 10 %).
-- **Cooking at home** is cheaper and healthier; cooking shows and recipes on social media inspire people; I can cook … (be ready to name something!).
+- **Cooking at home** is cheaper and healthier; cooking shows and recipes on social media inspire people; now it's your turn to freestyle — name a dish you can cook, e.g. scrambled eggs, pasta, or a simple soup.
 - Modern trends: vegetarian and vegan food, bio/organic products, local food, **food waste** reduction ([[family-global/global-problems]]).
 
 ---
