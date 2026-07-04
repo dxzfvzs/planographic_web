@@ -1,4 +1,9 @@
 footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
   padding: 1em 1.5em;
   width: 100%;
   bottom: 0;
@@ -8,6 +13,11 @@ footer {
   text-align: center;
   font-size: 0.9em;
   letter-spacing: 0.02em;
+}
+
+footer .footer-links,
+footer .analytics-note {
+  flex: 1 1 auto;
 }
 
 footer .link {
@@ -25,4 +35,9 @@ footer .link {
 
 footer .link::after {
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+footer .analytics-note {
+  font-size: 0.75em;
+  color: rgba(255, 255, 255, 0.4);
 }

@@ -4,7 +4,7 @@ import './footer.css';
 export default function Footer() {
   return (
     <footer>
-      <span>
+      <div className="footer-links">
         <a href="https://github.com/dxzfvzs/planographic_web"
            className="link"
            target="_blank"
@@ -21,7 +21,10 @@ export default function Footer() {
         >
           Původní stránka
         </a>
-      </span>
+      </div>
+      <div className="analytics-note">
+        Tento web používá anonymní, cookie-free analytiku návštěvnosti.
+      </div>
     </footer>
   );
 }
