@@ -1,0 +1,13 @@
+# pnpm settings (pnpm 11 reads project config from here, not .npmrc)
+
+# Supply-chain cooldown: refuse to install any package version published less
+# than this many minutes ago. 4320 min = 3 days — long enough for a hijacked
+# fresh release to be caught and yanked before it can land here.
+minimumReleaseAge: 4320
+# Package name globs exempt from the cooldown (add trusted deps here if needed).
+minimumReleaseAgeExclude: []
+
+# pnpm blocks dependency build scripts by default. esbuild (Vite's engine)
+# needs its postinstall to place its native binary.
+allowBuilds:
+  esbuild: true

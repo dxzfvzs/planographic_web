@@ -4,8 +4,9 @@
   "private": true,
   "homepage": "https://dxzfvzs.github.io/planographic_web/",
   "type": "module",
+  "packageManager": "pnpm@11.11.0",
   "dependencies": {
-    "gh-pages": "^6.3.0",
+    "fuse.js": "7.4.2",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-markdown": "^10.1.0",
@@ -23,13 +24,11 @@
   "scripts": {
     "start": "vite",
     "build": "tsc --noEmit && tsc -p tsconfig.node.json --noEmit && vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "gs-polygraphy": "npx ts-node --esm scripts/generate-content-structure.ts polygraphy",
-    "gs-technology": "npx ts-node --esm scripts/generate-content-structure.ts technology",
-    "gs-czech": "npx ts-node --esm scripts/generate-content-structure.ts czech",
-    "gs-english": "npx ts-node --esm scripts/generate-content-structure.ts english",
-    "gs-materials": "npx ts-node --esm scripts/generate-content-structure.ts materials",
-    "gs-all": "npm run gs-polygraphy && npm run gs-technology && npm run gs-czech && npm run gs-english && npm run gs-materials"
+    "gs-polygraphy": "pnpm exec ts-node --esm scripts/generate-content-structure.ts polygraphy",
+    "gs-technology": "pnpm exec ts-node --esm scripts/generate-content-structure.ts technology",
+    "gs-czech": "pnpm exec ts-node --esm scripts/generate-content-structure.ts czech",
+    "gs-english": "pnpm exec ts-node --esm scripts/generate-content-structure.ts english",
+    "gs-materials": "pnpm exec ts-node --esm scripts/generate-content-structure.ts materials",
+    "gs-all": "pnpm run gs-polygraphy && pnpm run gs-technology && pnpm run gs-czech && pnpm run gs-english && pnpm run gs-materials"
   }
 }
